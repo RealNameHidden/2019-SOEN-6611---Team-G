@@ -1,0 +1,225 @@
+<html>
+<head>
+  
+    <style type='text/css'>
+   
+   .tests{ 
+     width : 50%;
+     float : left;
+   }
+   
+   .mutees{
+     float : right;
+     width : 50%;
+   }
+   
+   .unit {
+     padding-top : 20px;
+     clear : both;
+   }
+   
+   .coverage_bar {
+    display : inline-block;
+    height : 1.1em;
+    width: 130px;
+    background: #FAA;
+    margin: 0 5px;
+    vertical-align: middle;
+    border: 1px solid #AAA;
+    position : relative;
+   }
+   
+   .coverage_complete {
+    display : inline-block;
+    height : 100%;
+    background: #DFD;
+    float: left;
+   }
+   
+   .coverage_ledgend {
+        position : absolute;
+        height : 100%;
+        width : 100%;
+        left : 0;
+        top : 0;
+        text-align : center;
+   }
+   
+   .line, .mut {
+        vertical-align : middle;
+   }
+   
+   .coveragePercentage {
+    display: inline-block;
+    width: 3em;
+    text-align: right;
+   }
+  </style>
+  
+</head>
+<body>
+
+<h1>Pit Test Coverage Report</h1>
+
+<h3>Project Summary</h3>
+<table>
+    <thead>
+        <tr>
+            <th>Number of Classes</th>
+            <th>Line Coverage</th>
+            <th>Mutation Coverage</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>168</td>
+            <td>93% <div class="coverage_bar"><div class="coverage_complete" style="width:93%"></div><div class="coverage_ledgend">9568/10318</div></div></td>
+            <td>85% <div class="coverage_bar"><div class="coverage_complete" style="width:85%"></div><div class="coverage_ledgend">4810/5628</div></div></td>
+        </tr>
+    </tbody>
+</table>
+
+
+<h3>Breakdown by Package</h3>
+<table>
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Number of Classes</th>
+            <th>Line Coverage</th>
+            <th>Mutation Coverage</th>
+        </tr>
+    </thead>
+    <tbody>
+
+        <tr>
+            <td><a href="./org.apache.commons.configuration2/index.html">org.apache.commons.configuration2</a></td>
+            <td>37</td>
+            <td><div class="coveragePercentage">92% </div><div class="coverage_bar"><div class="coverage_complete" style="width:92%"></div><div class="coverage_ledgend">3510/3831</div></div></td>
+            <td><div class="coveragePercentage">81% </div><div class="coverage_bar"><div class="coverage_complete" style="width:81%"></div><div class="coverage_ledgend">1810/2223</div></div></td>
+        </tr>
+
+        <tr>
+            <td><a href="./org.apache.commons.configuration2.beanutils/index.html">org.apache.commons.configuration2.beanutils</a></td>
+            <td>7</td>
+            <td><div class="coveragePercentage">90% </div><div class="coverage_bar"><div class="coverage_complete" style="width:90%"></div><div class="coverage_ledgend">447/497</div></div></td>
+            <td><div class="coveragePercentage">91% </div><div class="coverage_bar"><div class="coverage_complete" style="width:91%"></div><div class="coverage_ledgend">222/243</div></div></td>
+        </tr>
+
+        <tr>
+            <td><a href="./org.apache.commons.configuration2.builder/index.html">org.apache.commons.configuration2.builder</a></td>
+            <td>20</td>
+            <td><div class="coveragePercentage">99% </div><div class="coverage_bar"><div class="coverage_complete" style="width:99%"></div><div class="coverage_ledgend">623/629</div></div></td>
+            <td><div class="coveragePercentage">96% </div><div class="coverage_bar"><div class="coverage_complete" style="width:96%"></div><div class="coverage_ledgend">318/330</div></div></td>
+        </tr>
+
+        <tr>
+            <td><a href="./org.apache.commons.configuration2.builder.combined/index.html">org.apache.commons.configuration2.builder.combined</a></td>
+            <td>13</td>
+            <td><div class="coveragePercentage">98% </div><div class="coverage_bar"><div class="coverage_complete" style="width:98%"></div><div class="coverage_ledgend">761/775</div></div></td>
+            <td><div class="coveragePercentage">92% </div><div class="coverage_bar"><div class="coverage_complete" style="width:92%"></div><div class="coverage_ledgend">315/341</div></div></td>
+        </tr>
+
+        <tr>
+            <td><a href="./org.apache.commons.configuration2.builder.fluent/index.html">org.apache.commons.configuration2.builder.fluent</a></td>
+            <td>2</td>
+            <td><div class="coveragePercentage">100% </div><div class="coverage_bar"><div class="coverage_complete" style="width:100%"></div><div class="coverage_ledgend">77/77</div></div></td>
+            <td><div class="coveragePercentage">100% </div><div class="coverage_bar"><div class="coverage_complete" style="width:100%"></div><div class="coverage_ledgend">60/60</div></div></td>
+        </tr>
+
+        <tr>
+            <td><a href="./org.apache.commons.configuration2.convert/index.html">org.apache.commons.configuration2.convert</a></td>
+            <td>6</td>
+            <td><div class="coveragePercentage">93% </div><div class="coverage_bar"><div class="coverage_complete" style="width:93%"></div><div class="coverage_ledgend">422/453</div></div></td>
+            <td><div class="coveragePercentage">94% </div><div class="coverage_bar"><div class="coverage_complete" style="width:94%"></div><div class="coverage_ledgend">299/319</div></div></td>
+        </tr>
+
+        <tr>
+            <td><a href="./org.apache.commons.configuration2.event/index.html">org.apache.commons.configuration2.event</a></td>
+            <td>7</td>
+            <td><div class="coveragePercentage">98% </div><div class="coverage_bar"><div class="coverage_complete" style="width:98%"></div><div class="coverage_ledgend">220/225</div></div></td>
+            <td><div class="coveragePercentage">96% </div><div class="coverage_bar"><div class="coverage_complete" style="width:96%"></div><div class="coverage_ledgend">95/99</div></div></td>
+        </tr>
+
+        <tr>
+            <td><a href="./org.apache.commons.configuration2.interpol/index.html">org.apache.commons.configuration2.interpol</a></td>
+            <td>9</td>
+            <td><div class="coveragePercentage">91% </div><div class="coverage_bar"><div class="coverage_complete" style="width:91%"></div><div class="coverage_ledgend">262/289</div></div></td>
+            <td><div class="coveragePercentage">88% </div><div class="coverage_bar"><div class="coverage_complete" style="width:88%"></div><div class="coverage_ledgend">106/120</div></div></td>
+        </tr>
+
+        <tr>
+            <td><a href="./org.apache.commons.configuration2.io/index.html">org.apache.commons.configuration2.io</a></td>
+            <td>15</td>
+            <td><div class="coveragePercentage">82% </div><div class="coverage_bar"><div class="coverage_complete" style="width:82%"></div><div class="coverage_ledgend">698/850</div></div></td>
+            <td><div class="coveragePercentage">75% </div><div class="coverage_bar"><div class="coverage_complete" style="width:75%"></div><div class="coverage_ledgend">318/425</div></div></td>
+        </tr>
+
+        <tr>
+            <td><a href="./org.apache.commons.configuration2.plist/index.html">org.apache.commons.configuration2.plist</a></td>
+            <td>2</td>
+            <td><div class="coveragePercentage">86% </div><div class="coverage_bar"><div class="coverage_complete" style="width:86%"></div><div class="coverage_ledgend">380/444</div></div></td>
+            <td><div class="coveragePercentage">75% </div><div class="coverage_bar"><div class="coverage_complete" style="width:75%"></div><div class="coverage_ledgend">200/265</div></div></td>
+        </tr>
+
+        <tr>
+            <td><a href="./org.apache.commons.configuration2.reloading/index.html">org.apache.commons.configuration2.reloading</a></td>
+            <td>7</td>
+            <td><div class="coveragePercentage">97% </div><div class="coverage_bar"><div class="coverage_complete" style="width:97%"></div><div class="coverage_ledgend">172/178</div></div></td>
+            <td><div class="coveragePercentage">96% </div><div class="coverage_bar"><div class="coverage_complete" style="width:96%"></div><div class="coverage_ledgend">75/78</div></div></td>
+        </tr>
+
+        <tr>
+            <td><a href="./org.apache.commons.configuration2.resolver/index.html">org.apache.commons.configuration2.resolver</a></td>
+            <td>2</td>
+            <td><div class="coveragePercentage">76% </div><div class="coverage_bar"><div class="coverage_complete" style="width:76%"></div><div class="coverage_ledgend">118/156</div></div></td>
+            <td><div class="coveragePercentage">39% </div><div class="coverage_bar"><div class="coverage_complete" style="width:39%"></div><div class="coverage_ledgend">31/80</div></div></td>
+        </tr>
+
+        <tr>
+            <td><a href="./org.apache.commons.configuration2.spring/index.html">org.apache.commons.configuration2.spring</a></td>
+            <td>2</td>
+            <td><div class="coveragePercentage">73% </div><div class="coverage_bar"><div class="coverage_complete" style="width:73%"></div><div class="coverage_ledgend">33/45</div></div></td>
+            <td><div class="coveragePercentage">76% </div><div class="coverage_bar"><div class="coverage_complete" style="width:76%"></div><div class="coverage_ledgend">22/29</div></div></td>
+        </tr>
+
+        <tr>
+            <td><a href="./org.apache.commons.configuration2.sync/index.html">org.apache.commons.configuration2.sync</a></td>
+            <td>1</td>
+            <td><div class="coveragePercentage">100% </div><div class="coverage_bar"><div class="coverage_complete" style="width:100%"></div><div class="coverage_ledgend">14/14</div></div></td>
+            <td><div class="coveragePercentage">100% </div><div class="coverage_bar"><div class="coverage_complete" style="width:100%"></div><div class="coverage_ledgend">6/6</div></div></td>
+        </tr>
+
+        <tr>
+            <td><a href="./org.apache.commons.configuration2.tree/index.html">org.apache.commons.configuration2.tree</a></td>
+            <td>24</td>
+            <td><div class="coveragePercentage">99% </div><div class="coverage_bar"><div class="coverage_complete" style="width:99%"></div><div class="coverage_ledgend">1477/1491</div></div></td>
+            <td><div class="coveragePercentage">93% </div><div class="coverage_bar"><div class="coverage_complete" style="width:93%"></div><div class="coverage_ledgend">728/786</div></div></td>
+        </tr>
+
+        <tr>
+            <td><a href="./org.apache.commons.configuration2.tree.xpath/index.html">org.apache.commons.configuration2.tree.xpath</a></td>
+            <td>8</td>
+            <td><div class="coveragePercentage">97% </div><div class="coverage_bar"><div class="coverage_complete" style="width:97%"></div><div class="coverage_ledgend">296/305</div></div></td>
+            <td><div class="coveragePercentage">90% </div><div class="coverage_bar"><div class="coverage_complete" style="width:90%"></div><div class="coverage_ledgend">174/193</div></div></td>
+        </tr>
+
+        <tr>
+            <td><a href="./org.apache.commons.configuration2.web/index.html">org.apache.commons.configuration2.web</a></td>
+            <td>6</td>
+            <td><div class="coveragePercentage">98% </div><div class="coverage_bar"><div class="coverage_complete" style="width:98%"></div><div class="coverage_ledgend">58/59</div></div></td>
+            <td><div class="coveragePercentage">100% </div><div class="coverage_bar"><div class="coverage_complete" style="width:100%"></div><div class="coverage_ledgend">31/31</div></div></td>
+        </tr>
+
+     </tbody>
+</table>
+<br/>
+
+
+
+<hr/>
+
+Report generated by <a href='http://pitest.org'>PIT</a> 1.1.9
+
+</body>
+</html>

@@ -1,0 +1,148 @@
+<html>
+<head>
+  
+    <style type='text/css'>
+   
+   .tests{ 
+     width : 50%;
+     float : left;
+   }
+   
+   .mutees{
+     float : right;
+     width : 50%;
+   }
+   
+   .unit {
+     padding-top : 20px;
+     clear : both;
+   }
+   
+   .coverage_bar {
+    display : inline-block;
+    height : 1.1em;
+    width: 130px;
+    background: #FAA;
+    margin: 0 5px;
+    vertical-align: middle;
+    border: 1px solid #AAA;
+    position : relative;
+   }
+   
+   .coverage_complete {
+    display : inline-block;
+    height : 100%;
+    background: #DFD;
+    float: left;
+   }
+   
+   .coverage_ledgend {
+        position : absolute;
+        height : 100%;
+        width : 100%;
+        left : 0;
+        top : 0;
+        text-align : center;
+   }
+   
+   .line, .mut {
+        vertical-align : middle;
+   }
+   
+   .coveragePercentage {
+    display: inline-block;
+    width: 3em;
+    text-align: right;
+   }
+  </style>
+  
+</head>
+<body>
+
+<h1>Pit Test Coverage Report</h1>
+
+<h3>Project Summary</h3>
+<table>
+    <thead>
+        <tr>
+            <th>Number of Classes</th>
+            <th>Line Coverage</th>
+            <th>Mutation Coverage</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>27</td>
+            <td>26% <div class="coverage_bar"><div class="coverage_complete" style="width:26%"></div><div class="coverage_ledgend">600/2303</div></div></td>
+            <td>24% <div class="coverage_bar"><div class="coverage_complete" style="width:24%"></div><div class="coverage_ledgend">314/1331</div></div></td>
+        </tr>
+    </tbody>
+</table>
+
+
+<h3>Breakdown by Package</h3>
+<table>
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Number of Classes</th>
+            <th>Line Coverage</th>
+            <th>Mutation Coverage</th>
+        </tr>
+    </thead>
+    <tbody>
+
+        <tr>
+            <td><a href="./org.apache.maven.plugins.shade/index.html">org.apache.maven.plugins.shade</a></td>
+            <td>2</td>
+            <td><div class="coveragePercentage">64% </div><div class="coverage_bar"><div class="coverage_complete" style="width:64%"></div><div class="coverage_ledgend">163/254</div></div></td>
+            <td><div class="coveragePercentage">57% </div><div class="coverage_bar"><div class="coverage_complete" style="width:57%"></div><div class="coverage_ledgend">73/129</div></div></td>
+        </tr>
+
+        <tr>
+            <td><a href="./org.apache.maven.plugins.shade.filter/index.html">org.apache.maven.plugins.shade.filter</a></td>
+            <td>2</td>
+            <td><div class="coveragePercentage">33% </div><div class="coverage_bar"><div class="coverage_complete" style="width:33%"></div><div class="coverage_ledgend">39/118</div></div></td>
+            <td><div class="coveragePercentage">42% </div><div class="coverage_bar"><div class="coverage_complete" style="width:42%"></div><div class="coverage_ledgend">28/66</div></div></td>
+        </tr>
+
+        <tr>
+            <td><a href="./org.apache.maven.plugins.shade.mojo/index.html">org.apache.maven.plugins.shade.mojo</a></td>
+            <td>7</td>
+            <td><div class="coveragePercentage">25% </div><div class="coverage_bar"><div class="coverage_complete" style="width:25%"></div><div class="coverage_ledgend">115/464</div></div></td>
+            <td><div class="coveragePercentage">29% </div><div class="coverage_bar"><div class="coverage_complete" style="width:29%"></div><div class="coverage_ledgend">86/292</div></div></td>
+        </tr>
+
+        <tr>
+            <td><a href="./org.apache.maven.plugins.shade.pom/index.html">org.apache.maven.plugins.shade.pom</a></td>
+            <td>3</td>
+            <td><div class="coveragePercentage">0% </div><div class="coverage_bar"><div class="coverage_complete" style="width:0%"></div><div class="coverage_ledgend">0/945</div></div></td>
+            <td><div class="coveragePercentage">0% </div><div class="coverage_bar"><div class="coverage_complete" style="width:0%"></div><div class="coverage_ledgend">0/508</div></div></td>
+        </tr>
+
+        <tr>
+            <td><a href="./org.apache.maven.plugins.shade.relocation/index.html">org.apache.maven.plugins.shade.relocation</a></td>
+            <td>1</td>
+            <td><div class="coveragePercentage">89% </div><div class="coverage_bar"><div class="coverage_complete" style="width:89%"></div><div class="coverage_ledgend">58/65</div></div></td>
+            <td><div class="coveragePercentage">85% </div><div class="coverage_bar"><div class="coverage_complete" style="width:85%"></div><div class="coverage_ledgend">40/47</div></div></td>
+        </tr>
+
+        <tr>
+            <td><a href="./org.apache.maven.plugins.shade.resource/index.html">org.apache.maven.plugins.shade.resource</a></td>
+            <td>12</td>
+            <td><div class="coveragePercentage">49% </div><div class="coverage_bar"><div class="coverage_complete" style="width:49%"></div><div class="coverage_ledgend">225/457</div></div></td>
+            <td><div class="coveragePercentage">30% </div><div class="coverage_bar"><div class="coverage_complete" style="width:30%"></div><div class="coverage_ledgend">87/289</div></div></td>
+        </tr>
+
+     </tbody>
+</table>
+<br/>
+
+
+
+<hr/>
+
+Report generated by <a href='http://pitest.org'>PIT</a> 1.1.9
+
+</body>
+</html>
