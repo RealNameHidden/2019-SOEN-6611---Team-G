@@ -1,0 +1,33 @@
+|       1 |       1 |       0 |       1 |       -1 | doxia-core/src/test/java/org/apache/maven/doxia/parser/AbstractParserTest.java |
+|       1 |       7 |       7 |       0 |        7 | doxia-modules/doxia-module-markdown/src/test/resources/metadata.md |
+|       1 |      10 |      10 |       0 |       10 | doxia-modules/doxia-module-markdown/src/test/resources/first-heading.md |
+|       5 |      10 |       5 |       5 |        0 | doxia-core/pom.xml |
+|       5 |      10 |       5 |       5 |        0 | doxia-logging-api/pom.xml |
+|       5 |      10 |       5 |       5 |        0 | doxia-modules/doxia-module-apt/pom.xml |
+|       5 |      10 |       5 |       5 |        0 | doxia-modules/doxia-module-docbook-simple/pom.xml |
+|       5 |      10 |       5 |       5 |        0 | doxia-modules/doxia-module-fml/pom.xml |
+|       5 |      10 |       5 |       5 |        0 | doxia-modules/doxia-module-fo/pom.xml |
+|       5 |      10 |       5 |       5 |        0 | doxia-modules/doxia-module-itext/pom.xml |
+|       5 |      10 |       5 |       5 |        0 | doxia-modules/doxia-module-latex/pom.xml |
+|       5 |      10 |       5 |       5 |        0 | doxia-modules/doxia-module-markdown/pom.xml |
+|       5 |      10 |       5 |       5 |        0 | doxia-modules/doxia-module-rtf/pom.xml |
+|       5 |      10 |       5 |       5 |        0 | doxia-modules/doxia-module-twiki/pom.xml |
+|       5 |      10 |       5 |       5 |        0 | doxia-modules/doxia-module-xdoc/pom.xml |
+|       5 |      10 |       5 |       5 |        0 | doxia-modules/doxia-module-xhtml/pom.xml |
+|       5 |      10 |       5 |       5 |        0 | doxia-modules/pom.xml |
+|       5 |      10 |       5 |       5 |        0 | doxia-sink-api/pom.xml |
+|       5 |      10 |       5 |       5 |        0 | doxia-test-docs/pom.xml |
+|       6 |      16 |      11 |       5 |        6 | doxia-modules/doxia-module-confluence/pom.xml |
+|       1 |      20 |      20 |       0 |       20 | doxia-modules/doxia-module-docbook-simple/src/site/apt/index.apt.vm |
+|       1 |      20 |      20 |       0 |       20 | doxia-sink-api/src/site/apt/index.apt |
+|       1 |      25 |      25 |       0 |       25 | doxia-modules/doxia-module-confluence/src/test/java/org/apache/maven/doxia/module/confluence/ConfluenceParserTest.java |
+|       2 |      27 |      26 |       1 |       25 | doxia-modules/doxia-module-markdown/src/test/resources/comment-before-heading.md |
+|       8 |      47 |      27 |      20 |        7 | pom.xml |
+|       1 |      63 |       0 |      63 |      -63 | doxia-core/src/test/java/org/apache/maven/doxia/sink/render/RenderingContextTest.java |
+|       3 |      80 |      64 |      16 |       48 | doxia-modules/doxia-module-markdown/src/test/java/org/apache/maven/doxia/module/markdown/MarkdownParserTest.java |
+|       1 |      85 |      60 |      25 |       35 | doxia-modules/doxia-module-confluence/src/main/java/org/apache/maven/doxia/module/confluence/parser/table/TableBlockParser.java |
+|       1 |     194 |       0 |     194 |     -194 | doxia-core/src/main/java/org/apache/maven/doxia/sink/render/RenderingContext.java |
+|       4 |     210 |     179 |      31 |      148 | doxia-modules/doxia-module-markdown/src/main/java/org/apache/maven/doxia/module/markdown/MarkdownParser.java |
+|     112 |     965 |     529 |     436 |       93 | Stat Totals |
+=====================================================================
+|   files |   lines | growth  | shrink  | net(+/-) | filename/stats |

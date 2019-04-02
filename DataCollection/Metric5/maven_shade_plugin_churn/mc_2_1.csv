@@ -1,0 +1,33 @@
+|       1 |       0 |       0 |       0 |        0 | src/it/MSHADE-133/src/main/resources/logback.xml |
+|       1 |       0 |       0 |       0 |        0 | src/it/MSHADE-133/src/main/resources/myConfig.yml |
+|       1 |       1 |       1 |       0 |        1 | src/it/dep-reduced-pom-use-base-version/repo/org/apache/maven/its/shade/drp/a/0.1-SNAPSHOT/_maven.repositories |
+|       1 |       2 |       1 |       1 |        0 | src/main/java/org/apache/maven/plugins/shade/relocation/Relocator.java |
+|       1 |       2 |       1 |       1 |        0 | src/main/java/org/apache/maven/plugins/shade/resource/ManifestResourceTransformer.java |
+|       1 |       8 |       4 |       4 |        0 | src/main/java/org/apache/maven/plugins/shade/resource/ApacheNoticeResourceTransformer.java |
+|       1 |      11 |       6 |       5 |        1 | src/main/java/org/apache/maven/plugins/shade/pom/MavenJDOMWriter.java |
+|       1 |      11 |       6 |       5 |        1 | src/main/java/org/apache/maven/plugins/shade/relocation/SimpleRelocator.java |
+|       1 |      12 |      12 |       0 |       12 | src/it/plugin-descriptor-relocation/repo/org/apache/maven/its/shade/cdr/comp/maven-metadata.xml |
+|       1 |      16 |      15 |       1 |       14 | src/main/java/org/apache/maven/plugins/shade/resource/DontIncludeResourceTransformer.java |
+|       1 |      23 |      23 |       0 |       23 | src/it/MSHADE-133/verify.groovy |
+|       1 |      24 |      24 |       0 |       24 | src/it/dep-reduced-pom-use-base-version/repo/org/apache/maven/its/shade/drp/a/0.1-SNAPSHOT/maven-metadata.xml |
+|       1 |      24 |      24 |       0 |       24 | src/it/plugin-descriptor-relocation/verify.groovy |
+|       1 |      25 |      25 |       0 |       25 | src/it/plugin-descriptor-relocation/src/main/java/org/apache/maven/test/Entry.java |
+|       1 |      28 |      14 |      14 |        0 | src/site/apt/examples/includes-excludes.apt.vm |
+|       1 |      29 |      29 |       0 |       29 | src/it/dep-reduced-pom-use-base-version/verify.groovy |
+|       1 |      32 |      17 |      15 |        2 | src/main/java/org/apache/maven/plugins/shade/mojo/RelativizePath.java |
+|       1 |      36 |      36 |       0 |       36 | src/it/dep-reduced-pom-use-base-version/repo/org/apache/maven/its/shade/drp/a/0.1-SNAPSHOT/a-0.1-20130115.024354-82.pom |
+|       1 |      46 |      46 |       0 |       46 | src/it/plugin-descriptor-relocation/src/main/java/org/apache/maven/test/TestMojo.java |
+|       1 |      51 |      51 |       0 |       51 | src/it/plugin-descriptor-relocation/repo/org/apache/maven/its/shade/cdr/comp/0.1/comp-0.1.pom |
+|       5 |      53 |      31 |      22 |        9 | src/main/java/org/apache/maven/plugins/shade/filter/MinijarFilter.java |
+|       1 |      58 |      58 |       0 |       58 | src/it/MSHADE-133/pom.xml |
+|       1 |      61 |      61 |       0 |       61 | src/it/MSHADE-114/pom.xml |
+|       1 |      82 |      82 |       0 |       82 | src/it/dep-reduced-pom-use-base-version/pom.xml |
+|       2 |      86 |      68 |      18 |       50 | src/site/apt/examples/resource-transformers.apt.vm |
+|       3 |      95 |      78 |      17 |       61 | src/main/java/org/apache/maven/plugins/shade/DefaultShader.java |
+|       1 |     126 |     126 |       0 |      126 | src/it/plugin-descriptor-relocation/pom.xml |
+|      27 |     151 |      80 |      71 |        9 | pom.xml |
+|       4 |     208 |     117 |      91 |       26 | src/main/java/org/apache/maven/plugins/shade/mojo/ShadeMojo.java |
+|       1 |     231 |     231 |       0 |      231 | src/main/java/org/apache/maven/plugins/shade/resource/PluginXmlResourceTransformer.java |
+|      66 |    1532 |    1267 |     265 |     1002 | Stat Totals |
+=====================================================================
+|   files |   lines | growth  | shrink  | net(+/-) | filename/stats |

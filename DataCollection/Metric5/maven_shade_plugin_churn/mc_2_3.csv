@@ -1,0 +1,16 @@
+|       1 |       2 |       2 |       0 |        2 | src/it/shading-with-java-8-sources/invoker.properties |
+|       1 |       3 |       2 |       1 |        1 | src/main/java/org/apache/maven/plugins/shade/resource/ApacheLicenseResourceTransformer.java |
+|       1 |       6 |       3 |       3 |        0 | src/it/mini-jar-respect-includes/pom.xml |
+|       1 |       7 |       1 |       6 |       -5 | src/main/java/org/apache/maven/plugins/shade/pom/MavenJDOMWriter.java |
+|       2 |      20 |       9 |      11 |       -2 | src/main/java/org/apache/maven/plugins/shade/mojo/ShadeMojo.java |
+|       1 |      24 |      24 |       0 |       24 | src/it/shading-with-java-8-sources/verify.groovy |
+|       1 |      30 |      30 |       0 |       30 | src/it/shading-with-java-8-sources/src/main/java/org/apache/maven/plugins/shade/its/App.java |
+|       1 |      57 |      29 |      28 |        1 | src/main/java/org/apache/maven/plugins/shade/filter/MinijarFilter.java |
+|       7 |      66 |      24 |      42 |      -18 | pom.xml |
+|       1 |     114 |     114 |       0 |      114 | src/it/shading-with-java-8-sources/pom.xml |
+|       2 |     148 |     103 |      45 |       58 | src/test/java/org/apache/maven/plugins/shade/DefaultShaderTest.java |
+|       2 |     174 |      97 |      77 |       20 | src/main/java/org/apache/maven/plugins/shade/DefaultShader.java |
+|       1 |     182 |      91 |      91 |        0 | src/it/mshade-123/pom.xml |
+|      22 |     833 |     529 |     304 |      225 | Stat Totals |
+=====================================================================
+|   files |   lines | growth  | shrink  | net(+/-) | filename/stats |
