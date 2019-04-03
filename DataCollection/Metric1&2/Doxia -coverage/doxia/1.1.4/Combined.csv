@@ -1,0 +1,287 @@
+,GROUP,PACKAGE,CLASS,INSTRUCTION_MISSED,INSTRUCTION_COVERED,BRANCH_MISSED,BRANCH_COVERED,LINE_MISSED,LINE_COVERED,COMPLEXITY_MISSED,COMPLEXITY_COVERED,METHOD_MISSED,METHOD_COVERED
+0,Doxia :: Core,org.apache.maven.doxia.macro,MacroRequest,4,20,0,0,2,7,1,4,1,4
+1,Doxia :: Core,org.apache.maven.doxia.macro,MacroExecutionException,9,0,0,0,4,0,2,0,2,0
+2,Doxia :: Core,org.apache.maven.doxia.macro,Macro,1,13,1,1,0,2,1,1,0,1
+3,Doxia :: Core,org.apache.maven.doxia.macro,EchoMacro,0,57,0,6,0,11,0,5,0,2
+4,Doxia :: Core,org.apache.maven.doxia.macro,SwfMacro,12,337,14,32,4,77,12,13,0,2
+5,Doxia :: Core,org.apache.maven.doxia.macro,AbstractMacro,4,65,2,8,2,18,2,8,0,5
+6,Doxia :: Core,org.apache.maven.doxia,DefaultDoxia,25,0,0,0,6,0,3,0,3,0
+7,Doxia :: Core,org.apache.maven.doxia,Doxia,11,0,2,0,1,0,2,0,1,0
+8,Doxia :: Core,org.apache.maven.doxia.module.site,SiteModule,11,0,2,0,1,0,2,0,1,0
+9,Doxia :: Core,org.apache.maven.doxia.module.site,AbstractSiteModule,27,0,0,0,10,0,5,0,5,0
+10,Doxia :: Core,org.apache.maven.doxia.module.site.manager,DefaultSiteModuleManager,57,0,6,0,13,0,6,0,3,0
+11,Doxia :: Core,org.apache.maven.doxia.module.site.manager,SiteModuleNotFoundException,13,0,0,0,6,0,3,0,3,0
+12,Doxia :: Core,org.apache.maven.doxia.module.site.manager,SiteModuleManager,11,0,2,0,1,0,2,0,1,0
+13,Doxia :: Core,org.apache.maven.doxia.sink,SinkEventAttributeSet,0,516,1,43,0,106,1,47,0,26
+14,Doxia :: Core,org.apache.maven.doxia.sink,AbstractSink,25,55,7,7,5,15,5,7,0,5
+15,Doxia :: Core,org.apache.maven.doxia.sink,AbstractXmlSink,0,131,0,10,0,38,0,15,0,10
+16,Doxia :: Core,org.apache.maven.doxia.sink,AbstractBinarySinkFactory,59,0,6,0,11,0,7,0,4,0
+17,Doxia :: Core,org.apache.maven.doxia.sink,PipelineSink,60,0,6,0,12,0,7,0,4,0
+18,Doxia :: Core,org.apache.maven.doxia.sink,XhtmlBaseSink,477,1758,91,160,110,526,107,152,19,113
+19,Doxia :: Core,org.apache.maven.doxia.sink,SinkUtils,0,478,2,22,0,64,2,15,0,5
+20,Doxia :: Core,org.apache.maven.doxia.sink,AbstractTextSink,3,0,0,0,1,0,1,0,1,0
+21,Doxia :: Core,org.apache.maven.doxia.sink,AbstractTextSinkFactory,67,0,6,0,12,0,8,0,5,0
+22,Doxia :: Core,org.apache.maven.doxia.sink,SinkAdapter,11,312,5,39,1,195,4,142,0,124
+23,Doxia :: Core,org.apache.maven.doxia.sink,AbstractXmlSinkFactory,3,0,0,0,1,0,1,0,1,0
+24,Doxia :: Core,org.apache.maven.doxia.parser.manager,ParserManager,11,0,2,0,1,0,2,0,1,0
+25,Doxia :: Core,org.apache.maven.doxia.parser.manager,DefaultParserManager,25,0,2,0,5,0,3,0,2,0
+26,Doxia :: Core,org.apache.maven.doxia.parser.manager,ParserNotFoundException,13,0,0,0,6,0,3,0,3,0
+27,Doxia :: Core,org.apache.maven.doxia.macro.snippet,SnippetReader,2,178,3,23,0,45,3,19,0,9
+28,Doxia :: Core,org.apache.maven.doxia.macro.snippet,SnippetMacro,77,222,10,16,15,51,10,15,1,11
+29,Doxia :: Core,org.apache.maven.doxia.parser,XhtmlBaseParser,131,1370,36,218,31,325,29,133,3,32
+30,Doxia :: Core,org.apache.maven.doxia.parser,AbstractTextParser,5,0,0,0,2,0,2,0,2,0
+31,Doxia :: Core,org.apache.maven.doxia.parser,AbstractXmlParser.CachedFileEntityResolver,310,5,20,0,60,1,14,1,4,1
+32,Doxia :: Core,org.apache.maven.doxia.parser,ParseException,96,0,4,0,24,0,14,0,12,0
+33,Doxia :: Core,org.apache.maven.doxia.parser,AbstractParser,45,30,2,2,13,10,7,6,6,5
+34,Doxia :: Core,org.apache.maven.doxia.parser,AbstractXmlParser,186,407,26,52,43,110,29,35,7,18
+35,Doxia :: Core,org.apache.maven.doxia.parser,Parser,11,0,2,0,1,0,2,0,1,0
+36,Doxia :: Core,org.apache.maven.doxia.macro.manager,MacroNotFoundException,9,4,0,0,4,2,2,1,2,1
+37,Doxia :: Core,org.apache.maven.doxia.macro.manager,MacroManager,1,10,1,1,0,1,1,1,0,1
+38,Doxia :: Core,org.apache.maven.doxia.macro.manager,DefaultMacroManager,0,25,0,2,0,5,0,3,0,2
+39,Doxia :: Core,org.apache.maven.doxia.index,IndexingSink,48,134,2,3,24,46,12,16,10,15
+40,Doxia :: Core,org.apache.maven.doxia.index,IndexEntry,88,152,13,13,22,42,12,18,4,13
+41,Doxia :: Core,org.apache.maven.doxia.document.io.xpp3,DocumentXpp3Reader,638,2533,131,175,108,507,104,79,13,17
+42,Doxia :: Core,org.apache.maven.doxia.document.io.xpp3,DocumentXpp3Writer,44,1320,101,107,7,227,100,16,0,12
+43,Doxia :: Core,org.apache.maven.doxia.util,ByLineReaderSource,34,68,5,7,12,23,5,8,2,5
+44,Doxia :: Core,org.apache.maven.doxia.util,LineBreaker,171,0,20,0,52,0,20,0,9,0
+45,Doxia :: Core,org.apache.maven.doxia.util,DoxiaUtils,48,365,8,86,13,56,7,52,1,11
+46,Doxia :: Core,org.apache.maven.doxia.util,HtmlTools,22,811,9,62,5,99,9,42,0,14
+47,Doxia :: Core,org.apache.maven.doxia.util,XmlValidator.MessagesErrorHandler,163,0,10,0,40,0,13,0,7,0
+48,Doxia :: Core,org.apache.maven.doxia.util,XmlValidator,142,0,12,0,33,0,11,0,5,0
+49,Doxia :: Core,org.apache.maven.doxia.sink.render,RenderingContext,56,71,1,1,12,16,9,3,8,3
+50,Doxia :: Core,org.apache.maven.doxia.macro.toc,TocMacro,34,213,8,22,4,55,8,11,0,4
+51,Doxia :: Core,org.apache.maven.doxia.document,DocumentMeta,264,1419,165,119,33,273,139,66,4,59
+52,Doxia :: Core,org.apache.maven.doxia.document,DocumentAuthor,131,774,100,62,6,144,82,34,1,34
+53,Doxia :: Core,org.apache.maven.doxia.document,DocumentHyperlinkBehaviour,10,77,8,6,2,19,7,6,0,6
+54,Doxia :: Core,org.apache.maven.doxia.document,DocumentTOC,31,174,16,14,8,37,17,10,3,9
+55,Doxia :: Core,org.apache.maven.doxia.document,DocumentCover,131,651,84,54,16,123,69,32,2,30
+56,Doxia :: Core,org.apache.maven.doxia.document,DocumentModel,24,238,24,20,0,51,20,16,0,14
+57,Doxia :: Core,org.apache.maven.doxia.document,DocumentTOCItem,87,217,27,19,21,44,28,11,6,10
+58,Doxia :: Core,org.apache.maven.doxia.document,DocumentTemplate,30,237,26,20,3,47,22,14,0,13
+59,Doxia :: Core,org.apache.maven.doxia.document,DocumentStatistic,18,738,30,30,2,149,30,32,0,32
+60,Doxia :: Core,org.apache.maven.doxia.markup,HtmlMarkup.new HTML.Tag() {...},0,5,0,0,0,2,0,2,0,2
+61,Doxia :: Core,org.apache.maven.doxia.markup,HtmlMarkup.new HTML.Tag() {...},0,5,0,0,0,2,0,2,0,2
+62,Doxia :: Core,org.apache.maven.doxia.markup,HtmlMarkup.new HTML.Tag() {...},0,5,0,0,0,2,0,2,0,2
+63,Doxia :: Core,org.apache.maven.doxia.markup,HtmlMarkup.new HTML.Tag() {...},0,5,0,0,0,2,0,2,0,2
+64,Doxia :: Core,org.apache.maven.doxia.markup,HtmlMarkup.new HTML.Tag() {...},0,5,0,0,0,2,0,2,0,2
+65,Doxia :: Core,org.apache.maven.doxia.markup,HtmlMarkup.new HTML.Tag() {...},0,5,0,0,0,2,0,2,0,2
+66,Doxia :: Core,org.apache.maven.doxia.markup,HtmlMarkup.new HTML.Tag() {...},0,5,0,0,0,2,0,2,0,2
+67,Doxia :: Core,org.apache.maven.doxia.markup,HtmlMarkup.new HTML.Tag() {...},0,5,0,0,0,2,0,2,0,2
+68,Doxia :: Core,org.apache.maven.doxia.markup,HtmlMarkup.new HTML.Tag() {...},0,5,0,0,0,2,0,2,0,2
+69,Doxia :: Core,org.apache.maven.doxia.markup,HtmlMarkup,0,219,0,0,0,91,0,1,0,1
+70,Doxia :: Core,org.apache.maven.doxia.markup,HtmlMarkup.new HTML.Tag() {...},0,5,0,0,0,2,0,2,0,2
+71,Doxia :: Core,org.apache.maven.doxia.markup,HtmlMarkup.new HTML.Tag() {...},0,5,0,0,0,2,0,2,0,2
+72,Doxia :: Core,org.apache.maven.doxia.markup,HtmlMarkup.new HTML.Tag() {...},0,5,0,0,0,2,0,2,0,2
+73,Doxia :: Core,org.apache.maven.doxia.markup,HtmlMarkup.new HTML.Tag() {...},0,5,0,0,0,2,0,2,0,2
+74,Doxia :: Core,org.apache.maven.doxia.markup,HtmlMarkup.new HTML.Tag() {...},0,5,0,0,0,2,0,2,0,2
+75,Doxia :: Core,org.apache.maven.doxia.markup,HtmlMarkup.new HTML.Tag() {...},0,5,0,0,0,2,0,2,0,2
+76,Doxia :: Core,org.apache.maven.doxia.markup,HtmlMarkup.new HTML.Tag() {...},0,5,0,0,0,2,0,2,0,2
+77,Doxia :: Core,org.apache.maven.doxia.markup,HtmlMarkup.new HTML.Tag() {...},0,5,0,0,0,2,0,2,0,2
+78,Doxia :: Core,org.apache.maven.doxia.markup,HtmlMarkup.new HTML.Tag() {...},0,5,0,0,0,2,0,2,0,2
+79,Doxia :: Core,org.apache.maven.doxia.markup,Markup,0,4,0,0,0,1,0,1,0,1
+80,Doxia :: Sink API,org.apache.maven.doxia.sink,SinkFactory,11,0,2,0,1,0,2,0,1,0
+81,Doxia :: Sink API,org.apache.maven.doxia.sink,Sink,11,0,2,0,1,0,2,0,1,0
+82,Doxia :: Logging API,org.apache.maven.doxia.logging,SystemStreamLog,302,0,40,0,73,0,42,0,22,0
+83,Doxia :: Logging API,org.apache.maven.doxia.logging,PlexusLoggerWrapper,149,0,10,0,44,0,24,0,19,0
+84,Doxia :: Maven Plugin,org.apache.maven.doxia.plugin,DoxiaRenderBooksMojo,408,0,38,0,78,0,25,0,6,0
+85,Doxia :: Maven Plugin,org.apache.maven.doxia.plugin,Book,18,0,0,0,6,0,6,0,6,0
+86,Doxia :: Maven Plugin,org.apache.maven.doxia.plugin,Format,6,0,0,0,2,0,2,0,2,0
+87,Doxia :: Maven Plugin,org.apache.maven.doxia.plugin,HelpMojo,528,0,54,0,104,0,34,0,7,0
+88,Doxia :: XDoc Module,org.apache.maven.doxia.module.xdoc,XdocParser,95,740,10,106,17,175,10,61,0,13
+89,Doxia :: XDoc Module,org.apache.maven.doxia.module.xdoc,XmlWriterXdocSink,87,0,4,0,21,0,5,0,3,0
+90,Doxia :: XDoc Module,org.apache.maven.doxia.module.xdoc,XdocMarkup,0,33,0,0,0,8,0,1,0,1
+91,Doxia :: XDoc Module,org.apache.maven.doxia.module.xdoc,XdocSiteModule,6,0,0,0,2,0,1,0,1,0
+92,Doxia :: XDoc Module,org.apache.maven.doxia.module.xdoc,XdocMarkup.new HTML.Tag() {...},0,5,0,0,0,2,0,2,0,2
+93,Doxia :: XDoc Module,org.apache.maven.doxia.module.xdoc,XdocMarkup.new HTML.Tag() {...},0,5,0,0,0,2,0,2,0,2
+94,Doxia :: XDoc Module,org.apache.maven.doxia.module.xdoc,XdocMarkup.new HTML.Tag() {...},0,5,0,0,0,2,0,2,0,2
+95,Doxia :: XDoc Module,org.apache.maven.doxia.module.xdoc,XdocMarkup.new HTML.Tag() {...},0,5,0,0,0,2,0,2,0,2
+96,Doxia :: XDoc Module,org.apache.maven.doxia.module.xdoc,XdocMarkup.new HTML.Tag() {...},0,5,0,0,0,2,0,2,0,2
+97,Doxia :: XDoc Module,org.apache.maven.doxia.module.xdoc,XdocMarkup.new HTML.Tag() {...},0,5,0,0,0,2,0,2,0,2
+98,Doxia :: XDoc Module,org.apache.maven.doxia.module.xdoc,XdocMarkup.new HTML.Tag() {...},0,5,0,0,0,2,0,2,0,2
+99,Doxia :: XDoc Module,org.apache.maven.doxia.module.xdoc,XdocSinkFactory,16,0,0,0,3,0,3,0,3,0
+100,Doxia :: XDoc Module,org.apache.maven.doxia.module.xdoc,XdocMarkup.new HTML.Tag() {...},0,5,0,0,0,2,0,2,0,2
+101,Doxia :: XDoc Module,org.apache.maven.doxia.module.xdoc,XdocSink,11,481,4,48,4,142,5,46,1,24
+102,Doxia :: TWiki Module,org.apache.maven.doxia.module.twiki,TWikiSinkFactory,8,0,0,0,2,0,2,0,2,0
+103,Doxia :: TWiki Module,org.apache.maven.doxia.module.twiki,TWikiSink,256,695,35,22,101,248,56,108,30,104
+104,Doxia :: TWiki Module,org.apache.maven.doxia.module.twiki,TWikiSiteModule,6,0,0,0,2,0,1,0,1,0
+105,Doxia :: TWiki Module,org.apache.maven.doxia.module.twiki,TWikiParser,86,233,8,18,25,54,7,11,1,4
+106,Doxia :: TWiki Module,org.apache.maven.doxia.module.twiki,TWikiMarkup,0,5,0,0,0,1,0,1,0,1
+107,Doxia :: TWiki Module,org.apache.maven.doxia.module.twiki,TWikiMarkup.new HTML.Tag() {...},0,5,0,0,0,2,0,2,0,2
+108,Doxia :: TWiki Module,org.apache.maven.doxia.module.twiki.parser,SectionBlockParser,27,131,4,18,4,28,4,15,0,8
+109,Doxia :: TWiki Module,org.apache.maven.doxia.module.twiki.parser,TextParser,71,618,12,56,11,114,11,38,1,14
+110,Doxia :: TWiki Module,org.apache.maven.doxia.module.twiki.parser,VerbatimBlock,7,4,0,0,4,2,2,1,2,1
+111,Doxia :: TWiki Module,org.apache.maven.doxia.module.twiki.parser,HRuleBlockParser,5,53,2,6,1,17,2,6,0,4
+112,Doxia :: TWiki Module,org.apache.maven.doxia.module.twiki.parser,GenericListBlockParser.new GenericListBlockParser.Type() {...},0,10,0,0,0,3,0,3,0,3
+113,Doxia :: TWiki Module,org.apache.maven.doxia.module.twiki.parser,GenericListBlockParser.new GenericListBlockParser.Type() {...},6,5,0,0,1,2,1,2,1,2
+114,Doxia :: TWiki Module,org.apache.maven.doxia.module.twiki.parser,TableCellHeaderBlock,6,4,0,0,4,2,2,1,2,1
+115,Doxia :: TWiki Module,org.apache.maven.doxia.module.twiki.parser,UnorderedListBlock,6,4,0,0,4,2,2,1,2,1
+116,Doxia :: TWiki Module,org.apache.maven.doxia.module.twiki.parser,GenericListBlockParser.new GenericListBlockParser.Type() {...},0,11,0,0,0,3,0,3,0,3
+117,Doxia :: TWiki Module,org.apache.maven.doxia.module.twiki.parser,GenericListBlockParser.new GenericListBlockParser.Type() {...},6,5,0,0,1,2,1,2,1,2
+118,Doxia :: TWiki Module,org.apache.maven.doxia.module.twiki.parser,GenericListBlockParser.new GenericListBlockParser.Type() {...},0,11,0,0,0,3,0,3,0,3
+119,Doxia :: TWiki Module,org.apache.maven.doxia.module.twiki.parser,GenericListBlockParser.new GenericListBlockParser.Type() {...},0,11,0,0,0,3,0,3,0,3
+120,Doxia :: TWiki Module,org.apache.maven.doxia.module.twiki.parser,SectionBlock,168,38,3,5,34,10,10,5,8,3
+121,Doxia :: TWiki Module,org.apache.maven.doxia.module.twiki.parser,ListBlock,0,4,0,0,0,2,0,1,0,1
+122,Doxia :: TWiki Module,org.apache.maven.doxia.module.twiki.parser,BoldBlock,6,4,0,0,4,2,2,1,2,1
+123,Doxia :: TWiki Module,org.apache.maven.doxia.module.twiki.parser,ImageBlock,29,27,3,3,9,10,5,2,2,2
+124,Doxia :: TWiki Module,org.apache.maven.doxia.module.twiki.parser,ListItemBlock,25,82,11,13,7,21,11,8,2,5
+125,Doxia :: TWiki Module,org.apache.maven.doxia.module.twiki.parser,TableRowBlock,6,4,0,0,4,2,2,1,2,1
+126,Doxia :: TWiki Module,org.apache.maven.doxia.module.twiki.parser,ParagraphBlock,6,4,0,0,4,2,2,1,2,1
+127,Doxia :: TWiki Module,org.apache.maven.doxia.module.twiki.parser,TextBlock,29,37,1,5,4,13,3,6,2,4
+128,Doxia :: TWiki Module,org.apache.maven.doxia.module.twiki.parser,XHTMLBlock,50,0,8,0,17,0,8,0,4,0
+129,Doxia :: TWiki Module,org.apache.maven.doxia.module.twiki.parser,WikiWordBlock,19,83,3,11,5,20,4,9,1,5
+130,Doxia :: TWiki Module,org.apache.maven.doxia.module.twiki.parser,LinkBlock,24,63,3,9,7,15,5,6,2,3
+131,Doxia :: TWiki Module,org.apache.maven.doxia.module.twiki.parser,XHTMLWikiWordLinkResolver,11,3,0,0,1,1,1,1,1,1
+132,Doxia :: TWiki Module,org.apache.maven.doxia.module.twiki.parser,NumeratedListBlock,19,24,2,2,6,7,5,2,3,2
+133,Doxia :: TWiki Module,org.apache.maven.doxia.module.twiki.parser,FormatedTextParser.new FormatBlockFactory() {...},0,8,0,0,0,2,0,2,0,2
+134,Doxia :: TWiki Module,org.apache.maven.doxia.module.twiki.parser,FormatedTextParser.new FormatBlockFactory() {...},0,8,0,0,0,2,0,2,0,2
+135,Doxia :: TWiki Module,org.apache.maven.doxia.module.twiki.parser,FormatedTextParser.new FormatBlockFactory() {...},0,8,0,0,0,2,0,2,0,2
+136,Doxia :: TWiki Module,org.apache.maven.doxia.module.twiki.parser,ParagraphBlockParser,49,194,13,31,11,52,13,19,0,10
+137,Doxia :: TWiki Module,org.apache.maven.doxia.module.twiki.parser,AbstractFatherBlock,38,85,5,15,7,23,5,10,1,4
+138,Doxia :: TWiki Module,org.apache.maven.doxia.module.twiki.parser,FormatedTextParser.new FormatBlockFactory() {...},0,16,0,0,0,2,0,2,0,2
+139,Doxia :: TWiki Module,org.apache.maven.doxia.module.twiki.parser,FormatedTextParser.new FormatBlockFactory() {...},0,16,0,0,0,2,0,2,0,2
+140,Doxia :: TWiki Module,org.apache.maven.doxia.module.twiki.parser,AnchorBlock,15,34,1,5,5,12,3,5,2,3
+141,Doxia :: TWiki Module,org.apache.maven.doxia.module.twiki.parser,TableBlockParser,17,145,9,15,2,23,9,8,0,5
+142,Doxia :: TWiki Module,org.apache.maven.doxia.module.twiki.parser,HorizontalRuleBlock,3,22,0,6,2,4,1,6,1,3
+143,Doxia :: TWiki Module,org.apache.maven.doxia.module.twiki.parser,FormatedTextParser,5,386,4,54,1,67,4,33,0,8
+144,Doxia :: TWiki Module,org.apache.maven.doxia.module.twiki.parser,TableBlock,36,4,2,0,10,2,4,1,3,1
+145,Doxia :: TWiki Module,org.apache.maven.doxia.module.twiki.parser,TreeListBuilder.TreeComponent,61,70,6,4,13,19,6,8,2,7
+146,Doxia :: TWiki Module,org.apache.maven.doxia.module.twiki.parser,TableCellBlock,6,4,0,0,4,2,2,1,2,1
+147,Doxia :: TWiki Module,org.apache.maven.doxia.module.twiki.parser,MonospaceBlock,6,4,0,0,4,2,2,1,2,1
+148,Doxia :: TWiki Module,org.apache.maven.doxia.module.twiki.parser,ItalicBlock,6,4,0,0,4,2,2,1,2,1
+149,Doxia :: TWiki Module,org.apache.maven.doxia.module.twiki.parser,TreeListBuilder,9,173,3,17,2,34,3,12,0,5
+150,Doxia :: TWiki Module,org.apache.maven.doxia.module.twiki.parser,VerbatimBlockParser,5,91,2,4,1,17,2,5,0,4
+151,Doxia :: TWiki Module,org.apache.maven.doxia.module.twiki.parser,NopBlock,18,3,4,0,4,1,5,1,3,1
+152,Doxia :: TWiki Module,org.apache.maven.doxia.module.twiki.parser,GenericListBlockParser,12,206,6,20,1,38,6,12,0,5
+153,Doxia :: RTF Module,org.apache.maven.doxia.module.rtf,RomanNumerals,212,0,6,0,12,0,7,0,4,0
+154,Doxia :: RTF Module,org.apache.maven.doxia.module.rtf,MonospaceBold,3092,0,0,0,3,0,2,0,2,0
+155,Doxia :: RTF Module,org.apache.maven.doxia.module.rtf,RtfSink.Counter,0,24,0,0,0,10,0,5,0,5
+156,Doxia :: RTF Module,org.apache.maven.doxia.module.rtf,RtfSink.Paragraph,50,221,5,16,6,43,5,11,0,4
+157,Doxia :: RTF Module,org.apache.maven.doxia.module.rtf,RtfSink.Row,0,44,0,4,0,12,0,5,0,3
+158,Doxia :: RTF Module,org.apache.maven.doxia.module.rtf,Serif,0,3092,0,0,0,3,0,2,0,2
+159,Doxia :: RTF Module,org.apache.maven.doxia.module.rtf,PBMReader,159,0,20,0,42,0,19,0,8,0
+160,Doxia :: RTF Module,org.apache.maven.doxia.module.rtf,SerifBoldItalic,3092,0,0,0,3,0,2,0,2,0
+161,Doxia :: RTF Module,org.apache.maven.doxia.module.rtf,RtfSink.Item,0,9,0,0,0,4,0,1,0,1
+162,Doxia :: RTF Module,org.apache.maven.doxia.module.rtf,Font.TextExtents,0,12,0,0,0,5,0,1,0,1
+163,Doxia :: RTF Module,org.apache.maven.doxia.module.rtf,RtfSinkFactory,9,0,0,0,2,0,2,0,2,0
+164,Doxia :: RTF Module,org.apache.maven.doxia.module.rtf,RtfSink,884,1843,76,99,195,482,75,133,18,94
+165,Doxia :: RTF Module,org.apache.maven.doxia.module.rtf,SansSerif,3092,0,0,0,3,0,2,0,2,0
+166,Doxia :: RTF Module,org.apache.maven.doxia.module.rtf,RtfSink.Space,0,103,2,2,0,27,2,8,0,8
+167,Doxia :: RTF Module,org.apache.maven.doxia.module.rtf,WMFWriter.Dib,377,0,46,0,85,0,28,0,5,0
+168,Doxia :: RTF Module,org.apache.maven.doxia.module.rtf,SerifItalic,3092,0,0,0,3,0,2,0,2,0
+169,Doxia :: RTF Module,org.apache.maven.doxia.module.rtf,WMFWriter.Record,97,0,14,0,21,0,11,0,4,0
+170,Doxia :: RTF Module,org.apache.maven.doxia.module.rtf,MonospaceItalic,3092,0,0,0,3,0,2,0,2,0
+171,Doxia :: RTF Module,org.apache.maven.doxia.module.rtf,RtfSink.Context,0,46,1,1,0,11,1,4,0,4
+172,Doxia :: RTF Module,org.apache.maven.doxia.module.rtf,WMFWriter.DibBitBltRecord,31,0,0,0,10,0,3,0,3,0
+173,Doxia :: RTF Module,org.apache.maven.doxia.module.rtf,AlphaNumerals,11,33,2,4,3,9,4,2,2,1
+174,Doxia :: RTF Module,org.apache.maven.doxia.module.rtf,Font,14,87,1,7,3,19,3,6,2,3
+175,Doxia :: RTF Module,org.apache.maven.doxia.module.rtf,PBMReader.HeaderReader,196,0,24,0,52,0,18,0,5,0
+176,Doxia :: RTF Module,org.apache.maven.doxia.module.rtf,SerifBold,0,3092,0,0,0,3,0,2,0,2
+177,Doxia :: RTF Module,org.apache.maven.doxia.module.rtf,Monospace,0,3092,0,0,0,3,0,2,0,2
+178,Doxia :: RTF Module,org.apache.maven.doxia.module.rtf,RtfSink.Indentation,0,53,1,1,0,14,1,5,0,5
+179,Doxia :: RTF Module,org.apache.maven.doxia.module.rtf,RtfSink.Cell,1,107,2,8,1,25,2,6,0,3
+180,Doxia :: RTF Module,org.apache.maven.doxia.module.rtf,SansSerifItalic,3092,0,0,0,3,0,2,0,2,0
+181,Doxia :: RTF Module,org.apache.maven.doxia.module.rtf,RtfSink.Line,0,13,0,0,0,4,0,2,0,2
+182,Doxia :: RTF Module,org.apache.maven.doxia.module.rtf,FontMetrics,5,75,1,5,2,19,1,5,0,2
+183,Doxia :: RTF Module,org.apache.maven.doxia.module.rtf,RtfSink.Table,1,93,1,9,1,21,1,7,0,3
+184,Doxia :: RTF Module,org.apache.maven.doxia.module.rtf,WMFWriter,384,0,14,0,89,0,20,0,13,0
+185,Doxia :: RTF Module,org.apache.maven.doxia.module.rtf,FontMetrics.CharMetrics,0,27,0,0,0,8,0,1,0,1
+186,Doxia :: RTF Module,org.apache.maven.doxia.module.rtf,MonospaceBoldItalic,3092,0,0,0,3,0,2,0,2,0
+187,Doxia :: RTF Module,org.apache.maven.doxia.module.rtf,SansSerifBold,3092,0,0,0,3,0,2,0,2,0
+188,Doxia :: RTF Module,org.apache.maven.doxia.module.rtf,RtfSink.Box,0,9,0,0,0,4,0,1,0,1
+189,Doxia :: RTF Module,org.apache.maven.doxia.module.rtf,SansSerifBoldItalic,3092,0,0,0,3,0,2,0,2,0
+190,Doxia :: Latex Module,org.apache.maven.doxia.module.latex,LatexSink,163,1330,37,72,51,368,41,147,5,117
+191,Doxia :: Latex Module,org.apache.maven.doxia.module.latex,LatexSinkFactory,8,0,0,0,2,0,2,0,2,0
+192,Doxia :: iText Module,org.apache.maven.doxia.module.itext,ITextSinkFactory,26,0,2,0,6,0,5,0,4,0
+193,Doxia :: iText Module,org.apache.maven.doxia.module.itext,ITextSink,431,2478,57,67,98,677,56,117,8,98
+194,Doxia :: iText Module,org.apache.maven.doxia.module.itext,ITextUtil,73,125,7,21,14,28,9,12,2,5
+195,Doxia :: iText Module,org.apache.maven.doxia.module.itext,ITextFont,31,231,5,21,9,70,5,31,0,21
+196,Doxia :: iText Module,org.apache.maven.doxia.module.itext,ITextHeader,24,53,5,5,6,17,5,7,0,7
+197,Doxia :: iText Module,org.apache.maven.doxia.module.itext,SinkActionContext,2,32,1,1,1,8,1,4,0,4
+198,Doxia :: FML Module,org.apache.maven.doxia.module.fml.model,Faqs,183,39,30,2,37,13,23,7,8,6
+199,Doxia :: FML Module,org.apache.maven.doxia.module.fml.model,Part,182,34,34,2,32,12,22,8,5,7
+200,Doxia :: FML Module,org.apache.maven.doxia.module.fml.model,Faq,172,24,34,0,28,10,20,7,3,7
+201,Doxia :: FML Module,org.apache.maven.doxia.module.fml,FmlContentParser,50,109,3,23,5,29,3,14,0,4
+202,Doxia :: FML Module,org.apache.maven.doxia.module.fml,FmlSiteModule,6,0,0,0,2,0,1,0,1,0
+203,Doxia :: FML Module,org.apache.maven.doxia.module.fml,FmlMarkup,0,29,0,0,0,7,0,1,0,1
+204,Doxia :: FML Module,org.apache.maven.doxia.module.fml,FmlMarkup.new HTML.Tag() {...},0,5,0,0,0,2,0,2,0,2
+205,Doxia :: FML Module,org.apache.maven.doxia.module.fml,FmlMarkup.new HTML.Tag() {...},0,5,0,0,0,2,0,2,0,2
+206,Doxia :: FML Module,org.apache.maven.doxia.module.fml,FmlMarkup.new HTML.Tag() {...},0,5,0,0,0,2,0,2,0,2
+207,Doxia :: FML Module,org.apache.maven.doxia.module.fml,FmlMarkup.new HTML.Tag() {...},0,5,0,0,0,2,0,2,0,2
+208,Doxia :: FML Module,org.apache.maven.doxia.module.fml,FmlMarkup.new HTML.Tag() {...},0,5,0,0,0,2,0,2,0,2
+209,Doxia :: FML Module,org.apache.maven.doxia.module.fml,FmlMarkup.new HTML.Tag() {...},0,5,0,0,0,2,0,2,0,2
+210,Doxia :: FML Module,org.apache.maven.doxia.module.fml,FmlMarkup.new HTML.Tag() {...},0,5,0,0,0,2,0,2,0,2
+211,Doxia :: FML Module,org.apache.maven.doxia.module.fml,FmlParser,447,961,50,86,64,235,44,40,1,15
+212,Doxia :: Confluence Module,org.apache.maven.doxia.module.confluence.parser,VerbatimBlock,0,16,0,0,0,7,0,2,0,2
+213,Doxia :: Confluence Module,org.apache.maven.doxia.module.confluence.parser,ParagraphBlockParser,5,103,1,13,1,26,1,11,0,5
+214,Doxia :: Confluence Module,org.apache.maven.doxia.module.confluence.parser,ParagraphBlock,0,29,0,4,0,12,0,6,0,4
+215,Doxia :: Confluence Module,org.apache.maven.doxia.module.confluence.parser,HorizontalRuleBlock,0,6,0,0,0,3,0,2,0,2
+216,Doxia :: Confluence Module,org.apache.maven.doxia.module.confluence.parser,FigureBlock,0,42,1,3,0,15,1,4,0,3
+217,Doxia :: Confluence Module,org.apache.maven.doxia.module.confluence.parser,AbstractFatherBlock,5,33,1,3,1,12,1,4,0,3
+218,Doxia :: Confluence Module,org.apache.maven.doxia.module.confluence.parser,MonospaceBlock,0,10,0,0,0,6,0,3,0,3
+219,Doxia :: Confluence Module,org.apache.maven.doxia.module.confluence.parser,FigureBlockParser,13,103,2,14,1,19,2,10,0,4
+220,Doxia :: Confluence Module,org.apache.maven.doxia.module.confluence.parser,DefinitionListBlockParser,0,120,4,24,0,24,4,15,0,5
+221,Doxia :: Confluence Module,org.apache.maven.doxia.module.confluence.parser,SectionBlock,0,102,2,18,0,36,2,10,0,2
+222,Doxia :: Confluence Module,org.apache.maven.doxia.module.confluence.parser,SectionBlockParser,0,78,0,10,0,18,0,8,0,3
+223,Doxia :: Confluence Module,org.apache.maven.doxia.module.confluence.parser,TextBlock,0,11,0,0,0,5,0,2,0,2
+224,Doxia :: Confluence Module,org.apache.maven.doxia.module.confluence.parser,HorizontalRuleBlockParser,0,11,0,0,0,3,0,3,0,3
+225,Doxia :: Confluence Module,org.apache.maven.doxia.module.confluence.parser,ItalicBlock,0,10,0,0,0,6,0,3,0,3
+226,Doxia :: Confluence Module,org.apache.maven.doxia.module.confluence.parser,DefinitionListBlock,0,49,1,3,0,17,1,3,0,2
+227,Doxia :: Confluence Module,org.apache.maven.doxia.module.confluence.parser,LinkBlock,5,24,2,2,1,9,2,2,0,2
+228,Doxia :: Confluence Module,org.apache.maven.doxia.module.confluence.parser,LinebreakBlock,0,6,0,0,0,3,0,2,0,2
+229,Doxia :: Confluence Module,org.apache.maven.doxia.module.confluence.parser,VerbatimBlockParser,0,50,1,9,0,11,1,8,0,4
+230,Doxia :: Confluence Module,org.apache.maven.doxia.module.confluence.parser,AnchorBlock,5,15,1,1,1,7,1,2,0,2
+231,Doxia :: Confluence Module,org.apache.maven.doxia.module.confluence.parser,ChildBlocksBuilder,33,531,10,72,4,107,9,41,0,6
+232,Doxia :: Confluence Module,org.apache.maven.doxia.module.confluence.parser,BoldBlock,0,10,0,0,0,6,0,3,0,3
+233,Doxia :: Confluence Module,org.apache.maven.doxia.module.confluence.parser.list,BulletedListBlock,0,10,0,0,0,6,0,3,0,3
+234,Doxia :: Confluence Module,org.apache.maven.doxia.module.confluence.parser.list,NumberedListBlock,0,11,0,0,0,6,0,3,0,3
+235,Doxia :: Confluence Module,org.apache.maven.doxia.module.confluence.parser.list,ListItemBlock,3,25,0,2,1,11,1,5,1,4
+236,Doxia :: Confluence Module,org.apache.maven.doxia.module.confluence.parser.list,ListBlock,0,4,0,0,0,2,0,1,0,1
+237,Doxia :: Confluence Module,org.apache.maven.doxia.module.confluence.parser.list,ListBlockParser,0,193,3,41,0,37,3,26,0,7
+238,Doxia :: Confluence Module,org.apache.maven.doxia.module.confluence.parser.list,TreeListBuilder,23,158,5,15,3,34,4,11,0,5
+239,Doxia :: Confluence Module,org.apache.maven.doxia.module.confluence.parser.list,TreeComponent,61,62,5,3,13,20,5,9,2,8
+240,Doxia :: Confluence Module,org.apache.maven.doxia.module.confluence.parser.table,TableBlockParser,12,244,5,21,1,41,5,12,0,4
+241,Doxia :: Confluence Module,org.apache.maven.doxia.module.confluence.parser.table,TableRowBlock,0,10,0,0,0,6,0,3,0,3
+242,Doxia :: Confluence Module,org.apache.maven.doxia.module.confluence.parser.table,TableBlock,0,42,0,2,0,13,0,5,0,4
+243,Doxia :: Confluence Module,org.apache.maven.doxia.module.confluence.parser.table,TableCellBlock,0,10,0,0,0,6,0,3,0,3
+244,Doxia :: Confluence Module,org.apache.maven.doxia.module.confluence.parser.table,TableCellHeaderBlock,0,10,0,0,0,6,0,3,0,3
+245,Doxia :: Confluence Module,org.apache.maven.doxia.module.confluence,ConfluenceSiteModule,6,0,0,0,2,0,1,0,1,0
+246,Doxia :: Confluence Module,org.apache.maven.doxia.module.confluence,ConfluenceSink,99,523,9,17,56,213,36,106,28,101
+247,Doxia :: Confluence Module,org.apache.maven.doxia.module.confluence,ConfluenceParser,11,187,0,10,2,42,0,9,0,4
+248,Doxia :: Confluence Module,org.apache.maven.doxia.module.confluence,ConfluenceSinkFactory,8,0,0,0,2,0,2,0,2,0
+249,Doxia :: APT Module,org.apache.maven.doxia.module.apt,AptParser.Paragraph,0,24,0,0,0,7,0,2,0,2
+250,Doxia :: APT Module,org.apache.maven.doxia.module.apt,AptParser.HorizontalRule,0,15,0,0,0,5,0,2,0,2
+251,Doxia :: APT Module,org.apache.maven.doxia.module.apt,AptParser,482,1763,141,244,117,440,127,119,3,27
+252,Doxia :: APT Module,org.apache.maven.doxia.module.apt,AptParseException,24,0,0,0,8,0,4,0,4,0
+253,Doxia :: APT Module,org.apache.maven.doxia.module.apt,AptParser.DefinitionListItem,0,50,1,1,0,13,1,2,0,2
+254,Doxia :: APT Module,org.apache.maven.doxia.module.apt,AptParser.ListItem,0,15,0,0,0,5,0,2,0,2
+255,Doxia :: APT Module,org.apache.maven.doxia.module.apt,AptParser.Section2,0,20,0,0,0,7,0,3,0,3
+256,Doxia :: APT Module,org.apache.maven.doxia.module.apt,AptParser.Section3,0,20,0,0,0,7,0,3,0,3
+257,Doxia :: APT Module,org.apache.maven.doxia.module.apt,AptMarkup,0,178,0,0,0,32,0,1,0,1
+258,Doxia :: APT Module,org.apache.maven.doxia.module.apt,AptParser.Section1,0,20,0,0,0,7,0,3,0,3
+259,Doxia :: APT Module,org.apache.maven.doxia.module.apt,AptParser.Section4,0,20,0,0,0,7,0,3,0,3
+260,Doxia :: APT Module,org.apache.maven.doxia.module.apt,AptParser.Section5,0,20,0,0,0,7,0,3,0,3
+261,Doxia :: APT Module,org.apache.maven.doxia.module.apt,AptSink,91,1199,22,72,24,311,26,110,5,82
+262,Doxia :: APT Module,org.apache.maven.doxia.module.apt,AptParser.ListBreak,5,10,0,0,1,3,1,1,1,1
+263,Doxia :: APT Module,org.apache.maven.doxia.module.apt,AptParser.Figure,0,53,1,1,0,13,1,2,0,2
+264,Doxia :: APT Module,org.apache.maven.doxia.module.apt,AptParser.Table,14,485,7,59,3,134,7,32,0,4
+265,Doxia :: APT Module,org.apache.maven.doxia.module.apt,AptParser.Verbatim,23,126,5,13,3,31,5,6,0,2
+266,Doxia :: APT Module,org.apache.maven.doxia.module.apt,AptParser.MacroBlock,32,161,5,9,7,37,5,6,0,4
+267,Doxia :: APT Module,org.apache.maven.doxia.module.apt,AptParser.Comment,0,17,0,0,0,5,0,2,0,2
+268,Doxia :: APT Module,org.apache.maven.doxia.module.apt,AptUtils,0,131,0,36,0,27,0,24,0,6
+269,Doxia :: APT Module,org.apache.maven.doxia.module.apt,AptParser.Section,0,19,0,0,0,7,0,2,0,2
+270,Doxia :: APT Module,org.apache.maven.doxia.module.apt,AptParser.new SinkAdapter() {...},12,15,0,0,4,3,2,2,2,2
+271,Doxia :: APT Module,org.apache.maven.doxia.module.apt,AptParser.Title,29,123,13,19,8,41,11,10,0,2
+272,Doxia :: APT Module,org.apache.maven.doxia.module.apt,AptReaderSource,27,41,1,3,6,14,2,5,1,4
+273,Doxia :: APT Module,org.apache.maven.doxia.module.apt,AptParser.PageBreak,0,15,0,0,0,5,0,2,0,2
+274,Doxia :: APT Module,org.apache.maven.doxia.module.apt,AptParser.Block,5,176,5,19,1,48,5,16,0,9
+275,Doxia :: APT Module,org.apache.maven.doxia.module.apt,AptParser.NumberedListItem,5,57,2,6,1,16,2,6,0,4
+276,Doxia :: APT Module,org.apache.maven.doxia.module.apt,AptSinkFactory,8,0,0,0,2,0,2,0,2,0
+277,Doxia :: APT Module,org.apache.maven.doxia.module.apt,AptSiteModule,6,0,0,0,2,0,1,0,1,0
+278,Doxia :: XHTML Module,org.apache.maven.doxia.module.xhtml,XhtmlSinkFactory,16,0,0,0,3,0,3,0,3,0
+279,Doxia :: XHTML Module,org.apache.maven.doxia.module.xhtml,AbstractXhtmlSink,3,0,0,0,1,0,1,0,1,0
+280,Doxia :: XHTML Module,org.apache.maven.doxia.module.xhtml,XhtmlParser,51,264,3,43,6,64,3,24,0,4
+281,Doxia :: XHTML Module,org.apache.maven.doxia.module.xhtml,XhtmlSink,6,184,1,9,2,59,1,17,0,13
+282,Doxia :: XHTML Module,org.apache.maven.doxia.module.xhtml,XhtmlSiteModule,6,0,0,0,2,0,1,0,1,0
+,,,,40033,47075,2116,3232,,,,,,
+,,,statement,0.540421086,,,,,,,,,
+,,,branch,0.60433807,,,,,,,,,
