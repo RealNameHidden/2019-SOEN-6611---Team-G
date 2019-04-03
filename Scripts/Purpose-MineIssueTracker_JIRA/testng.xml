@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="5" name="Test" >
+  <test thread-count="5" name="Test" >
+  	<classes>
+  		<class name="DefectDensity">
+  		<methods>
+  		
+  		<include name ="ProjectList"><!--Run each Test annotated method indivitually-->
+  		</include> 
+  		</methods>
+  		
+  		
+  		</class>
+  		</classes>
+
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
