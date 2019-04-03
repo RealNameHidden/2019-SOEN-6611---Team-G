@@ -1,0 +1,2475 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="../style.css">
+</head>
+<body>
+
+
+<h1>MockExtension.java</h1>
+
+<table class="src">
+
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3e7cdacf_1'/>
+1
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3e7cdacf_1'></a>
+<span>
+</span>
+</td>
+<td class=''><pre><span  class=''>/*</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3e7cdacf_2'/>
+2
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3e7cdacf_2'></a>
+<span>
+</span>
+</td>
+<td class=''><pre><span  class=''> * Licensed to the Apache Software Foundation (ASF) under one</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3e7cdacf_3'/>
+3
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3e7cdacf_3'></a>
+<span>
+</span>
+</td>
+<td class=''><pre><span  class=''> * or more contributor license agreements. See the NOTICE file</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3e7cdacf_4'/>
+4
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3e7cdacf_4'></a>
+<span>
+</span>
+</td>
+<td class=''><pre><span  class=''> * distributed with this work for additional information</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3e7cdacf_5'/>
+5
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3e7cdacf_5'></a>
+<span>
+</span>
+</td>
+<td class=''><pre><span  class=''> * regarding copyright ownership. The ASF licenses this file</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3e7cdacf_6'/>
+6
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3e7cdacf_6'></a>
+<span>
+</span>
+</td>
+<td class=''><pre><span  class=''> * to you under the Apache License, Version 2.0 (the</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3e7cdacf_7'/>
+7
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3e7cdacf_7'></a>
+<span>
+</span>
+</td>
+<td class=''><pre><span  class=''> * &#34;License&#34;); you may not use this file except in compliance</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3e7cdacf_8'/>
+8
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3e7cdacf_8'></a>
+<span>
+</span>
+</td>
+<td class=''><pre><span  class=''> * with the License. You may obtain a copy of the License at</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3e7cdacf_9'/>
+9
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3e7cdacf_9'></a>
+<span>
+</span>
+</td>
+<td class=''><pre><span  class=''> *</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3e7cdacf_10'/>
+10
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3e7cdacf_10'></a>
+<span>
+</span>
+</td>
+<td class=''><pre><span  class=''> * http://www.apache.org/licenses/LICENSE-2.0</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3e7cdacf_11'/>
+11
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3e7cdacf_11'></a>
+<span>
+</span>
+</td>
+<td class=''><pre><span  class=''> *</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3e7cdacf_12'/>
+12
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3e7cdacf_12'></a>
+<span>
+</span>
+</td>
+<td class=''><pre><span  class=''> * Unless required by applicable law or agreed to in writing,</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3e7cdacf_13'/>
+13
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3e7cdacf_13'></a>
+<span>
+</span>
+</td>
+<td class=''><pre><span  class=''> * software distributed under the License is distributed on an</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3e7cdacf_14'/>
+14
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3e7cdacf_14'></a>
+<span>
+</span>
+</td>
+<td class=''><pre><span  class=''> * &#34;AS IS&#34; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3e7cdacf_15'/>
+15
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3e7cdacf_15'></a>
+<span>
+</span>
+</td>
+<td class=''><pre><span  class=''> * KIND, either express or implied. See the License for the</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3e7cdacf_16'/>
+16
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3e7cdacf_16'></a>
+<span>
+</span>
+</td>
+<td class=''><pre><span  class=''> * specific language governing permissions and limitations</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3e7cdacf_17'/>
+17
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3e7cdacf_17'></a>
+<span>
+</span>
+</td>
+<td class=''><pre><span  class=''> * under the License.</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3e7cdacf_18'/>
+18
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3e7cdacf_18'></a>
+<span>
+</span>
+</td>
+<td class=''><pre><span  class=''> */</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3e7cdacf_19'/>
+19
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3e7cdacf_19'></a>
+<span>
+</span>
+</td>
+<td class=''><pre><span  class=''>package org.apache.deltaspike.testcontrol.impl.mock;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3e7cdacf_20'/>
+20
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3e7cdacf_20'></a>
+<span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3e7cdacf_21'/>
+21
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3e7cdacf_21'></a>
+<span>
+</span>
+</td>
+<td class=''><pre><span  class=''>import org.apache.deltaspike.core.spi.activation.Deactivatable;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3e7cdacf_22'/>
+22
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3e7cdacf_22'></a>
+<span>
+</span>
+</td>
+<td class=''><pre><span  class=''>import org.apache.deltaspike.core.util.ClassDeactivationUtils;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3e7cdacf_23'/>
+23
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3e7cdacf_23'></a>
+<span>
+</span>
+</td>
+<td class=''><pre><span  class=''>import org.apache.deltaspike.core.util.ServiceUtils;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3e7cdacf_24'/>
+24
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3e7cdacf_24'></a>
+<span>
+</span>
+</td>
+<td class=''><pre><span  class=''>import org.apache.deltaspike.testcontrol.spi.mock.MockFilter;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3e7cdacf_25'/>
+25
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3e7cdacf_25'></a>
+<span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3e7cdacf_26'/>
+26
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3e7cdacf_26'></a>
+<span>
+</span>
+</td>
+<td class=''><pre><span  class=''>import javax.enterprise.event.Observes;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3e7cdacf_27'/>
+27
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3e7cdacf_27'></a>
+<span>
+</span>
+</td>
+<td class=''><pre><span  class=''>import javax.enterprise.inject.Typed;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3e7cdacf_28'/>
+28
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3e7cdacf_28'></a>
+<span>
+</span>
+</td>
+<td class=''><pre><span  class=''>import javax.enterprise.inject.spi.AnnotatedMember;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3e7cdacf_29'/>
+29
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3e7cdacf_29'></a>
+<span>
+</span>
+</td>
+<td class=''><pre><span  class=''>import javax.enterprise.inject.spi.BeanManager;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3e7cdacf_30'/>
+30
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3e7cdacf_30'></a>
+<span>
+</span>
+</td>
+<td class=''><pre><span  class=''>import javax.enterprise.inject.spi.BeforeBeanDiscovery;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3e7cdacf_31'/>
+31
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3e7cdacf_31'></a>
+<span>
+</span>
+</td>
+<td class=''><pre><span  class=''>import javax.enterprise.inject.spi.Extension;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3e7cdacf_32'/>
+32
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3e7cdacf_32'></a>
+<span>
+</span>
+</td>
+<td class=''><pre><span  class=''>import javax.enterprise.inject.spi.InjectionTarget;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3e7cdacf_33'/>
+33
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3e7cdacf_33'></a>
+<span>
+</span>
+</td>
+<td class=''><pre><span  class=''>import javax.enterprise.inject.spi.ProcessInjectionTarget;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3e7cdacf_34'/>
+34
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3e7cdacf_34'></a>
+<span>
+</span>
+</td>
+<td class=''><pre><span  class=''>import javax.enterprise.inject.spi.ProcessProducer;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3e7cdacf_35'/>
+35
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3e7cdacf_35'></a>
+<span>
+</span>
+</td>
+<td class=''><pre><span  class=''>import javax.enterprise.inject.spi.Producer;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3e7cdacf_36'/>
+36
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3e7cdacf_36'></a>
+<span>
+</span>
+</td>
+<td class=''><pre><span  class=''>import java.lang.annotation.Annotation;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3e7cdacf_37'/>
+37
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3e7cdacf_37'></a>
+<span>
+</span>
+</td>
+<td class=''><pre><span  class=''>import java.lang.reflect.Type;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3e7cdacf_38'/>
+38
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3e7cdacf_38'></a>
+<span>
+</span>
+</td>
+<td class=''><pre><span  class=''>import java.util.ArrayList;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3e7cdacf_39'/>
+39
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3e7cdacf_39'></a>
+<span>
+</span>
+</td>
+<td class=''><pre><span  class=''>import java.util.Collections;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3e7cdacf_40'/>
+40
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3e7cdacf_40'></a>
+<span>
+</span>
+</td>
+<td class=''><pre><span  class=''>import java.util.List;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3e7cdacf_41'/>
+41
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3e7cdacf_41'></a>
+<span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3e7cdacf_42'/>
+42
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3e7cdacf_42'></a>
+<span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>public class MockExtension implements Extension, Deactivatable</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3e7cdacf_43'/>
+43
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3e7cdacf_43'></a>
+<span>
+</span>
+</td>
+<td class=''><pre><span  class=''>{</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3e7cdacf_44'/>
+44
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3e7cdacf_44'></a>
+<span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>    private Boolean isActivated = true;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3e7cdacf_45'/>
+45
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3e7cdacf_45'></a>
+<span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    private List&#60;MockFilter&#62; mockFilters;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3e7cdacf_46'/>
+46
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3e7cdacf_46'></a>
+<span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3e7cdacf_47'/>
+47
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3e7cdacf_47'></a>
+<span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    protected void init(@Observes BeforeBeanDiscovery beforeBeanDiscovery)</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3e7cdacf_48'/>
+48
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3e7cdacf_48'></a>
+<span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    {</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3e7cdacf_49'/>
+49
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3e7cdacf_49'></a>
+<span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>        isActivated = ClassDeactivationUtils.isActivated(getClass());</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3e7cdacf_50'/>
+50
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3e7cdacf_50'></a>
+<span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>        mockFilters = ServiceUtils.loadServiceImplementations(MockFilter.class);</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3e7cdacf_51'/>
+51
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3e7cdacf_51'></a>
+<span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>    }</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3e7cdacf_52'/>
+52
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3e7cdacf_52'></a>
+<span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3e7cdacf_53'/>
+53
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3e7cdacf_53'></a>
+<span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    public &#60;X&#62; void onProcessInjectionTarget(@Observes ProcessInjectionTarget&#60;X&#62; processInjectionTarget,</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3e7cdacf_54'/>
+54
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3e7cdacf_54'></a>
+<span>
+</span>
+</td>
+<td class=''><pre><span  class=''>                                             BeanManager beanManager)</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3e7cdacf_55'/>
+55
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3e7cdacf_55'></a>
+<span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    {</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3e7cdacf_56'/>
+56
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3e7cdacf_56'>1</a>
+<span>
+
+1. onProcessInjectionTarget : negated conditional &rarr; KILLED<br/>
+
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>        if (!isActivated)</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3e7cdacf_57'/>
+57
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3e7cdacf_57'></a>
+<span>
+</span>
+</td>
+<td class=''><pre><span  class=''>        {</span></pre></td></tr>
+
+
+<tr>
+<td class='uncovered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3e7cdacf_58'/>
+58
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3e7cdacf_58'></a>
+<span>
+</span>
+</td>
+<td class='uncovered'><pre><span  class=''>            return;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3e7cdacf_59'/>
+59
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3e7cdacf_59'></a>
+<span>
+</span>
+</td>
+<td class=''><pre><span  class=''>        }</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3e7cdacf_60'/>
+60
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3e7cdacf_60'></a>
+<span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3e7cdacf_61'/>
+61
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3e7cdacf_61'></a>
+<span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>        for (MockFilter mockFilter : mockFilters)</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3e7cdacf_62'/>
+62
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3e7cdacf_62'></a>
+<span>
+</span>
+</td>
+<td class=''><pre><span  class=''>        {</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3e7cdacf_63'/>
+63
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3e7cdacf_63'>1</a>
+<span>
+
+1. onProcessInjectionTarget : negated conditional &rarr; KILLED<br/>
+
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>            if (!mockFilter.isMockedImplementationSupported(beanManager, processInjectionTarget.getAnnotatedType()))</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3e7cdacf_64'/>
+64
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3e7cdacf_64'></a>
+<span>
+</span>
+</td>
+<td class=''><pre><span  class=''>            {</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3e7cdacf_65'/>
+65
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3e7cdacf_65'></a>
+<span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>                return;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3e7cdacf_66'/>
+66
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3e7cdacf_66'></a>
+<span>
+</span>
+</td>
+<td class=''><pre><span  class=''>            }</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3e7cdacf_67'/>
+67
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3e7cdacf_67'></a>
+<span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>        }</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3e7cdacf_68'/>
+68
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3e7cdacf_68'></a>
+<span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3e7cdacf_69'/>
+69
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3e7cdacf_69'></a>
+<span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>        List&#60;Annotation&#62; qualifiers = new ArrayList&#60;Annotation&#62;();</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3e7cdacf_70'/>
+70
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3e7cdacf_70'></a>
+<span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>        for (Annotation annotation : processInjectionTarget.getAnnotatedType().getAnnotations())</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3e7cdacf_71'/>
+71
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3e7cdacf_71'></a>
+<span>
+</span>
+</td>
+<td class=''><pre><span  class=''>        {</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3e7cdacf_72'/>
+72
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3e7cdacf_72'>1</a>
+<span>
+
+1. onProcessInjectionTarget : negated conditional &rarr; KILLED<br/>
+
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>            if (beanManager.isQualifier(annotation.annotationType()))</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3e7cdacf_73'/>
+73
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3e7cdacf_73'></a>
+<span>
+</span>
+</td>
+<td class=''><pre><span  class=''>            {</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3e7cdacf_74'/>
+74
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3e7cdacf_74'></a>
+<span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>                qualifiers.add(annotation);</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3e7cdacf_75'/>
+75
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3e7cdacf_75'></a>
+<span>
+</span>
+</td>
+<td class=''><pre><span  class=''>            }</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3e7cdacf_76'/>
+76
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3e7cdacf_76'></a>
+<span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>        }</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3e7cdacf_77'/>
+77
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3e7cdacf_77'></a>
+<span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3e7cdacf_78'/>
+78
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3e7cdacf_78'></a>
+<span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>        Typed typed = processInjectionTarget.getAnnotatedType().getAnnotation(Typed.class);</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3e7cdacf_79'/>
+79
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3e7cdacf_79'></a>
+<span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3e7cdacf_80'/>
+80
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3e7cdacf_80'></a>
+<span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>        List&#60;Type&#62; foundTypes = new ArrayList&#60;Type&#62;();</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3e7cdacf_81'/>
+81
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3e7cdacf_81'>1</a>
+<span>
+
+1. onProcessInjectionTarget : negated conditional &rarr; KILLED<br/>
+
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>        if (typed != null)</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3e7cdacf_82'/>
+82
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3e7cdacf_82'></a>
+<span>
+</span>
+</td>
+<td class=''><pre><span  class=''>        {</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3e7cdacf_83'/>
+83
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3e7cdacf_83'></a>
+<span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>            Collections.addAll(foundTypes, typed.value());</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3e7cdacf_84'/>
+84
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3e7cdacf_84'></a>
+<span>
+</span>
+</td>
+<td class=''><pre><span  class=''>        }</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3e7cdacf_85'/>
+85
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3e7cdacf_85'></a>
+<span>
+</span>
+</td>
+<td class=''><pre><span  class=''>        else</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3e7cdacf_86'/>
+86
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3e7cdacf_86'></a>
+<span>
+</span>
+</td>
+<td class=''><pre><span  class=''>        {</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3e7cdacf_87'/>
+87
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3e7cdacf_87'></a>
+<span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>            foundTypes.addAll(extractTypes(processInjectionTarget.getAnnotatedType().getJavaClass()));</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3e7cdacf_88'/>
+88
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3e7cdacf_88'></a>
+<span>
+</span>
+</td>
+<td class=''><pre><span  class=''>        }</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3e7cdacf_89'/>
+89
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3e7cdacf_89'></a>
+<span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3e7cdacf_90'/>
+90
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3e7cdacf_90'>1</a>
+<span>
+
+1. onProcessInjectionTarget : negated conditional &rarr; KILLED<br/>
+
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>        if (foundTypes.isEmpty())</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3e7cdacf_91'/>
+91
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3e7cdacf_91'></a>
+<span>
+</span>
+</td>
+<td class=''><pre><span  class=''>        {</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3e7cdacf_92'/>
+92
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3e7cdacf_92'></a>
+<span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>            return;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3e7cdacf_93'/>
+93
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3e7cdacf_93'></a>
+<span>
+</span>
+</td>
+<td class=''><pre><span  class=''>        }</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3e7cdacf_94'/>
+94
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3e7cdacf_94'></a>
+<span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3e7cdacf_95'/>
+95
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3e7cdacf_95'></a>
+<span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>        final InjectionTarget&#60;X&#62; originalInjectionTarget = processInjectionTarget.getInjectionTarget();</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3e7cdacf_96'/>
+96
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3e7cdacf_96'>1</a>
+<span>
+
+1. onProcessInjectionTarget : removed call to javax/enterprise/inject/spi/ProcessInjectionTarget::setInjectionTarget &rarr; KILLED<br/>
+
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>        processInjectionTarget.setInjectionTarget(new MockAwareInjectionTargetWrapper&#60;X&#62;(</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3e7cdacf_97'/>
+97
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3e7cdacf_97'></a>
+<span>
+</span>
+</td>
+<td class=''><pre><span  class=''>            beanManager, originalInjectionTarget, foundTypes, qualifiers));</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3e7cdacf_98'/>
+98
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3e7cdacf_98'></a>
+<span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>    }</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3e7cdacf_99'/>
+99
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3e7cdacf_99'></a>
+<span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3e7cdacf_100'/>
+100
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3e7cdacf_100'></a>
+<span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    public &#60;X, T&#62; void onProcessProducer(@Observes ProcessProducer&#60;X, T&#62; processProducer, BeanManager beanManager)</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3e7cdacf_101'/>
+101
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3e7cdacf_101'></a>
+<span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    {</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3e7cdacf_102'/>
+102
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3e7cdacf_102'>1</a>
+<span>
+
+1. onProcessProducer : negated conditional &rarr; KILLED<br/>
+
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>        if (!isActivated)</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3e7cdacf_103'/>
+103
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3e7cdacf_103'></a>
+<span>
+</span>
+</td>
+<td class=''><pre><span  class=''>        {</span></pre></td></tr>
+
+
+<tr>
+<td class='uncovered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3e7cdacf_104'/>
+104
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3e7cdacf_104'></a>
+<span>
+</span>
+</td>
+<td class='uncovered'><pre><span  class=''>            return;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3e7cdacf_105'/>
+105
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3e7cdacf_105'></a>
+<span>
+</span>
+</td>
+<td class=''><pre><span  class=''>        }</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3e7cdacf_106'/>
+106
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3e7cdacf_106'></a>
+<span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3e7cdacf_107'/>
+107
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3e7cdacf_107'></a>
+<span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>        for (MockFilter mockFilter : mockFilters)</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3e7cdacf_108'/>
+108
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3e7cdacf_108'></a>
+<span>
+</span>
+</td>
+<td class=''><pre><span  class=''>        {</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3e7cdacf_109'/>
+109
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3e7cdacf_109'>1</a>
+<span>
+
+1. onProcessProducer : negated conditional &rarr; KILLED<br/>
+
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>            if (!mockFilter.isMockedImplementationSupported(beanManager, processProducer.getAnnotatedMember()))</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3e7cdacf_110'/>
+110
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3e7cdacf_110'></a>
+<span>
+</span>
+</td>
+<td class=''><pre><span  class=''>            {</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3e7cdacf_111'/>
+111
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3e7cdacf_111'></a>
+<span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>                return;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3e7cdacf_112'/>
+112
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3e7cdacf_112'></a>
+<span>
+</span>
+</td>
+<td class=''><pre><span  class=''>            }</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3e7cdacf_113'/>
+113
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3e7cdacf_113'></a>
+<span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>        }</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3e7cdacf_114'/>
+114
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3e7cdacf_114'></a>
+<span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3e7cdacf_115'/>
+115
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3e7cdacf_115'></a>
+<span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>        final Producer&#60;T&#62; originalProducer = processProducer.getProducer();</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3e7cdacf_116'/>
+116
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3e7cdacf_116'></a>
+<span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>        AnnotatedMember&#60;X&#62; annotatedMember = processProducer.getAnnotatedMember();</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3e7cdacf_117'/>
+117
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3e7cdacf_117'></a>
+<span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>        List&#60;Annotation&#62; qualifiers = new ArrayList&#60;Annotation&#62;();</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3e7cdacf_118'/>
+118
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3e7cdacf_118'></a>
+<span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>        for (Annotation annotation : annotatedMember.getAnnotations())</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3e7cdacf_119'/>
+119
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3e7cdacf_119'></a>
+<span>
+</span>
+</td>
+<td class=''><pre><span  class=''>        {</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3e7cdacf_120'/>
+120
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3e7cdacf_120'>1</a>
+<span>
+
+1. onProcessProducer : negated conditional &rarr; KILLED<br/>
+
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>            if (beanManager.isQualifier(annotation.annotationType()))</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3e7cdacf_121'/>
+121
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3e7cdacf_121'></a>
+<span>
+</span>
+</td>
+<td class=''><pre><span  class=''>            {</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3e7cdacf_122'/>
+122
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3e7cdacf_122'></a>
+<span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>                qualifiers.add(annotation);</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3e7cdacf_123'/>
+123
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3e7cdacf_123'></a>
+<span>
+</span>
+</td>
+<td class=''><pre><span  class=''>            }</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3e7cdacf_124'/>
+124
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3e7cdacf_124'></a>
+<span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>        }</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3e7cdacf_125'/>
+125
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3e7cdacf_125'></a>
+<span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3e7cdacf_126'/>
+126
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3e7cdacf_126'></a>
+<span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>        Typed typed = annotatedMember.getAnnotation(Typed.class);</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3e7cdacf_127'/>
+127
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3e7cdacf_127'></a>
+<span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3e7cdacf_128'/>
+128
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3e7cdacf_128'></a>
+<span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>        List&#60;Type&#62; foundTypes = new ArrayList&#60;Type&#62;();</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3e7cdacf_129'/>
+129
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3e7cdacf_129'>1</a>
+<span>
+
+1. onProcessProducer : negated conditional &rarr; KILLED<br/>
+
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>        if (typed != null)</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3e7cdacf_130'/>
+130
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3e7cdacf_130'></a>
+<span>
+</span>
+</td>
+<td class=''><pre><span  class=''>        {</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3e7cdacf_131'/>
+131
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3e7cdacf_131'></a>
+<span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>            Collections.addAll(foundTypes, typed.value());</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3e7cdacf_132'/>
+132
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3e7cdacf_132'></a>
+<span>
+</span>
+</td>
+<td class=''><pre><span  class=''>        }</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3e7cdacf_133'/>
+133
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3e7cdacf_133'>1</a>
+<span>
+
+1. onProcessProducer : negated conditional &rarr; KILLED<br/>
+
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>        else if (annotatedMember.getBaseType() instanceof Class)</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3e7cdacf_134'/>
+134
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3e7cdacf_134'></a>
+<span>
+</span>
+</td>
+<td class=''><pre><span  class=''>        {</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3e7cdacf_135'/>
+135
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3e7cdacf_135'></a>
+<span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>            foundTypes.addAll(extractTypes((Class)annotatedMember.getBaseType()));</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3e7cdacf_136'/>
+136
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3e7cdacf_136'></a>
+<span>
+</span>
+</td>
+<td class=''><pre><span  class=''>        }</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3e7cdacf_137'/>
+137
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3e7cdacf_137'></a>
+<span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3e7cdacf_138'/>
+138
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3e7cdacf_138'>1</a>
+<span>
+
+1. onProcessProducer : negated conditional &rarr; KILLED<br/>
+
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>        if (foundTypes.isEmpty())</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3e7cdacf_139'/>
+139
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3e7cdacf_139'></a>
+<span>
+</span>
+</td>
+<td class=''><pre><span  class=''>        {</span></pre></td></tr>
+
+
+<tr>
+<td class='uncovered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3e7cdacf_140'/>
+140
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3e7cdacf_140'></a>
+<span>
+</span>
+</td>
+<td class='uncovered'><pre><span  class=''>            return;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3e7cdacf_141'/>
+141
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3e7cdacf_141'></a>
+<span>
+</span>
+</td>
+<td class=''><pre><span  class=''>        }</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3e7cdacf_142'/>
+142
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3e7cdacf_142'></a>
+<span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3e7cdacf_143'/>
+143
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3e7cdacf_143'>1</a>
+<span>
+
+1. onProcessProducer : removed call to javax/enterprise/inject/spi/ProcessProducer::setProducer &rarr; KILLED<br/>
+
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>        processProducer.setProducer(new MockAwareProducerWrapper&#60;T&#62;(</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3e7cdacf_144'/>
+144
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3e7cdacf_144'></a>
+<span>
+</span>
+</td>
+<td class=''><pre><span  class=''>            beanManager, originalProducer, foundTypes, qualifiers));</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3e7cdacf_145'/>
+145
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3e7cdacf_145'></a>
+<span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>    }</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3e7cdacf_146'/>
+146
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3e7cdacf_146'></a>
+<span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3e7cdacf_147'/>
+147
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3e7cdacf_147'></a>
+<span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    //logic from org.apache.deltaspike.core.util.bean.BeanBuilder</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3e7cdacf_148'/>
+148
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3e7cdacf_148'></a>
+<span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    protected List&#60;Type&#62; extractTypes(Class currentClass)</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3e7cdacf_149'/>
+149
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3e7cdacf_149'></a>
+<span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    {</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3e7cdacf_150'/>
+150
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3e7cdacf_150'></a>
+<span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>        List&#60;Type&#62; result = new ArrayList&#60;Type&#62;();</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3e7cdacf_151'/>
+151
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3e7cdacf_151'>2</a>
+<span>
+
+1. extractTypes : negated conditional &rarr; KILLED<br/>
+
+2. extractTypes : negated conditional &rarr; KILLED<br/>
+
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>        for (Class&#60;?&#62; c = currentClass; c != Object.class &#38;&#38; c != null; c = c.getSuperclass())</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3e7cdacf_152'/>
+152
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3e7cdacf_152'></a>
+<span>
+</span>
+</td>
+<td class=''><pre><span  class=''>        {</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3e7cdacf_153'/>
+153
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3e7cdacf_153'></a>
+<span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>            result.add(c);</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3e7cdacf_154'/>
+154
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3e7cdacf_154'></a>
+<span>
+</span>
+</td>
+<td class=''><pre><span  class=''>        }</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3e7cdacf_155'/>
+155
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3e7cdacf_155'></a>
+<span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>        Collections.addAll(result, currentClass.getInterfaces());</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3e7cdacf_156'/>
+156
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3e7cdacf_156'>1</a>
+<span>
+
+1. extractTypes : mutated return of Object value for org/apache/deltaspike/testcontrol/impl/mock/MockExtension::extractTypes to ( if (x != null) null else throw new RuntimeException ) &rarr; KILLED<br/>
+
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>        return result;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3e7cdacf_157'/>
+157
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3e7cdacf_157'></a>
+<span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    }</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3e7cdacf_158'/>
+158
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3e7cdacf_158'></a>
+<span>
+</span>
+</td>
+<td class=''><pre><span  class=''>}</span></pre></td></tr>
+
+
+
+<tr><td></td><td></td><td><h2>Mutations</h2></td></tr>
+
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@3e7cdacf_56'>56</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@3e7cdacf_56'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>onProcessInjectionTarget<br/><b>Killed by : </b>org.apache.deltaspike.test.testcontrol.mock.uc012.MockedRequestScopedBeanWithInjectionTest.mixedMocksWithInjection1(org.apache.deltaspike.test.testcontrol.mock.uc012.MockedRequestScopedBeanWithInjectionTest)</span></span> negated conditional &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@3e7cdacf_63'>63</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@3e7cdacf_63'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>onProcessInjectionTarget<br/><b>Killed by : </b>org.apache.deltaspike.test.testcontrol.uc018.DefaultServiceTest.defaultValue(org.apache.deltaspike.test.testcontrol.uc018.DefaultServiceTest)</span></span> negated conditional &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@3e7cdacf_72'>72</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@3e7cdacf_72'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>onProcessInjectionTarget<br/><b>Killed by : </b>org.apache.deltaspike.test.testcontrol.mock.uc012.MockedRequestScopedBeanWithInjectionTest.mixedMocksWithInjection1(org.apache.deltaspike.test.testcontrol.mock.uc012.MockedRequestScopedBeanWithInjectionTest)</span></span> negated conditional &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@3e7cdacf_81'>81</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@3e7cdacf_81'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>onProcessInjectionTarget<br/><b>Killed by : </b>org.apache.deltaspike.test.testcontrol.uc018.DefaultServiceTest.defaultValue(org.apache.deltaspike.test.testcontrol.uc018.DefaultServiceTest)</span></span> negated conditional &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@3e7cdacf_90'>90</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@3e7cdacf_90'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>onProcessInjectionTarget<br/><b>Killed by : </b>org.apache.deltaspike.test.testcontrol.mock.uc012.MockedRequestScopedBeanWithInjectionTest.mixedMocksWithInjection1(org.apache.deltaspike.test.testcontrol.mock.uc012.MockedRequestScopedBeanWithInjectionTest)</span></span> negated conditional &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@3e7cdacf_96'>96</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@3e7cdacf_96'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>onProcessInjectionTarget<br/><b>Killed by : </b>org.apache.deltaspike.test.testcontrol.mock.uc012.MockedRequestScopedBeanWithInjectionTest.mixedMocksWithInjection1(org.apache.deltaspike.test.testcontrol.mock.uc012.MockedRequestScopedBeanWithInjectionTest)</span></span> removed call to javax/enterprise/inject/spi/ProcessInjectionTarget::setInjectionTarget &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@3e7cdacf_102'>102</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@3e7cdacf_102'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>onProcessProducer<br/><b>Killed by : </b>org.apache.deltaspike.test.testcontrol.mock.uc009.MockedTypedProducedBeanTest.manualMockT1(org.apache.deltaspike.test.testcontrol.mock.uc009.MockedTypedProducedBeanTest)</span></span> negated conditional &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@3e7cdacf_109'>109</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@3e7cdacf_109'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>onProcessProducer<br/><b>Killed by : </b>org.apache.deltaspike.test.testcontrol.mock.uc009.MockedTypedProducedBeanTest.manualMockT1(org.apache.deltaspike.test.testcontrol.mock.uc009.MockedTypedProducedBeanTest)</span></span> negated conditional &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@3e7cdacf_120'>120</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@3e7cdacf_120'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>onProcessProducer<br/><b>Killed by : </b>org.apache.deltaspike.test.testcontrol.mock.uc009.MockedTypedProducedBeanTest.manualMockT1(org.apache.deltaspike.test.testcontrol.mock.uc009.MockedTypedProducedBeanTest)</span></span> negated conditional &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@3e7cdacf_129'>129</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@3e7cdacf_129'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>onProcessProducer<br/><b>Killed by : </b>org.apache.deltaspike.test.testcontrol.uc018.DefaultServiceTest.defaultValue(org.apache.deltaspike.test.testcontrol.uc018.DefaultServiceTest)</span></span> negated conditional &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@3e7cdacf_133'>133</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@3e7cdacf_133'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>onProcessProducer<br/><b>Killed by : </b>org.apache.deltaspike.test.testcontrol.mock.uc007.MockedProducedQualifiedBeanTest.manualMockWithQualifierForProducedBean2(org.apache.deltaspike.test.testcontrol.mock.uc007.MockedProducedQualifiedBeanTest)</span></span> negated conditional &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@3e7cdacf_138'>138</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@3e7cdacf_138'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>onProcessProducer<br/><b>Killed by : </b>org.apache.deltaspike.test.testcontrol.mock.uc009.MockedTypedProducedBeanTest.manualMockT1(org.apache.deltaspike.test.testcontrol.mock.uc009.MockedTypedProducedBeanTest)</span></span> negated conditional &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@3e7cdacf_143'>143</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@3e7cdacf_143'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>onProcessProducer<br/><b>Killed by : </b>org.apache.deltaspike.test.testcontrol.mock.uc009.MockedTypedProducedBeanTest.manualMockT1(org.apache.deltaspike.test.testcontrol.mock.uc009.MockedTypedProducedBeanTest)</span></span> removed call to javax/enterprise/inject/spi/ProcessProducer::setProducer &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@3e7cdacf_151'>151</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@3e7cdacf_151'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>extractTypes<br/><b>Killed by : </b>org.apache.deltaspike.test.testcontrol.mock.uc012.MockedRequestScopedBeanWithInjectionTest.mixedMocksWithInjection1(org.apache.deltaspike.test.testcontrol.mock.uc012.MockedRequestScopedBeanWithInjectionTest)</span></span> negated conditional &rarr; KILLED</p> <p class='KILLED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>extractTypes<br/><b>Killed by : </b>org.apache.deltaspike.test.testcontrol.mock.uc012.MockedRequestScopedBeanWithInjectionTest.mixedMocksWithInjection1(org.apache.deltaspike.test.testcontrol.mock.uc012.MockedRequestScopedBeanWithInjectionTest)</span></span> negated conditional &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@3e7cdacf_156'>156</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@3e7cdacf_156'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>extractTypes<br/><b>Killed by : </b>org.apache.deltaspike.test.testcontrol.uc018.DefaultServiceTest.defaultValue(org.apache.deltaspike.test.testcontrol.uc018.DefaultServiceTest)</span></span> mutated return of Object value for org/apache/deltaspike/testcontrol/impl/mock/MockExtension::extractTypes to ( if (x != null) null else throw new RuntimeException ) &rarr; KILLED</p> 
+</td>
+</tr>
+
+</table>
+
+
+<h2>Active mutators</h2>
+<ul>
+
+<li class='mutator'>INCREMENTS_MUTATOR</li>
+
+<li class='mutator'>VOID_METHOD_CALL_MUTATOR</li>
+
+<li class='mutator'>RETURN_VALS_MUTATOR</li>
+
+<li class='mutator'>MATH_MUTATOR</li>
+
+<li class='mutator'>NEGATE_CONDITIONALS_MUTATOR</li>
+
+<li class='mutator'>INVERT_NEGS_MUTATOR</li>
+
+<li class='mutator'>CONDITIONALS_BOUNDARY_MUTATOR</li>
+
+</ul>
+
+<h2>Tests examined</h2>
+<ul>
+<li>org.apache.deltaspike.test.testcontrol.uc011.InterceptedBeanTest.methodLevelInterception(org.apache.deltaspike.test.testcontrol.uc011.InterceptedBeanTest) (406 ms)</li><li>org.apache.deltaspike.test.testcontrol.mock.uc012.MockedRequestScopedBeanWithInjectionTest.mixedMocksWithInjection1(org.apache.deltaspike.test.testcontrol.mock.uc012.MockedRequestScopedBeanWithInjectionTest) (375 ms)</li><li>org.apache.deltaspike.test.testcontrol.uc008.BeforeAndAfterInjectionTest.injectionTest(org.apache.deltaspike.test.testcontrol.uc008.BeforeAndAfterInjectionTest) (328 ms)</li><li>org.apache.deltaspike.test.testcontrol.mock.uc016.CustomMockManagerTest.manualMock2(org.apache.deltaspike.test.testcontrol.mock.uc016.CustomMockManagerTest) (406 ms)</li><li>org.apache.deltaspike.test.testcontrol.uc003.RequestAndSessionScopePerTestMethodTest.secondTest(org.apache.deltaspike.test.testcontrol.uc003.RequestAndSessionScopePerTestMethodTest) (422 ms)</li><li>org.apache.deltaspike.test.testcontrol.uc011.InterceptedBeanTest.classLevelInterception(org.apache.deltaspike.test.testcontrol.uc011.InterceptedBeanTest) (453 ms)</li><li>org.apache.deltaspike.test.testcontrol.uc019.TestServiceLabelYTest.resultY(org.apache.deltaspike.test.testcontrol.uc019.TestServiceLabelYTest) (328 ms)</li><li>org.apache.deltaspike.test.testcontrol.uc010.JsfContainerPerTestMethodTest.firstTest(org.apache.deltaspike.test.testcontrol.uc010.JsfContainerPerTestMethodTest) (609 ms)</li><li>org.apache.deltaspike.test.testcontrol.mock.uc007.MockedProducedQualifiedBeanTest.manualMockWithQualifierForProducedBean2(org.apache.deltaspike.test.testcontrol.mock.uc007.MockedProducedQualifiedBeanTest) (459 ms)</li><li>org.apache.deltaspike.test.testcontrol.uc015.AlternativeServiceTest.defaultValue(org.apache.deltaspike.test.testcontrol.uc015.AlternativeServiceTest) (375 ms)</li><li>org.apache.deltaspike.test.testcontrol.mock.uc014.MockedTypedProducedBeanTest.manualMockT1(org.apache.deltaspike.test.testcontrol.mock.uc014.MockedTypedProducedBeanTest) (446 ms)</li><li>org.apache.deltaspike.test.testcontrol.mock.uc003.MockedSessionScopedBeanAcrossMethodsTest.manualMock2(org.apache.deltaspike.test.testcontrol.mock.uc003.MockedSessionScopedBeanAcrossMethodsTest) (500 ms)</li><li>org.apache.deltaspike.test.testcontrol.uc006.SkipExternalContainerTest.skippedSetupTest(org.apache.deltaspike.test.testcontrol.uc006.SkipExternalContainerTest) (375 ms)</li><li>org.apache.deltaspike.test.testcontrol.mock.uc015.InterceptedBeanTest.classLevelInterception(org.apache.deltaspike.test.testcontrol.mock.uc015.InterceptedBeanTest) (469 ms)</li><li>org.apache.deltaspike.test.testcontrol.uc019.TestServiceLabelXTest.resultX(org.apache.deltaspike.test.testcontrol.uc019.TestServiceLabelXTest) (375 ms)</li><li>org.apache.deltaspike.test.testcontrol.mock.uc005.MockedProducedBeanTest.manualMockForProducedBean2(org.apache.deltaspike.test.testcontrol.mock.uc005.MockedProducedBeanTest) (594 ms)</li><li>org.apache.deltaspike.test.testcontrol.uc002.SessionScopePerTestClassTest.org.apache.deltaspike.test.testcontrol.uc002.SessionScopePerTestClassTest (375 ms)</li><li>org.apache.deltaspike.test.testcontrol.mock.uc010.MockedRequestScopedBeanTest.mockitoMock1(org.apache.deltaspike.test.testcontrol.mock.uc010.MockedRequestScopedBeanTest) (594 ms)</li><li>org.apache.deltaspike.test.testcontrol.uc013.ContainerConfigTest.configForTestContainerStageUnitTest(org.apache.deltaspike.test.testcontrol.uc013.ContainerConfigTest) (422 ms)</li><li>org.apache.deltaspike.test.testcontrol.uc015.LabeledServiceTest.resultLbl(org.apache.deltaspike.test.testcontrol.uc015.LabeledServiceTest) (390 ms)</li><li>org.apache.deltaspike.test.testcontrol.uc003.RequestAndSessionScopePerTestMethodTest.firstTest(org.apache.deltaspike.test.testcontrol.uc003.RequestAndSessionScopePerTestMethodTest) (375 ms)</li><li>org.apache.deltaspike.test.testcontrol.uc013.ContainerConfigTest.configForTestContainerStageIntegrationTest(org.apache.deltaspike.test.testcontrol.uc013.ContainerConfigTest) (347 ms)</li><li>org.apache.deltaspike.test.testcontrol.uc004.ProjectStageTestControlTest.org.apache.deltaspike.test.testcontrol.uc004.ProjectStageTestControlTest (390 ms)</li><li>org.apache.deltaspike.test.testcontrol.mock.uc007.MockedProducedQualifiedBeanTest.manualMockWithQualifierForProducedBean1(org.apache.deltaspike.test.testcontrol.mock.uc007.MockedProducedQualifiedBeanTest) (531 ms)</li><li>org.apache.deltaspike.test.testcontrol.uc003.SessionScopePerTestClassTest.secondTest(org.apache.deltaspike.test.testcontrol.uc003.SessionScopePerTestClassTest) (393 ms)</li><li>org.apache.deltaspike.test.testcontrol.mock.uc005.MockedProducedBeanTest.manualMockForProducedBean1(org.apache.deltaspike.test.testcontrol.mock.uc005.MockedProducedBeanTest) (562 ms)</li><li>org.apache.deltaspike.test.testcontrol.mock.uc013.MockedTypedProducedBeanTest.manualMockT1(org.apache.deltaspike.test.testcontrol.mock.uc013.MockedTypedProducedBeanTest) (468 ms)</li><li>org.apache.deltaspike.test.testcontrol.uc018.LabeledServiceTest.labeledValue(org.apache.deltaspike.test.testcontrol.uc018.LabeledServiceTest) (374 ms)</li><li>org.apache.deltaspike.test.testcontrol.mock.uc003.MockedSessionScopedBeanAcrossMethodsTest.manualMock1(org.apache.deltaspike.test.testcontrol.mock.uc003.MockedSessionScopedBeanAcrossMethodsTest) (597 ms)</li><li>org.apache.deltaspike.test.testcontrol.uc005.MockedJsfContainerTest.secondTest(org.apache.deltaspike.test.testcontrol.uc005.MockedJsfContainerTest) (319 ms)</li><li>org.apache.deltaspike.test.testcontrol.uc017.LabeledServiceTest.labeledValue(org.apache.deltaspike.test.testcontrol.uc017.LabeledServiceTest) (342 ms)</li><li>org.apache.deltaspike.test.testcontrol.mock.uc004.MockedApplicationScopedBeanTest.org.apache.deltaspike.test.testcontrol.mock.uc004.MockedApplicationScopedBeanTest (578 ms)</li><li>org.apache.deltaspike.test.testcontrol.uc001.RequestAndSessionScopePerTestMethodTest.org.apache.deltaspike.test.testcontrol.uc001.RequestAndSessionScopePerTestMethodTest (406 ms)</li><li>org.apache.deltaspike.test.testcontrol.mock.uc009.MockedTypedProducedBeanTest.manualMockT1(org.apache.deltaspike.test.testcontrol.mock.uc009.MockedTypedProducedBeanTest) (407 ms)</li><li>org.apache.deltaspike.test.testcontrol.mock.uc006.MockedRequestScopedQualifiedBeanTest.manualMockWithQualifier(org.apache.deltaspike.test.testcontrol.mock.uc006.MockedRequestScopedQualifiedBeanTest) (566 ms)</li><li>org.apache.deltaspike.test.testcontrol.mock.uc001.MockedRequestScopedBeanTest.manualMock1(org.apache.deltaspike.test.testcontrol.mock.uc001.MockedRequestScopedBeanTest) (1937 ms)</li><li>org.apache.deltaspike.test.testcontrol.uc014.TestServiceLabelYTest.resultY(org.apache.deltaspike.test.testcontrol.uc014.TestServiceLabelYTest) (391 ms)</li><li>org.apache.deltaspike.test.testcontrol.mock.uc002.MockedSessionScopedBeanTest.manualMock2(org.apache.deltaspike.test.testcontrol.mock.uc002.MockedSessionScopedBeanTest) (781 ms)</li><li>org.apache.deltaspike.test.testcontrol.mock.uc010.MockedRequestScopedBeanTest.mockitoMock2(org.apache.deltaspike.test.testcontrol.mock.uc010.MockedRequestScopedBeanTest) (406 ms)</li><li>org.apache.deltaspike.test.testcontrol.uc016.TestServiceLabelXTest.resultX(org.apache.deltaspike.test.testcontrol.uc016.TestServiceLabelXTest) (328 ms)</li><li>org.apache.deltaspike.test.testcontrol.uc014.TestServiceTestLabelXTest.resultX(org.apache.deltaspike.test.testcontrol.uc014.TestServiceTestLabelXTest) (437 ms)</li><li>org.apache.deltaspike.test.testcontrol.uc009.JsfContainerTest.secondTest(org.apache.deltaspike.test.testcontrol.uc009.JsfContainerTest) (484 ms)</li><li>org.apache.deltaspike.test.testcontrol.uc007.ExtendedTest.inheritedInjectionTest(org.apache.deltaspike.test.testcontrol.uc007.ExtendedTest) (379 ms)</li><li>org.apache.deltaspike.test.testcontrol.mock.uc001.MockedRequestScopedBeanTest.manualMock2(org.apache.deltaspike.test.testcontrol.mock.uc001.MockedRequestScopedBeanTest) (578 ms)</li><li>org.apache.deltaspike.test.testcontrol.mock.uc011.MockedRequestScopedBeanWithInjectionTest.manualMockWithInjection(org.apache.deltaspike.test.testcontrol.mock.uc011.MockedRequestScopedBeanWithInjectionTest) (442 ms)</li><li>org.apache.deltaspike.test.testcontrol.mock.uc016.CustomMockManagerTest.manualMock1(org.apache.deltaspike.test.testcontrol.mock.uc016.CustomMockManagerTest) (410 ms)</li><li>org.apache.deltaspike.test.testcontrol.mock.uc008.MockedTypedBeanTest.manualMockForTypedBeans(org.apache.deltaspike.test.testcontrol.mock.uc008.MockedTypedBeanTest) (453 ms)</li><li>org.apache.deltaspike.test.testcontrol.uc016.TestServiceLabelYTest.resultY(org.apache.deltaspike.test.testcontrol.uc016.TestServiceLabelYTest) (313 ms)</li><li>org.apache.deltaspike.test.testcontrol.mock.uc012.MockedRequestScopedBeanWithInjectionTest.mixedMocksWithInjection2(org.apache.deltaspike.test.testcontrol.mock.uc012.MockedRequestScopedBeanWithInjectionTest) (406 ms)</li><li>org.apache.deltaspike.test.testcontrol.uc012.ApplicationScopedBeanTest.org.apache.deltaspike.test.testcontrol.uc012.ApplicationScopedBeanTest (375 ms)</li><li>org.apache.deltaspike.test.testcontrol.uc003.SessionScopePerTestClassTest.firstTest(org.apache.deltaspike.test.testcontrol.uc003.SessionScopePerTestClassTest) (422 ms)</li><li>org.apache.deltaspike.test.testcontrol.mock.uc015.InterceptedBeanTest.methodLevelInterception(org.apache.deltaspike.test.testcontrol.mock.uc015.InterceptedBeanTest) (407 ms)</li><li>org.apache.deltaspike.test.testcontrol.uc005.MockedJsfContainerTest.firstTest(org.apache.deltaspike.test.testcontrol.uc005.MockedJsfContainerTest) (594 ms)</li><li>org.apache.deltaspike.test.testcontrol.uc018.DefaultServiceTest.defaultValue(org.apache.deltaspike.test.testcontrol.uc018.DefaultServiceTest) (313 ms)</li><li>org.apache.deltaspike.test.testcontrol.uc017.DefaultServiceTest.defaultValue(org.apache.deltaspike.test.testcontrol.uc017.DefaultServiceTest) (328 ms)</li><li>org.apache.deltaspike.test.testcontrol.uc014.TestServiceNoLabelTest.noLabel(org.apache.deltaspike.test.testcontrol.uc014.TestServiceNoLabelTest) (453 ms)</li><li>org.apache.deltaspike.test.testcontrol.uc010.JsfContainerPerTestMethodTest.secondTest(org.apache.deltaspike.test.testcontrol.uc010.JsfContainerPerTestMethodTest) (453 ms)</li><li>org.apache.deltaspike.test.testcontrol.mock.uc002.MockedSessionScopedBeanTest.manualMock1(org.apache.deltaspike.test.testcontrol.mock.uc002.MockedSessionScopedBeanTest) (688 ms)</li><li>org.apache.deltaspike.test.testcontrol.uc009.JsfContainerTest.firstTest(org.apache.deltaspike.test.testcontrol.uc009.JsfContainerTest) (1567 ms)</li>
+</ul>
+
+<br/>
+
+Report generated by <a href='http://pitest.org'>PIT</a> 1.4.1
+
+</body>
+</html>

@@ -1,0 +1,1313 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="../style.css">
+</head>
+<body>
+
+
+<h1>EntityManagerEntry.java</h1>
+
+<table class="src">
+
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@35b6bc80_1'/>
+1
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@35b6bc80_1'></a>
+<span>
+</span>
+</td>
+<td class=''><pre><span  class=''>/*</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@35b6bc80_2'/>
+2
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@35b6bc80_2'></a>
+<span>
+</span>
+</td>
+<td class=''><pre><span  class=''> * Licensed to the Apache Software Foundation (ASF) under one</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@35b6bc80_3'/>
+3
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@35b6bc80_3'></a>
+<span>
+</span>
+</td>
+<td class=''><pre><span  class=''> * or more contributor license agreements. See the NOTICE file</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@35b6bc80_4'/>
+4
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@35b6bc80_4'></a>
+<span>
+</span>
+</td>
+<td class=''><pre><span  class=''> * distributed with this work for additional information</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@35b6bc80_5'/>
+5
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@35b6bc80_5'></a>
+<span>
+</span>
+</td>
+<td class=''><pre><span  class=''> * regarding copyright ownership. The ASF licenses this file</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@35b6bc80_6'/>
+6
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@35b6bc80_6'></a>
+<span>
+</span>
+</td>
+<td class=''><pre><span  class=''> * to you under the Apache License, Version 2.0 (the</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@35b6bc80_7'/>
+7
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@35b6bc80_7'></a>
+<span>
+</span>
+</td>
+<td class=''><pre><span  class=''> * &#34;License&#34;); you may not use this file except in compliance</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@35b6bc80_8'/>
+8
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@35b6bc80_8'></a>
+<span>
+</span>
+</td>
+<td class=''><pre><span  class=''> * with the License. You may obtain a copy of the License at</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@35b6bc80_9'/>
+9
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@35b6bc80_9'></a>
+<span>
+</span>
+</td>
+<td class=''><pre><span  class=''> *</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@35b6bc80_10'/>
+10
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@35b6bc80_10'></a>
+<span>
+</span>
+</td>
+<td class=''><pre><span  class=''> * http://www.apache.org/licenses/LICENSE-2.0</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@35b6bc80_11'/>
+11
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@35b6bc80_11'></a>
+<span>
+</span>
+</td>
+<td class=''><pre><span  class=''> *</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@35b6bc80_12'/>
+12
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@35b6bc80_12'></a>
+<span>
+</span>
+</td>
+<td class=''><pre><span  class=''> * Unless required by applicable law or agreed to in writing,</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@35b6bc80_13'/>
+13
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@35b6bc80_13'></a>
+<span>
+</span>
+</td>
+<td class=''><pre><span  class=''> * software distributed under the License is distributed on an</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@35b6bc80_14'/>
+14
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@35b6bc80_14'></a>
+<span>
+</span>
+</td>
+<td class=''><pre><span  class=''> * &#34;AS IS&#34; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@35b6bc80_15'/>
+15
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@35b6bc80_15'></a>
+<span>
+</span>
+</td>
+<td class=''><pre><span  class=''> * KIND, either express or implied. See the License for the</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@35b6bc80_16'/>
+16
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@35b6bc80_16'></a>
+<span>
+</span>
+</td>
+<td class=''><pre><span  class=''> * specific language governing permissions and limitations</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@35b6bc80_17'/>
+17
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@35b6bc80_17'></a>
+<span>
+</span>
+</td>
+<td class=''><pre><span  class=''> * under the License.</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@35b6bc80_18'/>
+18
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@35b6bc80_18'></a>
+<span>
+</span>
+</td>
+<td class=''><pre><span  class=''> */</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@35b6bc80_19'/>
+19
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@35b6bc80_19'></a>
+<span>
+</span>
+</td>
+<td class=''><pre><span  class=''>package org.apache.deltaspike.jpa.impl.transaction.context;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@35b6bc80_20'/>
+20
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@35b6bc80_20'></a>
+<span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@35b6bc80_21'/>
+21
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@35b6bc80_21'></a>
+<span>
+</span>
+</td>
+<td class=''><pre><span  class=''>import javax.enterprise.inject.Typed;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@35b6bc80_22'/>
+22
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@35b6bc80_22'></a>
+<span>
+</span>
+</td>
+<td class=''><pre><span  class=''>import javax.persistence.EntityManager;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@35b6bc80_23'/>
+23
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@35b6bc80_23'></a>
+<span>
+</span>
+</td>
+<td class=''><pre><span  class=''>import java.lang.annotation.Annotation;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@35b6bc80_24'/>
+24
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@35b6bc80_24'></a>
+<span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@35b6bc80_25'/>
+25
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@35b6bc80_25'></a>
+<span>
+</span>
+</td>
+<td class=''><pre><span  class=''>/**</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@35b6bc80_26'/>
+26
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@35b6bc80_26'></a>
+<span>
+</span>
+</td>
+<td class=''><pre><span  class=''> * Stores a {@link EntityManager} and the qualifier</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@35b6bc80_27'/>
+27
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@35b6bc80_27'></a>
+<span>
+</span>
+</td>
+<td class=''><pre><span  class=''> */</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@35b6bc80_28'/>
+28
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@35b6bc80_28'></a>
+<span>
+</span>
+</td>
+<td class=''><pre><span  class=''>@Typed()</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@35b6bc80_29'/>
+29
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@35b6bc80_29'></a>
+<span>
+</span>
+</td>
+<td class=''><pre><span  class=''>public class EntityManagerEntry</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@35b6bc80_30'/>
+30
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@35b6bc80_30'></a>
+<span>
+</span>
+</td>
+<td class=''><pre><span  class=''>{</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@35b6bc80_31'/>
+31
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@35b6bc80_31'></a>
+<span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    private final EntityManager entityManager;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@35b6bc80_32'/>
+32
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@35b6bc80_32'></a>
+<span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    //TODO DELTASPIKE-259 - use the annotation itself + calculate a key for #hashCode and #equals</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@35b6bc80_33'/>
+33
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@35b6bc80_33'></a>
+<span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    private Class&#60;? extends Annotation&#62; qualifier;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@35b6bc80_34'/>
+34
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@35b6bc80_34'></a>
+<span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@35b6bc80_35'/>
+35
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@35b6bc80_35'></a>
+<span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    public EntityManagerEntry(EntityManager entityManager, Class&#60;? extends Annotation&#62; qualifier)</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@35b6bc80_36'/>
+36
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@35b6bc80_36'></a>
+<span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>    {</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@35b6bc80_37'/>
+37
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@35b6bc80_37'></a>
+<span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>        this.entityManager = entityManager;</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@35b6bc80_38'/>
+38
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@35b6bc80_38'></a>
+<span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>        this.qualifier = qualifier;</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@35b6bc80_39'/>
+39
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@35b6bc80_39'></a>
+<span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>    }</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@35b6bc80_40'/>
+40
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@35b6bc80_40'></a>
+<span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@35b6bc80_41'/>
+41
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@35b6bc80_41'></a>
+<span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    public EntityManager getEntityManager()</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@35b6bc80_42'/>
+42
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@35b6bc80_42'></a>
+<span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    {</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@35b6bc80_43'/>
+43
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@35b6bc80_43'>1</a>
+<span>
+
+1. getEntityManager : mutated return of Object value for org/apache/deltaspike/jpa/impl/transaction/context/EntityManagerEntry::getEntityManager to ( if (x != null) null else throw new RuntimeException ) &rarr; KILLED<br/>
+
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>        return entityManager;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@35b6bc80_44'/>
+44
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@35b6bc80_44'></a>
+<span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    }</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@35b6bc80_45'/>
+45
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@35b6bc80_45'></a>
+<span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@35b6bc80_46'/>
+46
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@35b6bc80_46'></a>
+<span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    //can be used e.g. by a custom strategy for logging,...</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@35b6bc80_47'/>
+47
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@35b6bc80_47'></a>
+<span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    @SuppressWarnings(&#34;UnusedDeclaration&#34;)</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@35b6bc80_48'/>
+48
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@35b6bc80_48'></a>
+<span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    public Class&#60;? extends Annotation&#62; getQualifier()</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@35b6bc80_49'/>
+49
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@35b6bc80_49'></a>
+<span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    {</span></pre></td></tr>
+
+
+<tr>
+<td class='uncovered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@35b6bc80_50'/>
+50
+</td>
+<td class='survived'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@35b6bc80_50'>1</a>
+<span>
+
+1. getQualifier : mutated return of Object value for org/apache/deltaspike/jpa/impl/transaction/context/EntityManagerEntry::getQualifier to ( if (x != null) null else throw new RuntimeException ) &rarr; NO_COVERAGE<br/>
+
+</span>
+</td>
+<td class='uncovered'><pre><span  class='survived'>        return qualifier;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@35b6bc80_51'/>
+51
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@35b6bc80_51'></a>
+<span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    }</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@35b6bc80_52'/>
+52
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@35b6bc80_52'></a>
+<span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@35b6bc80_53'/>
+53
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@35b6bc80_53'></a>
+<span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    @Override</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@35b6bc80_54'/>
+54
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@35b6bc80_54'></a>
+<span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    public boolean equals(Object o)</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@35b6bc80_55'/>
+55
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@35b6bc80_55'></a>
+<span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    {</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@35b6bc80_56'/>
+56
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@35b6bc80_56'>1</a>
+<span>
+
+1. equals : negated conditional &rarr; KILLED<br/>
+
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>        if (this == o)</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@35b6bc80_57'/>
+57
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@35b6bc80_57'></a>
+<span>
+</span>
+</td>
+<td class=''><pre><span  class=''>        {</span></pre></td></tr>
+
+
+<tr>
+<td class='uncovered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@35b6bc80_58'/>
+58
+</td>
+<td class='survived'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@35b6bc80_58'>1</a>
+<span>
+
+1. equals : replaced return of integer sized value with (x == 0 ? 1 : 0) &rarr; NO_COVERAGE<br/>
+
+</span>
+</td>
+<td class='uncovered'><pre><span  class='survived'>            return true;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@35b6bc80_59'/>
+59
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@35b6bc80_59'></a>
+<span>
+</span>
+</td>
+<td class=''><pre><span  class=''>        }</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@35b6bc80_60'/>
+60
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@35b6bc80_60'>2</a>
+<span>
+
+1. equals : negated conditional &rarr; KILLED<br/>
+
+2. equals : negated conditional &rarr; KILLED<br/>
+
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>        if (o == null || getClass() != o.getClass())</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@35b6bc80_61'/>
+61
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@35b6bc80_61'></a>
+<span>
+</span>
+</td>
+<td class=''><pre><span  class=''>        {</span></pre></td></tr>
+
+
+<tr>
+<td class='uncovered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@35b6bc80_62'/>
+62
+</td>
+<td class='survived'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@35b6bc80_62'>1</a>
+<span>
+
+1. equals : replaced return of integer sized value with (x == 0 ? 1 : 0) &rarr; NO_COVERAGE<br/>
+
+</span>
+</td>
+<td class='uncovered'><pre><span  class='survived'>            return false;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@35b6bc80_63'/>
+63
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@35b6bc80_63'></a>
+<span>
+</span>
+</td>
+<td class=''><pre><span  class=''>        }</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@35b6bc80_64'/>
+64
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@35b6bc80_64'></a>
+<span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@35b6bc80_65'/>
+65
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@35b6bc80_65'></a>
+<span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>        EntityManagerEntry that = (EntityManagerEntry) o;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@35b6bc80_66'/>
+66
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@35b6bc80_66'></a>
+<span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@35b6bc80_67'/>
+67
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@35b6bc80_67'>1</a>
+<span>
+
+1. equals : negated conditional &rarr; KILLED<br/>
+
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>        if (!qualifier.equals(that.qualifier))</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@35b6bc80_68'/>
+68
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@35b6bc80_68'></a>
+<span>
+</span>
+</td>
+<td class=''><pre><span  class=''>        {</span></pre></td></tr>
+
+
+<tr>
+<td class='uncovered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@35b6bc80_69'/>
+69
+</td>
+<td class='survived'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@35b6bc80_69'>1</a>
+<span>
+
+1. equals : replaced return of integer sized value with (x == 0 ? 1 : 0) &rarr; NO_COVERAGE<br/>
+
+</span>
+</td>
+<td class='uncovered'><pre><span  class='survived'>            return false;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@35b6bc80_70'/>
+70
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@35b6bc80_70'></a>
+<span>
+</span>
+</td>
+<td class=''><pre><span  class=''>        }</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@35b6bc80_71'/>
+71
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@35b6bc80_71'></a>
+<span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@35b6bc80_72'/>
+72
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@35b6bc80_72'>1</a>
+<span>
+
+1. equals : replaced return of integer sized value with (x == 0 ? 1 : 0) &rarr; KILLED<br/>
+
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>        return true;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@35b6bc80_73'/>
+73
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@35b6bc80_73'></a>
+<span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    }</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@35b6bc80_74'/>
+74
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@35b6bc80_74'></a>
+<span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@35b6bc80_75'/>
+75
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@35b6bc80_75'></a>
+<span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    @Override</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@35b6bc80_76'/>
+76
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@35b6bc80_76'></a>
+<span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    public int hashCode()</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@35b6bc80_77'/>
+77
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@35b6bc80_77'></a>
+<span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    {</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@35b6bc80_78'/>
+78
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@35b6bc80_78'>1</a>
+<span>
+
+1. hashCode : replaced return of integer sized value with (x == 0 ? 1 : 0) &rarr; KILLED<br/>
+
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>        return qualifier.hashCode();</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@35b6bc80_79'/>
+79
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@35b6bc80_79'></a>
+<span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    }</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@35b6bc80_80'/>
+80
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@35b6bc80_80'></a>
+<span>
+</span>
+</td>
+<td class=''><pre><span  class=''>}</span></pre></td></tr>
+
+
+
+<tr><td></td><td></td><td><h2>Mutations</h2></td></tr>
+
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@35b6bc80_43'>43</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@35b6bc80_43'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>getEntityManager<br/><b>Killed by : </b>org.apache.deltaspike.test.jpa.api.transactional.getRollbackOnly.multipleinjection.nested.NestedMultiTransactionRollbackOnlyTest.nestedMultiTransactionRollbackOnlyTest(org.apache.deltaspike.test.jpa.api.transactional.getRollbackOnly.multipleinjection.nested.NestedMultiTransactionRollbackOnlyTest)</span></span> mutated return of Object value for org/apache/deltaspike/jpa/impl/transaction/context/EntityManagerEntry::getEntityManager to ( if (x != null) null else throw new RuntimeException ) &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@35b6bc80_50'>50</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@35b6bc80_50'/> 
+
+<p class='NO_COVERAGE'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>getQualifier<br/><b>Killed by : </b>none</span></span> mutated return of Object value for org/apache/deltaspike/jpa/impl/transaction/context/EntityManagerEntry::getQualifier to ( if (x != null) null else throw new RuntimeException ) &rarr; NO_COVERAGE</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@35b6bc80_56'>56</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@35b6bc80_56'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>equals<br/><b>Killed by : </b>org.apache.deltaspike.test.jpa.api.transactionscoped.defaultnested.DefaultTransactionScopedNestedTransactionTest.defaultTransactionScopedNestedTransaction(org.apache.deltaspike.test.jpa.api.transactionscoped.defaultnested.DefaultTransactionScopedNestedTransactionTest)</span></span> negated conditional &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@35b6bc80_58'>58</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@35b6bc80_58'/> 
+
+<p class='NO_COVERAGE'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>equals<br/><b>Killed by : </b>none</span></span> replaced return of integer sized value with (x == 0 ? 1 : 0) &rarr; NO_COVERAGE</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@35b6bc80_60'>60</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@35b6bc80_60'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>equals<br/><b>Killed by : </b>org.apache.deltaspike.test.jpa.api.transactional.nested.NestedTransactionTest.nestedTransaction(org.apache.deltaspike.test.jpa.api.transactional.nested.NestedTransactionTest)</span></span> negated conditional &rarr; KILLED</p> <p class='KILLED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>equals<br/><b>Killed by : </b>org.apache.deltaspike.test.jpa.api.transactionscoped.defaultnested.DefaultTransactionScopedNestedTransactionTest.defaultTransactionScopedNestedTransaction(org.apache.deltaspike.test.jpa.api.transactionscoped.defaultnested.DefaultTransactionScopedNestedTransactionTest)</span></span> negated conditional &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@35b6bc80_62'>62</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@35b6bc80_62'/> 
+
+<p class='NO_COVERAGE'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>equals<br/><b>Killed by : </b>none</span></span> replaced return of integer sized value with (x == 0 ? 1 : 0) &rarr; NO_COVERAGE</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@35b6bc80_67'>67</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@35b6bc80_67'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>equals<br/><b>Killed by : </b>org.apache.deltaspike.test.jpa.api.transactionscoped.defaultnested.DefaultTransactionScopedNestedTransactionTest.defaultTransactionScopedNestedTransaction(org.apache.deltaspike.test.jpa.api.transactionscoped.defaultnested.DefaultTransactionScopedNestedTransactionTest)</span></span> negated conditional &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@35b6bc80_69'>69</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@35b6bc80_69'/> 
+
+<p class='NO_COVERAGE'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>equals<br/><b>Killed by : </b>none</span></span> replaced return of integer sized value with (x == 0 ? 1 : 0) &rarr; NO_COVERAGE</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@35b6bc80_72'>72</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@35b6bc80_72'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>equals<br/><b>Killed by : </b>org.apache.deltaspike.test.jpa.api.transactionscoped.defaultnested.DefaultTransactionScopedNestedTransactionTest.defaultTransactionScopedNestedTransaction(org.apache.deltaspike.test.jpa.api.transactionscoped.defaultnested.DefaultTransactionScopedNestedTransactionTest)</span></span> replaced return of integer sized value with (x == 0 ? 1 : 0) &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@35b6bc80_78'>78</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@35b6bc80_78'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>hashCode<br/><b>Killed by : </b>org.apache.deltaspike.test.jpa.api.transactional.getRollbackOnly.multipleinjection.nested.NestedMultiTransactionRollbackOnlyTest.nestedMultiTransactionRollbackOnlyTest(org.apache.deltaspike.test.jpa.api.transactional.getRollbackOnly.multipleinjection.nested.NestedMultiTransactionRollbackOnlyTest)</span></span> replaced return of integer sized value with (x == 0 ? 1 : 0) &rarr; KILLED</p> 
+</td>
+</tr>
+
+</table>
+
+
+<h2>Active mutators</h2>
+<ul>
+
+<li class='mutator'>INCREMENTS_MUTATOR</li>
+
+<li class='mutator'>VOID_METHOD_CALL_MUTATOR</li>
+
+<li class='mutator'>RETURN_VALS_MUTATOR</li>
+
+<li class='mutator'>MATH_MUTATOR</li>
+
+<li class='mutator'>NEGATE_CONDITIONALS_MUTATOR</li>
+
+<li class='mutator'>INVERT_NEGS_MUTATOR</li>
+
+<li class='mutator'>CONDITIONALS_BOUNDARY_MUTATOR</li>
+
+</ul>
+
+<h2>Tests examined</h2>
+<ul>
+<li>org.apache.deltaspike.test.jpa.api.transactionscoped.multipleinjection.nested.NestedMultiTransactionScopedTransactionTest.nestedMultiTransactionScopedTransactionTest(org.apache.deltaspike.test.jpa.api.transactionscoped.multipleinjection.nested.NestedMultiTransactionScopedTransactionTest) (802 ms)</li><li>org.apache.deltaspike.test.jpa.api.transactionscoped.defaultnested.DefaultTransactionScopedNestedTransactionTest.defaultTransactionScopedNestedTransaction(org.apache.deltaspike.test.jpa.api.transactionscoped.defaultnested.DefaultTransactionScopedNestedTransactionTest) (766 ms)</li><li>org.apache.deltaspike.test.jpa.api.transactional.exception.uncatched.multipleinjection.flush.auto.UncatchedFlushExceptionTest.autoInjectionUncatchedFlushExceptionTest(org.apache.deltaspike.test.jpa.api.transactional.exception.uncatched.multipleinjection.flush.auto.UncatchedFlushExceptionTest) (812 ms)</li><li>org.apache.deltaspike.test.jpa.api.transactional.exception.catched.multipleinjection.nested.NestedMultiTransactionCatchedExceptionTest.nestedMultiTransactionCatchedExceptionTest(org.apache.deltaspike.test.jpa.api.transactional.exception.catched.multipleinjection.nested.NestedMultiTransactionCatchedExceptionTest) (1052 ms)</li><li>org.apache.deltaspike.test.jpa.api.transactional.defaultinjection.DefaultEntityManagerInjectionTest.defaultEntityManagerInjectionFailedTransaction(org.apache.deltaspike.test.jpa.api.transactional.defaultinjection.DefaultEntityManagerInjectionTest) (874 ms)</li><li>org.apache.deltaspike.test.jpa.api.transactional.getRollbackOnly.multipleinjection.nested.NestedMultiTransactionRollbackOnlyTest.nestedMultiTransactionRollbackOnlyTest(org.apache.deltaspike.test.jpa.api.transactional.getRollbackOnly.multipleinjection.nested.NestedMultiTransactionRollbackOnlyTest) (719 ms)</li><li>org.apache.deltaspike.test.jpa.api.transactional.readonly.auto.MultipleEntityManagerInjectionReadOnlyTest.autoInjectionReadOnlyTest(org.apache.deltaspike.test.jpa.api.transactional.readonly.auto.MultipleEntityManagerInjectionReadOnlyTest) (846 ms)</li><li>org.apache.deltaspike.test.jpa.api.transactional.nested.NestedTransactionTest.nestedTransaction(org.apache.deltaspike.test.jpa.api.transactional.nested.NestedTransactionTest) (785 ms)</li><li>org.apache.deltaspike.test.jpa.api.transactionscoped.stereotype.StereotypeTransactionScopedTransactionalTest.transactionalBeanViaStereotypeInTransactionScoped(org.apache.deltaspike.test.jpa.api.transactionscoped.stereotype.StereotypeTransactionScopedTransactionalTest) (749 ms)</li><li>org.apache.deltaspike.test.jpa.api.transactional.defaultinjection.DefaultEntityManagerInjectionTest.defaultEntityManagerInjection(org.apache.deltaspike.test.jpa.api.transactional.defaultinjection.DefaultEntityManagerInjectionTest) (1000 ms)</li><li>org.apache.deltaspike.test.jpa.api.transactional.readonly.nested.norollback.NestedMultiTransactionReadOnlyNoRollbackTest.nestedMultiTransactionReadOnlyNoRollbackTest(org.apache.deltaspike.test.jpa.api.transactional.readonly.nested.norollback.NestedMultiTransactionReadOnlyNoRollbackTest) (750 ms)</li><li>org.apache.deltaspike.test.jpa.api.transactional.exception.uncatched.multipleinjection.auto.UncatchedExceptionTest.autoInjectionUncatchedExceptionTest(org.apache.deltaspike.test.jpa.api.transactional.exception.uncatched.multipleinjection.auto.UncatchedExceptionTest) (937 ms)</li><li>org.apache.deltaspike.test.jpa.api.transactional.stereotype.StereotypeTransactionalTest.transactionalBeanViaStereotype(org.apache.deltaspike.test.jpa.api.transactional.stereotype.StereotypeTransactionalTest) (843 ms)</li><li>org.apache.deltaspike.test.jpa.api.transactional.transactionhelper.TransactionHelperTest.testTransactionHelper(org.apache.deltaspike.test.jpa.api.transactional.transactionhelper.TransactionHelperTest) (745 ms)</li><li>org.apache.deltaspike.test.jpa.api.transactional.getRollbackOnly.multipleinjection.auto.RollbackOnly1Test.autoInjectionRollbackOnly1Test(org.apache.deltaspike.test.jpa.api.transactional.getRollbackOnly.multipleinjection.auto.RollbackOnly1Test) (847 ms)</li><li>org.apache.deltaspike.test.jpa.api.transactional.exception.catched.nested.NestedTransactionCatchedExceptionTest.nestedTransactionCatchedExceptionTest(org.apache.deltaspike.test.jpa.api.transactional.exception.catched.nested.NestedTransactionCatchedExceptionTest) (958 ms)</li><li>org.apache.deltaspike.test.jpa.api.transactional.getRollbackOnly.multipleinjection.auto.RollbackOnlyTest.autoInjectionRollbackOnlyDefaultTest(org.apache.deltaspike.test.jpa.api.transactional.getRollbackOnly.multipleinjection.auto.RollbackOnlyTest) (765 ms)</li><li>org.apache.deltaspike.test.jpa.api.transactional.getRollbackOnly.multipleinjection.auto.RollbackOnly2Test.autoInjectionRollbackOnly2Test(org.apache.deltaspike.test.jpa.api.transactional.getRollbackOnly.multipleinjection.auto.RollbackOnly2Test) (750 ms)</li><li>org.apache.deltaspike.test.jpa.api.transactional.multipleinjection.manual.ManualTransactionTest.manualTransactionTest(org.apache.deltaspike.test.jpa.api.transactional.multipleinjection.manual.ManualTransactionTest) (922 ms)</li><li>org.apache.deltaspike.test.jpa.api.transactional.exception.uncatched.multipleinjection.flush.nested.UncatchedFlushExceptionTest.nestedMultiTransactionUncatchedFlushExceptionTest(org.apache.deltaspike.test.jpa.api.transactional.exception.uncatched.multipleinjection.flush.nested.UncatchedFlushExceptionTest) (864 ms)</li><li>org.apache.deltaspike.test.jpa.api.transactional.readonly.nested.rollback.NestedMultiTransactionReadOnlyRollbackTest.nestedMultiTransactionReadOnlyRollbackTest(org.apache.deltaspike.test.jpa.api.transactional.readonly.nested.rollback.NestedMultiTransactionReadOnlyRollbackTest) (797 ms)</li><li>org.apache.deltaspike.test.jpa.api.transactional.multipleinjection.nested.NestedMultiTransactionTest.nestedMultiTransactionTest(org.apache.deltaspike.test.jpa.api.transactional.multipleinjection.nested.NestedMultiTransactionTest) (781 ms)</li><li>org.apache.deltaspike.test.jpa.api.transactional.exception.uncatched.nested.NestedTransactionWithExceptionTest.nestedTransactionWithExceptionTest(org.apache.deltaspike.test.jpa.api.transactional.exception.uncatched.nested.NestedTransactionWithExceptionTest) (842 ms)</li><li>org.apache.deltaspike.test.jpa.api.transactionscoped.nested.NestedTransactionScopedTransactionTest.nestedTransactionScopedTransaction(org.apache.deltaspike.test.jpa.api.transactionscoped.nested.NestedTransactionScopedTransactionTest) (795 ms)</li><li>org.apache.deltaspike.test.jpa.api.transactional.exception.uncatched.multipleinjection.nested.UncatchedExceptionTest.nestedMultiTransactionUncatchedExceptionTest(org.apache.deltaspike.test.jpa.api.transactional.exception.uncatched.multipleinjection.nested.UncatchedExceptionTest) (801 ms)</li><li>org.apache.deltaspike.test.jpa.api.transactional.multipleinjection.auto.MultipleEntityManagerInjectionTest.autoEntityManagerInjection(org.apache.deltaspike.test.jpa.api.transactional.multipleinjection.auto.MultipleEntityManagerInjectionTest) (781 ms)</li><li>org.apache.deltaspike.test.jpa.api.transactional.defaultnested.DefaultNestedTransactionTest.defaultNestedTransaction(org.apache.deltaspike.test.jpa.api.transactional.defaultnested.DefaultNestedTransactionTest) (985 ms)</li><li>org.apache.deltaspike.test.jpa.api.transactionscoped.defaultinjection.DefaultTransactionScopedEntityManagerInjectionTest.invalidEntityManagerUsageAfterTransaction(org.apache.deltaspike.test.jpa.api.transactionscoped.defaultinjection.DefaultTransactionScopedEntityManagerInjectionTest) (813 ms)</li><li>org.apache.deltaspike.test.jpa.api.transactional.defaultinjection.DefaultEntityManagerInjectionTest.defaultEntityManagerInjectionFailedFlush(org.apache.deltaspike.test.jpa.api.transactional.defaultinjection.DefaultEntityManagerInjectionTest) (922 ms)</li><li>org.apache.deltaspike.test.jpa.api.transactionscoped.multipleinjection.manual.ManualTransactionScopedTransactionTest.manualTransactionScopedTransactionTest(org.apache.deltaspike.test.jpa.api.transactionscoped.multipleinjection.manual.ManualTransactionScopedTransactionTest) (757 ms)</li><li>org.apache.deltaspike.test.jpa.api.transactional.aggregation.AggregatedDefaultEntityManagerInjectionTest.defaultEntityManagerInjection(org.apache.deltaspike.test.jpa.api.transactional.aggregation.AggregatedDefaultEntityManagerInjectionTest) (878 ms)</li><li>org.apache.deltaspike.test.jpa.api.transactionscoped.defaultinjection.DefaultTransactionScopedEntityManagerInjectionTest.defaultTransactionScopedEntityManagerInjection(org.apache.deltaspike.test.jpa.api.transactionscoped.defaultinjection.DefaultTransactionScopedEntityManagerInjectionTest) (784 ms)</li><li>org.apache.deltaspike.test.jpa.api.transactional.multipleinjection.manual.BeanManagedlTransactionTest.manualTransactionTest(org.apache.deltaspike.test.jpa.api.transactional.multipleinjection.manual.BeanManagedlTransactionTest) (832 ms)</li><li>org.apache.deltaspike.test.jpa.api.transactionscoped.multipleinjection.auto.MultipleTransactionScopedEntityManagerInjectionTest.autoTransactionScopedEntityManagerInjection(org.apache.deltaspike.test.jpa.api.transactionscoped.multipleinjection.auto.MultipleTransactionScopedEntityManagerInjectionTest) (738 ms)</li>
+</ul>
+
+<br/>
+
+Report generated by <a href='http://pitest.org'>PIT</a> 1.4.1
+
+</body>
+</html>
