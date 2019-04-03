@@ -1,0 +1,359 @@
+,GROUP,PACKAGE,CLASS,INSTRUCTION_MISSED,INSTRUCTION_COVERED,BRANCH_MISSED,BRANCH_COVERED,LINE_MISSED,LINE_COVERED,COMPLEXITY_MISSED,COMPLEXITY_COVERED,METHOD_MISSED,METHOD_COVERED
+0,Apache DeltaSpike Test-Control-Module Impl,org.apache.deltaspike.testcontrol.impl.mock,AbstractMockManager,28,117,5,19,6,24,5,11,1,3
+1,Apache DeltaSpike Test-Control-Module Impl,org.apache.deltaspike.testcontrol.impl.mock,BeanCacheKey.AnnotationComparator,163,50,40,6,37,15,23,2,0,2
+2,Apache DeltaSpike Test-Control-Module Impl,org.apache.deltaspike.testcontrol.impl.mock,BeanCacheKey,123,127,30,18,23,29,22,11,1,8
+3,Apache DeltaSpike Test-Control-Module Impl,org.apache.deltaspike.testcontrol.impl.mock,SimpleMockManager,0,18,0,2,0,5,0,3,0,2
+4,Apache DeltaSpike Test-Control-Module Impl,org.apache.deltaspike.testcontrol.impl.mock,MockAwareInjectionTargetWrapper,0,83,0,4,0,24,0,9,0,7
+5,Apache DeltaSpike Test-Control-Module Impl,org.apache.deltaspike.testcontrol.impl.mock,DefaultMockFilter,61,191,23,33,13,41,19,18,1,8
+6,Apache DeltaSpike Test-Control-Module Impl,org.apache.deltaspike.testcontrol.impl.mock,MockExtension,3,232,5,29,3,51,5,17,0,5
+7,Apache DeltaSpike Test-Control-Module Impl,org.apache.deltaspike.testcontrol.impl.mock,SimpleApplicationMockManager,0,3,0,0,0,1,0,1,0,1
+8,Apache DeltaSpike Test-Control-Module Impl,org.apache.deltaspike.testcontrol.impl.mock,MockAwareProducerWrapper,6,61,2,2,2,16,2,4,0,4
+9,Apache DeltaSpike Test-Control-Module Impl,org.apache.deltaspike.testcontrol.impl.request,ContextControlDecorator,83,51,13,9,22,13,10,8,1,6
+10,Apache DeltaSpike Test-Control-Module Impl,org.apache.deltaspike.testcontrol.impl.validation,StandardContextTestControlValidator,46,84,6,10,4,26,5,10,0,7
+11,Apache DeltaSpike Test-Control-Module Impl,org.apache.deltaspike.testcontrol.impl.jsf,MockedJsfTestContainerAdapter,50,0,8,0,17,0,10,0,6,0
+12,Apache DeltaSpike Test-Control-Module Impl,org.apache.deltaspike.testcontrol.impl.jsf,MyFacesTestBaseConfig,0,12,0,0,0,5,0,1,0,1
+13,Apache DeltaSpike Test-Control-Module Impl,org.apache.deltaspike.testcontrol.impl.jsf,MockedJsf2TestContainer,34,363,8,14,6,104,9,24,1,21
+14,Apache DeltaSpike Test-Control-Module Impl,org.apache.deltaspike.testcontrol.impl.jsf,MyFacesContainerAdapter.new MyFacesContainer() {...},23,60,4,2,4,14,3,4,0,4
+15,Apache DeltaSpike Test-Control-Module Impl,org.apache.deltaspike.testcontrol.impl.jsf,MyFacesContainerPerTestMethodAdapter,2,45,0,2,1,16,1,9,1,8
+16,Apache DeltaSpike Test-Control-Module Impl,org.apache.deltaspike.testcontrol.impl.jsf,MyFacesContainerAdapter,15,103,4,10,3,27,5,13,1,10
+17,Apache DeltaSpike Test-Control-Module Impl,org.apache.deltaspike.testcontrol.impl.transaction,TransactionStatementDecoratorFactory.TransactionAwareRunAfters,65,94,11,9,20,23,8,5,0,3
+18,Apache DeltaSpike Test-Control-Module Impl,org.apache.deltaspike.testcontrol.impl.transaction,TransactionStatementDecoratorFactory,2,25,0,0,1,7,1,4,1,4
+19,Apache DeltaSpike Scheduler-Module Impl,org.apache.deltaspike.scheduler.impl,JobQuartzScheduler,2,3,0,0,1,1,1,1,1,1
+20,Apache DeltaSpike Scheduler-Module Impl,org.apache.deltaspike.scheduler.impl,SchedulerBaseConfig,0,10,0,0,0,4,0,1,0,1
+21,Apache DeltaSpike Scheduler-Module Impl,org.apache.deltaspike.scheduler.impl,SchedulerBaseConfig.JobCustomization,0,37,0,0,0,17,0,1,0,1
+22,Apache DeltaSpike Scheduler-Module Impl,org.apache.deltaspike.scheduler.impl,AbstractQuartzScheduler,622,16,54,0,165,4,44,2,17,2
+23,Apache DeltaSpike Scheduler-Module Impl,org.apache.deltaspike.scheduler.impl,SchedulerProducer,0,7,0,0,0,2,0,2,0,2
+24,Apache DeltaSpike Scheduler-Module Impl,org.apache.deltaspike.scheduler.impl,JobRunnableAdapter,30,0,0,0,9,0,2,0,2,0
+25,Apache DeltaSpike Scheduler-Module Impl,org.apache.deltaspike.scheduler.impl,RunnableQuartzScheduler,16,3,0,0,6,1,3,1,3,1
+26,Apache DeltaSpike Scheduler-Module Impl,org.apache.deltaspike.scheduler.impl,CdiAwareJobFactory,42,0,2,0,13,0,3,0,2,0
+27,Apache DeltaSpike Scheduler-Module Impl,org.apache.deltaspike.scheduler.impl,SchedulerBaseConfig.LifecycleIntegration,0,35,0,0,0,15,0,1,0,1
+28,Apache DeltaSpike Scheduler-Module Impl,org.apache.deltaspike.scheduler.impl,AbstractQuartzScheduler.JobListenerContext,65,0,8,0,15,0,7,0,3,0
+29,Apache DeltaSpike Scheduler-Module Impl,org.apache.deltaspike.scheduler.impl,SchedulerExtension,123,269,28,34,28,64,23,19,0,11
+30,Apache DeltaSpike Scheduler-Module Impl,org.apache.deltaspike.scheduler.impl,QuartzSchedulerProducer,6,0,0,0,2,0,2,0,2,0
+31,Apache DeltaSpike Scheduler-Module Impl,org.apache.deltaspike.scheduler.impl,AbstractQuartzScheduler.InjectionAwareJobListener,82,0,10,0,29,0,11,0,6,0
+32,Apache DeltaSpike Scheduler-Module Impl,org.apache.deltaspike.scheduler.impl,DynamicExpressionObserverJob,108,5,2,0,26,1,3,1,2,1
+33,Apache DeltaSpike Data-Module API,org.apache.deltaspike.data.api,AbstractEntityRepository,3,0,0,0,1,0,1,0,1,0
+34,Apache DeltaSpike Data-Module API,org.apache.deltaspike.data.api,QueryInvocationException,122,0,0,0,21,0,6,0,6,0
+35,Apache DeltaSpike Data-Module API,org.apache.deltaspike.data.api,AbstractFullEntityRepository,3,0,0,0,1,0,1,0,1,0
+36,Apache DeltaSpike Data-Module API,org.apache.deltaspike.data.api,EntityGraphType,37,0,0,0,7,0,3,0,3,0
+37,Apache DeltaSpike Data-Module API,org.apache.deltaspike.data.api,SingleResultType,34,0,0,0,4,0,1,0,1,0
+38,Apache DeltaSpike Data-Module API,org.apache.deltaspike.data.api.mapping,SimpleQueryInOutMapperBase,46,75,4,12,10,18,6,9,2,5
+39,Apache DeltaSpike BeanValidation-Module Impl,org.apache.deltaspike.beanvalidation.impl,CDIAwareConstraintValidatorFactory,123,29,22,2,24,9,14,2,2,2
+40,Apache DeltaSpike JSF-Module API,org.apache.deltaspike.jsf.spi.scope.window,ClientWindowConfig.ClientWindowRenderMode,54,0,0,0,6,0,1,0,1,0
+41,Apache DeltaSpike JSF-Module API,org.apache.deltaspike.jsf.spi.scope.window,DefaultClientWindowConfig,202,0,36,0,61,0,30,0,12,0
+42,Apache DeltaSpike JSF-Module API,org.apache.deltaspike.jsf.util,ValueExpressionEvaluationInputStream,33,215,9,27,6,49,7,15,0,4
+43,Apache DeltaSpike JSF-Module API,org.apache.deltaspike.jsf.util,NamingConventionUtils,92,0,18,0,20,0,11,0,2,0
+44,Apache DeltaSpike JSF-Module API,org.apache.deltaspike.jsf.api.literal,ViewLiteral,323,0,56,0,78,0,40,0,12,0
+45,Apache DeltaSpike JSF-Module API,org.apache.deltaspike.jsf.api.literal,FolderLiteral,111,0,24,0,32,0,18,0,6,0
+46,Apache DeltaSpike JSF-Module API,org.apache.deltaspike.jsf.api.config.view,View.AbstractNameBuilder,9,0,0,0,3,0,2,0,2,0
+47,Apache DeltaSpike JSF-Module API,org.apache.deltaspike.jsf.api.config.view,View.DefaultExtensionBuilder,19,0,4,0,6,0,4,0,2,0
+48,Apache DeltaSpike JSF-Module API,org.apache.deltaspike.jsf.api.config.view,View.DefaultBasePathBuilder,105,0,24,0,20,0,14,0,2,0
+49,Apache DeltaSpike JSF-Module API,org.apache.deltaspike.jsf.api.config.view,View.ViewParameterMode,34,0,0,0,2,0,1,0,1,0
+50,Apache DeltaSpike JSF-Module API,org.apache.deltaspike.jsf.api.config.view,View.DefaultFileNameBuilder,42,0,6,0,9,0,5,0,2,0
+51,Apache DeltaSpike JSF-Module API,org.apache.deltaspike.jsf.api.config.view,Folder.DefaultFolderNameBuilder,104,0,22,0,20,0,14,0,3,0
+52,Apache DeltaSpike JSF-Module API,org.apache.deltaspike.jsf.api.config.view,View.NavigationMode,34,0,0,0,2,0,1,0,1,0
+53,Apache DeltaSpike JSF-Module API,org.apache.deltaspike.jsf.api.config.view,View.ViewConfigPreProcessor,250,0,42,0,70,0,29,0,8,0
+54,Apache DeltaSpike JSF-Module API,org.apache.deltaspike.jsf.api.config.view,Folder.FolderConfigPreProcessor,86,0,12,0,28,0,10,0,4,0
+55,Apache DeltaSpike JSF-Module API,org.apache.deltaspike.jsf.api.config,JsfModuleConfig,87,0,16,0,31,0,21,0,13,0
+56,Apache DeltaSpike JSF-Module API,org.apache.deltaspike.jsf.api.config.base,JsfBaseConfig.ScopeCustomization.WindowRestriction,25,0,0,0,11,0,1,0,1,0
+57,Apache DeltaSpike JSF-Module API,org.apache.deltaspike.jsf.api.config.base,JsfBaseConfig.ScopeCustomization.ViewDelegation,12,0,0,0,5,0,1,0,1,0
+58,Apache DeltaSpike JSF-Module API,org.apache.deltaspike.jsf.api.config.base,JsfBaseConfig.ViewConfigCustomization,33,0,0,0,13,0,1,0,1,0
+59,Apache DeltaSpike JSF-Module API,org.apache.deltaspike.jsf.api.listener.phase,JsfPhaseId,136,0,12,0,25,0,10,0,4,0
+60,Apache DeltaSpike Servlet-Module Impl,org.apache.deltaspike.servlet.impl.config,ServletConfigListener,54,0,8,0,16,0,8,0,4,0
+61,Apache DeltaSpike Servlet-Module Impl,org.apache.deltaspike.servlet.impl.config,ServletConfigSource,31,0,0,0,10,0,6,0,6,0
+62,Apache DeltaSpike Servlet-Module Impl,org.apache.deltaspike.servlet.impl.produce,RequestResponseHolderListener,25,0,6,0,10,0,6,0,3,0
+63,Apache DeltaSpike Servlet-Module Impl,org.apache.deltaspike.servlet.impl.produce,ServletObjectProducer,64,0,6,0,17,0,11,0,8,0
+64,Apache DeltaSpike Servlet-Module Impl,org.apache.deltaspike.servlet.impl.produce,RequestResponseHolderFilter,27,0,4,0,12,0,6,0,4,0
+65,Apache DeltaSpike Servlet-Module Impl,org.apache.deltaspike.servlet.impl.produce,RequestResponseHolder,66,0,10,0,20,0,11,0,6,0
+66,Apache DeltaSpike Servlet-Module Impl,org.apache.deltaspike.servlet.impl.produce,ServletContextHolder,79,0,6,0,17,0,7,0,4,0
+67,Apache DeltaSpike Servlet-Module Impl,org.apache.deltaspike.servlet.impl.produce,ServletContextHolderListener,9,0,0,0,5,0,3,0,3,0
+68,Apache DeltaSpike Servlet-Module Impl,org.apache.deltaspike.servlet.impl.event,EventBridgeSessionListener,31,0,4,0,7,0,5,0,3,0
+69,Apache DeltaSpike Servlet-Module Impl,org.apache.deltaspike.servlet.impl.event,EventBroadcaster,37,0,4,0,12,0,6,0,4,0
+70,Apache DeltaSpike Servlet-Module Impl,org.apache.deltaspike.servlet.impl.event,EventBridgeFilter,52,0,4,0,11,0,6,0,4,0
+71,Apache DeltaSpike Servlet-Module Impl,org.apache.deltaspike.servlet.impl.event,EventBridgeContextListener,31,0,4,0,7,0,5,0,3,0
+72,Apache DeltaSpike JPA-Module Impl,org.apache.deltaspike.jpa.impl.descriptor.xml,PersistenceUnitDescriptorInitExtension,1,20,1,1,1,6,1,2,0,2
+73,Apache DeltaSpike JPA-Module Impl,org.apache.deltaspike.jpa.impl.transaction,ManagedUserTransactionResolver,6,0,0,0,2,0,2,0,2,0
+74,Apache DeltaSpike JPA-Module Impl,org.apache.deltaspike.jpa.impl.transaction,ContainerManagedTransactionStrategy,6,0,0,0,2,0,2,0,2,0
+75,Apache DeltaSpike JPA-Module Impl,org.apache.deltaspike.jpa.impl.transaction,BeanManagedUserTransactionStrategy.new TransactionConfig() {...},8,0,0,0,2,0,2,0,2,0
+76,Apache DeltaSpike JPA-Module Impl,org.apache.deltaspike.jpa.impl.transaction,TransactionalInterceptor,0,8,0,0,0,2,0,2,0,2
+77,Apache DeltaSpike JPA-Module Impl,org.apache.deltaspike.jpa.impl.transaction,ResourceLocalTransactionStrategy,37,316,18,52,9,95,17,34,0,16
+78,Apache DeltaSpike JPA-Module Impl,org.apache.deltaspike.jpa.impl.transaction,BeanManagedUserTransactionStrategy,103,5,12,0,34,1,16,1,10,1
+79,Apache DeltaSpike JPA-Module Impl,org.apache.deltaspike.jpa.impl.transaction,EnvironmentAwareTransactionStrategy,63,5,8,0,23,1,10,1,6,1
+80,Apache DeltaSpike JPA-Module Impl,org.apache.deltaspike.jpa.impl.transaction,TransactionStrategyHelper,3,166,3,23,0,36,3,16,0,6
+81,Apache DeltaSpike JPA-Module Impl,org.apache.deltaspike.jpa.impl.transaction,BeanManagedUserTransactionStrategy.UserTransactionAdapter,177,0,38,0,55,0,29,0,10,0
+82,Apache DeltaSpike JPA-Module Impl,org.apache.deltaspike.jpa.impl.transaction,UserTransactionResolver,61,0,6,0,20,0,5,0,2,0
+83,Apache DeltaSpike JPA-Module Impl,org.apache.deltaspike.jpa.impl.entitymanager,DefaultEntityManagerHolder,8,5,0,0,3,2,3,2,3,2
+84,Apache DeltaSpike JPA-Module Impl,org.apache.deltaspike.jpa.impl.entitymanager,EntityManagerFactoryProducer,5,30,1,1,2,8,1,3,0,3
+85,Apache DeltaSpike JPA-Module Impl,org.apache.deltaspike.jpa.impl.entitymanager,PersistenceConfigurationProviderImpl,0,105,0,8,0,22,0,7,0,3
+86,Apache DeltaSpike JPA-Module Impl,org.apache.deltaspike.jpa.impl.entitymanager,EntityManagerRefLookup,154,0,20,0,46,0,14,0,4,0
+87,Apache DeltaSpike JPA-Module Impl,org.apache.deltaspike.jpa.impl.entitymanager,EntityManagerMetadata,40,91,1,9,13,30,7,13,6,9
+88,Apache DeltaSpike JPA-Module Impl,org.apache.deltaspike.jpa.impl.entitymanager,EntityManagerRef,51,0,4,0,21,0,14,0,12,0
+89,Apache DeltaSpike JPA-Module Impl,org.apache.deltaspike.jpa.impl.transaction.context,TransactionBeanStorage.TransactionContextInfo,0,19,0,0,0,4,0,1,0,1
+90,Apache DeltaSpike JPA-Module Impl,org.apache.deltaspike.jpa.impl.transaction.context,TransactionContext,34,61,4,8,9,18,4,7,0,5
+91,Apache DeltaSpike JPA-Module Impl,org.apache.deltaspike.jpa.impl.transaction.context,EntityManagerEntry,9,37,4,4,4,11,5,4,1,4
+92,Apache DeltaSpike JPA-Module Impl,org.apache.deltaspike.jpa.impl.transaction.context,TransactionBeanStorage,26,158,7,17,7,45,7,21,0,16
+93,Apache DeltaSpike JPA-Module Impl,org.apache.deltaspike.jpa.impl.transaction.context,TransactionContextExtension,1,26,1,1,1,8,1,3,0,3
+94,Apache DeltaSpike JPA-Module Impl,org.apache.deltaspike.jpa.impl.transaction.context,TransactionBeanEntry,0,21,0,0,0,8,0,4,0,4
+95,Apache DeltaSpike Security-Module Impl,org.apache.deltaspike.security.impl.authorization,SecuredAnnotationAuthorizer,10,174,7,19,2,41,7,10,0,4
+96,Apache DeltaSpike Security-Module Impl,org.apache.deltaspike.security.impl.authorization,AccessDeniedExceptionBroadcaster,12,14,0,0,3,4,0,2,0,2
+97,Apache DeltaSpike Security-Module Impl,org.apache.deltaspike.security.impl.authorization,SkipInternalProcessingException,0,9,0,0,0,4,0,2,0,2
+98,Apache DeltaSpike Security-Module Impl,org.apache.deltaspike.security.impl.authorization,SecurityParameterValueRedefiner,90,107,12,12,17,27,9,5,0,2
+99,Apache DeltaSpike Security-Module Impl,org.apache.deltaspike.security.impl.authorization,DefaultAccessDecisionVoterContext,34,59,4,6,8,19,7,8,4,6
+100,Apache DeltaSpike Security-Module Impl,org.apache.deltaspike.security.impl.extension,AuthorizationParameter,132,98,13,11,25,20,10,6,2,2
+101,Apache DeltaSpike Security-Module Impl,org.apache.deltaspike.security.impl.extension,SecurityExtension,89,328,13,47,16,86,12,25,0,7
+102,Apache DeltaSpike Security-Module Impl,org.apache.deltaspike.security.impl.extension,DefaultSecurityStrategy,24,89,4,8,8,26,2,9,0,5
+103,Apache DeltaSpike Security-Module Impl,org.apache.deltaspike.security.impl.extension,SecurityMetaDataStorage,160,295,14,30,27,68,12,25,0,15
+104,Apache DeltaSpike Security-Module Impl,org.apache.deltaspike.security.impl.extension,Authorizer.new SecurityViolation() {...},2,6,0,0,1,1,1,1,1,1
+105,Apache DeltaSpike Security-Module Impl,org.apache.deltaspike.security.impl.extension,Authorizer,176,337,20,56,38,79,15,31,1,7
+106,Apache DeltaSpike Security-Module Impl,org.apache.deltaspike.security.impl.extension,SecurityInterceptorBindingLiteral,0,3,0,0,0,1,0,1,0,1
+107,Apache DeltaSpike Security-Module Impl,org.apache.deltaspike.security.impl.extension,SecurityInterceptor,0,8,0,0,0,2,0,2,0,2
+108,Apache DeltaSpike Security-Module Impl,org.apache.deltaspike.security.impl.util,SecurityUtils,35,213,6,30,6,40,5,19,0,6
+109,Apache DeltaSpike Proxy-Module Impl ASM,org.apache.deltaspike.proxy.impl,AsmDeltaSpikeProxyClassGenerator.new ClassVisitor() {...},0,20,0,0,0,4,0,2,0,2
+110,Apache DeltaSpike Proxy-Module Impl ASM,org.apache.deltaspike.proxy.impl,AsmDeltaSpikeProxyClassGenerator,209,795,21,21,42,182,16,18,1,12
+111,Apache DeltaSpike Proxy-Module Impl ASM,org.apache.deltaspike.proxy.impl,CopyAnnotationVisitorAdapter,75,26,8,2,18,10,8,3,3,3
+112,Apache DeltaSpike CDI Servlet-ContainerControl,org.apache.deltaspike.cdise.servlet,CdiServletRequestListener,0,43,0,0,0,14,0,5,0,5
+113,Apache DeltaSpike CDI Servlet-ContainerControl,org.apache.deltaspike.cdise.servlet,CdiServletContextListener,0,9,0,0,0,4,0,3,0,3
+114,Apache DeltaSpike Core-Implementation,org.apache.deltaspike.core.impl.resourceloader,InjectableResourceProducer,13,80,5,3,5,23,4,7,0,7
+115,Apache DeltaSpike Core-Implementation,org.apache.deltaspike.core.impl.resourceloader,ResourceLoaderExtension,26,0,0,0,6,0,3,0,3,0
+116,Apache DeltaSpike Core-Implementation,org.apache.deltaspike.core.impl.config,EnvironmentPropertyConfigSourceProvider,19,55,1,5,3,13,1,5,0,3
+117,Apache DeltaSpike Core-Implementation,org.apache.deltaspike.core.impl.config,ConfigurationExtension.DynamicBean,0,55,0,0,0,16,0,12,0,12
+118,Apache DeltaSpike Core-Implementation,org.apache.deltaspike.core.impl.config,ProxyConfigurationLifecycle.ConfigurationHandler,49,235,16,36,14,61,16,12,0,2
+119,Apache DeltaSpike Core-Implementation,org.apache.deltaspike.core.impl.config,SystemPropertyConfigSource,0,9,0,0,0,4,0,2,0,2
+120,Apache DeltaSpike Core-Implementation,org.apache.deltaspike.core.impl.config,ProxyConfigurationLifecycle.DefaultSupplier,0,10,0,0,0,4,0,2,0,2
+121,Apache DeltaSpike Core-Implementation,org.apache.deltaspike.core.impl.config,DeltaSpikeConfigInfo.ConfigEntry,24,0,0,0,8,0,4,0,4,0
+122,Apache DeltaSpike Core-Implementation,org.apache.deltaspike.core.impl.config,DefaultConfigPropertyProducer,44,30,0,0,7,6,3,6,3,6
+123,Apache DeltaSpike Core-Implementation,org.apache.deltaspike.core.impl.config,MapConfigSource,11,12,0,0,5,4,3,2,3,2
+124,Apache DeltaSpike Core-Implementation,org.apache.deltaspike.core.impl.config,BaseConfigSource,13,31,0,2,2,10,0,4,0,3
+125,Apache DeltaSpike Core-Implementation,org.apache.deltaspike.core.impl.config,ProxyConfigurationLifecycle,4,41,1,1,0,9,1,3,0,3
+126,Apache DeltaSpike Core-Implementation,org.apache.deltaspike.core.impl.config,LocalJndiConfigSource,25,26,1,1,6,9,2,5,1,5
+127,Apache DeltaSpike Core-Implementation,org.apache.deltaspike.core.impl.config,PropertyFileConfigSource,0,15,0,0,0,5,0,2,0,2
+128,Apache DeltaSpike Core-Implementation,org.apache.deltaspike.core.impl.config,ConfigurationExtension,208,473,31,43,46,117,24,32,0,19
+129,Apache DeltaSpike Core-Implementation,org.apache.deltaspike.core.impl.config,EnvironmentPropertyConfigSource,3,26,3,1,0,9,2,4,0,4
+130,Apache DeltaSpike Core-Implementation,org.apache.deltaspike.core.impl.config,DeltaSpikeConfigInfo,439,6,16,0,73,3,14,1,6,1
+131,Apache DeltaSpike Core-Implementation,org.apache.deltaspike.core.impl.config,ConfigurationExtension.DynamicBeanProducer,0,9,0,0,0,2,0,2,0,2
+132,Apache DeltaSpike Core-Implementation,org.apache.deltaspike.core.impl.config,PropertiesConfigSource,0,40,0,2,0,10,0,5,0,4
+133,Apache DeltaSpike Core-Implementation,org.apache.deltaspike.core.impl.config,DefaultConfigSourceProvider,14,119,2,6,2,30,2,7,0,5
+134,Apache DeltaSpike Core-Implementation,org.apache.deltaspike.core.impl.config,ProxyConfigurationLifecycle.ConfigurationHandler.new ProxyConfigurationLifecycle.Supplier() {...},0,17,0,0,0,2,0,2,0,2
+135,Apache DeltaSpike Core-Implementation,org.apache.deltaspike.core.impl.config,ProxyConfigurationLifecycle.ConfigurationHandler.new BaseConfigPropertyProducer() {...},0,6,0,0,0,1,0,1,0,1
+136,Apache DeltaSpike Core-Implementation,org.apache.deltaspike.core.impl.lock,LockSupplierStorage,28,130,4,12,6,29,4,7,0,3
+137,Apache DeltaSpike Core-Implementation,org.apache.deltaspike.core.impl.lock,DefaultLockedStrategy,0,16,0,0,0,4,0,2,0,2
+138,Apache DeltaSpike Core-Implementation,org.apache.deltaspike.core.impl.lock,LockSupplierStorage.new LockSupplier() {...},9,46,0,2,3,5,0,3,0,2
+139,Apache DeltaSpike Core-Implementation,org.apache.deltaspike.core.impl.lock,LockSupplierStorage.new LockSupplier() {...},0,15,0,0,0,3,0,2,0,2
+140,Apache DeltaSpike Core-Implementation,org.apache.deltaspike.core.impl.lock,LockedInterceptor,0,8,0,0,0,2,0,2,0,2
+141,Apache DeltaSpike Core-Implementation,org.apache.deltaspike.core.impl.jmx,Operation,0,15,0,0,0,6,0,3,0,3
+142,Apache DeltaSpike Core-Implementation,org.apache.deltaspike.core.impl.jmx,DynamicMBeanWrapper.MBeanFeatureInfoSorter,0,11,0,0,0,2,0,2,0,2
+143,Apache DeltaSpike Core-Implementation,org.apache.deltaspike.core.impl.jmx,AttributeAccessor,10,40,2,2,2,11,2,4,0,4
+144,Apache DeltaSpike Core-Implementation,org.apache.deltaspike.core.impl.jmx,JmxBroadcasterLifecycle,10,0,0,0,5,0,3,0,3,0
+145,Apache DeltaSpike Core-Implementation,org.apache.deltaspike.core.impl.jmx,MBeanExtension,27,298,14,26,7,61,12,19,0,11
+146,Apache DeltaSpike Core-Implementation,org.apache.deltaspike.core.impl.jmx,DynamicMBeanWrapper,380,698,35,53,67,135,30,29,3,12
+147,Apache DeltaSpike Core-Implementation,org.apache.deltaspike.core.impl.jmx,BroadcasterProducer,23,16,1,1,3,5,1,2,0,2
+148,Apache DeltaSpike Core-Implementation,org.apache.deltaspike.core.impl.throttling,InvokerStorage,33,140,7,19,6,34,7,9,0,3
+149,Apache DeltaSpike Core-Implementation,org.apache.deltaspike.core.impl.throttling,DefaultThrottledStrategy,0,10,0,0,0,2,0,2,0,2
+150,Apache DeltaSpike Core-Implementation,org.apache.deltaspike.core.impl.throttling,Invoker,13,68,0,4,6,14,1,4,1,2
+151,Apache DeltaSpike Core-Implementation,org.apache.deltaspike.core.impl.throttling,ThrottledInterceptor,0,8,0,0,0,2,0,2,0,2
+152,Apache DeltaSpike Core-Implementation,org.apache.deltaspike.core.impl.scope.conversation,ConversationBeanHolder,0,3,0,0,0,1,0,1,0,1
+153,Apache DeltaSpike Core-Implementation,org.apache.deltaspike.core.impl.scope.conversation,ConversationKey,105,88,21,15,25,22,16,8,1,5
+154,Apache DeltaSpike Core-Implementation,org.apache.deltaspike.core.impl.scope.conversation,GroupedConversationArtifactProducer,0,22,0,0,0,5,0,3,0,3
+155,Apache DeltaSpike Core-Implementation,org.apache.deltaspike.core.impl.scope.conversation,GroupedConversationContext,18,201,3,19,4,48,4,17,1,9
+156,Apache DeltaSpike Core-Implementation,org.apache.deltaspike.core.impl.scope.conversation,InjectableGroupedConversation,0,27,0,0,0,8,0,2,0,2
+157,Apache DeltaSpike Core-Implementation,org.apache.deltaspike.core.impl.scope.conversation,InjectableGroupedConversationManager,8,27,1,1,2,9,1,5,0,5
+158,Apache DeltaSpike Core-Implementation,org.apache.deltaspike.core.impl.future,ThreadPoolManager,191,331,19,19,41,69,16,7,1,3
+159,Apache DeltaSpike Core-Implementation,org.apache.deltaspike.core.impl.future,DefaultFutureableStrategy,89,149,24,10,20,45,15,6,0,4
+160,Apache DeltaSpike Core-Implementation,org.apache.deltaspike.core.impl.future,DefaultFutureableStrategy.CallKey,76,0,20,0,11,0,14,0,4,0
+161,Apache DeltaSpike Core-Implementation,org.apache.deltaspike.core.impl.future,J8PromiseCompanionTask,47,62,0,0,15,18,0,3,0,3
+162,Apache DeltaSpike Core-Implementation,org.apache.deltaspike.core.impl.future,DefaultFutureableStrategy.new Callable() {...},34,40,6,4,8,10,5,2,0,2
+163,Apache DeltaSpike Core-Implementation,org.apache.deltaspike.core.impl.future,DefaultFutureableStrategy.new ThreadLocal() {...},4,3,0,0,1,1,1,1,1,1
+164,Apache DeltaSpike Core-Implementation,org.apache.deltaspike.core.impl.future,FutureableInterceptor,0,8,0,0,0,2,0,2,0,2
+165,Apache DeltaSpike Core-Implementation,org.apache.deltaspike.core.impl.interceptor.interdyn,InterDynExtension,238,39,37,3,48,11,22,3,2,3
+166,Apache DeltaSpike Core-Implementation,org.apache.deltaspike.core.impl.interceptor.interdyn,AnnotationRule,21,0,0,0,8,0,4,0,4,0
+167,Apache DeltaSpike Core-Implementation,org.apache.deltaspike.core.impl.exception.control,DefaultExceptionEvent,8,64,1,1,2,27,2,13,1,13
+168,Apache DeltaSpike Core-Implementation,org.apache.deltaspike.core.impl.exception.control,ExceptionHandlerBroadcaster,49,293,9,33,9,74,8,21,0,3
+169,Apache DeltaSpike Core-Implementation,org.apache.deltaspike.core.impl.exception.control,HandlerMethodStorageProducer,0,10,0,0,0,2,0,2,0,2
+170,Apache DeltaSpike Core-Implementation,org.apache.deltaspike.core.impl.exception.control,HandlerMethodImpl,19,391,9,39,5,76,9,31,0,16
+171,Apache DeltaSpike Core-Implementation,org.apache.deltaspike.core.impl.exception.control,ExceptionHandlerComparator,2,109,3,17,1,25,3,11,0,4
+172,Apache DeltaSpike Core-Implementation,org.apache.deltaspike.core.impl.exception.control,HandlerMethodStorageImpl,52,125,7,21,8,22,5,12,1,2
+173,Apache DeltaSpike Core-Implementation,org.apache.deltaspike.core.impl.exception.control,OutboundParameterValueRedefiner,0,41,1,3,0,12,1,3,0,2
+174,Apache DeltaSpike Core-Implementation,org.apache.deltaspike.core.impl.exception.control.extension,ExceptionControlExtension,20,178,5,21,6,36,5,15,0,7
+175,Apache DeltaSpike Core-Implementation,org.apache.deltaspike.core.impl.activation,DefaultClassDeactivator,16,36,2,4,1,8,2,4,0,3
+176,Apache DeltaSpike Core-Implementation,org.apache.deltaspike.core.impl.scope.window,DefaultWindowContextQuotaHandler,11,54,3,7,3,14,3,5,0,3
+177,Apache DeltaSpike Core-Implementation,org.apache.deltaspike.core.impl.scope.window,WindowBeanHolder,0,28,1,1,0,9,1,3,0,3
+178,Apache DeltaSpike Core-Implementation,org.apache.deltaspike.core.impl.scope.window,InjectableWindowContext,12,22,1,1,3,8,2,4,1,4
+179,Apache DeltaSpike Core-Implementation,org.apache.deltaspike.core.impl.scope.window,WindowContextProducer,0,10,0,0,0,2,0,2,0,2
+180,Apache DeltaSpike Core-Implementation,org.apache.deltaspike.core.impl.scope.window,WindowContextImpl,8,76,5,7,2,22,5,9,0,8
+181,Apache DeltaSpike Core-Implementation,org.apache.deltaspike.core.impl.scope.window,WindowContextQuotaHandlerCache,10,17,1,1,3,6,2,3,1,3
+182,Apache DeltaSpike Core-Implementation,org.apache.deltaspike.core.impl.scope.window,WindowIdHolder,0,10,0,0,0,4,0,3,0,3
+183,Apache DeltaSpike Core-Implementation,org.apache.deltaspike.core.impl.crypto,DefaultCipherService,87,335,14,18,18,64,13,17,0,14
+184,Apache DeltaSpike Core-Implementation,org.apache.deltaspike.core.impl.crypto,CdiCipherService,28,0,0,0,6,0,4,0,4,0
+185,Apache DeltaSpike Core-Implementation,org.apache.deltaspike.core.impl.crypto,CipherCli,173,0,28,0,41,0,16,0,2,0
+186,Apache DeltaSpike Core-Implementation,org.apache.deltaspike.core.impl.interceptor,GlobalInterceptorExtension,59,27,12,2,11,9,7,4,0,4
+187,Apache DeltaSpike Core-Implementation,org.apache.deltaspike.core.impl.interceptor,GlobalInterceptorWrapper,94,0,2,0,20,0,11,0,10,0
+188,Apache DeltaSpike Core-Implementation,org.apache.deltaspike.core.impl.util,AnnotationInstanceUtils,17,9,3,1,4,5,2,1,0,1
+189,Apache DeltaSpike Core-Implementation,org.apache.deltaspike.core.impl.util,JndiUtils,196,13,12,0,40,6,9,2,3,2
+190,Apache DeltaSpike Core-Implementation,org.apache.deltaspike.core.impl.util,ConversationUtils,55,87,10,12,9,23,7,7,0,3
+191,Apache DeltaSpike Core-Implementation,org.apache.deltaspike.core.impl.util,AnnotatedMethods,12,26,2,4,1,8,2,2,0,1
+192,Apache DeltaSpike Core-Implementation,org.apache.deltaspike.core.impl.exclude.extension,ExcludeExtension,189,655,27,103,42,173,28,60,3,20
+193,Apache DeltaSpike Core-Implementation,org.apache.deltaspike.core.impl.exclude.extension,LabelAwareGlobalAlternativeBeanClassProvider,66,67,8,8,8,17,6,5,0,3
+194,Apache DeltaSpike Core-Implementation,org.apache.deltaspike.core.impl.message,MessageBundleInvocationHandler,59,226,12,34,12,52,9,19,0,5
+195,Apache DeltaSpike Core-Implementation,org.apache.deltaspike.core.impl.message,MessageBundleExtension.MessageBundleLifecycle,0,47,1,1,0,9,1,4,0,4
+196,Apache DeltaSpike Core-Implementation,org.apache.deltaspike.core.impl.message,DefaultMessageContext,2,137,2,4,1,32,2,14,0,13
+197,Apache DeltaSpike Core-Implementation,org.apache.deltaspike.core.impl.message,DefaultLocaleResolver,2,3,0,0,1,1,1,1,1,1
+198,Apache DeltaSpike Core-Implementation,org.apache.deltaspike.core.impl.message,MessageBundleExtension,74,185,6,16,12,40,6,12,0,7
+199,Apache DeltaSpike Core-Implementation,org.apache.deltaspike.core.impl.message,DefaultMessageResolver,4,90,5,13,1,23,5,7,0,3
+200,Apache DeltaSpike Core-Implementation,org.apache.deltaspike.core.impl.message,MessageBundleContext,14,5,0,0,6,1,3,1,3,1
+201,Apache DeltaSpike Core-Implementation,org.apache.deltaspike.core.impl.message,MessageFormatMessageInterpolator,0,13,0,0,0,3,0,2,0,2
+202,Apache DeltaSpike Core-Implementation,org.apache.deltaspike.core.impl.message,DefaultMessageInterpolator,0,15,1,3,0,4,1,3,0,2
+203,Apache DeltaSpike Core-Implementation,org.apache.deltaspike.core.impl.message,DefaultMessage,30,229,17,25,11,55,16,20,2,13
+204,Apache DeltaSpike Core-Implementation,org.apache.deltaspike.core.impl.monitoring,InvocationResultLogger.ResultEntry,55,0,8,0,11,0,9,0,5,0
+205,Apache DeltaSpike Core-Implementation,org.apache.deltaspike.core.impl.monitoring,InvocationMonitorInterceptor,25,0,0,0,6,0,2,0,2,0
+206,Apache DeltaSpike Core-Implementation,org.apache.deltaspike.core.impl.monitoring,InvocationResultLogger,225,5,14,0,38,1,12,1,5,1
+207,Apache DeltaSpike Core-Implementation,org.apache.deltaspike.core.impl.monitoring,RequestInvocationCounter,110,0,6,0,23,0,6,0,3,0
+208,Apache DeltaSpike Core-Implementation,org.apache.deltaspike.core.impl.scope.viewaccess,ViewAccessViewHistory,0,10,0,0,0,4,0,3,0,3
+209,Apache DeltaSpike Core-Implementation,org.apache.deltaspike.core.impl.scope.viewaccess,ViewAccessContext,6,152,6,12,3,36,7,13,1,10
+210,Apache DeltaSpike Core-Implementation,org.apache.deltaspike.core.impl.scope.viewaccess,ViewAccessContextArtifactProducer,10,0,0,0,2,0,2,0,2,0
+211,Apache DeltaSpike Core-Implementation,org.apache.deltaspike.core.impl.scope.viewaccess,ViewAccessBeanAccessHistory,0,11,0,0,0,3,0,2,0,2
+212,Apache DeltaSpike Core-Implementation,org.apache.deltaspike.core.impl.scope.viewaccess,ViewAccessBeanHolder,0,3,0,0,0,1,0,1,0,1
+213,Apache DeltaSpike Core-Implementation,org.apache.deltaspike.core.impl.scope.viewaccess,InjectableViewAccessContextManager,24,0,2,0,9,0,4,0,3,0
+214,Apache DeltaSpike Core-Implementation,org.apache.deltaspike.core.impl.scope,AbstractBeanHolder,0,93,1,7,0,25,1,10,0,7
+215,Apache DeltaSpike Core-Implementation,org.apache.deltaspike.core.impl.scope,DeltaSpikeContextExtension,2,130,2,2,2,32,2,7,0,7
+216,Apache DeltaSpike Core-Implementation,org.apache.deltaspike.core.impl.interpreter,PropertyExpressionInterpreter,0,6,0,0,0,2,0,2,0,2
+217,Apache DeltaSpike Core-API,org.apache.deltaspike.core.api.exception.control,ExceptionHandlingFlow,64,0,0,0,7,0,1,0,1,0
+218,Apache DeltaSpike Core-API,org.apache.deltaspike.core.api.exception.control,ExceptionStackItem,92,0,10,0,25,0,12,0,7,0
+219,Apache DeltaSpike Core-API,org.apache.deltaspike.core.api.projectstage,ProjectStage.Staging,0,3,0,0,0,1,0,1,0,1
+220,Apache DeltaSpike Core-API,org.apache.deltaspike.core.api.projectstage,ProjectStage.SystemTest,0,3,0,0,0,1,0,1,0,1
+221,Apache DeltaSpike Core-API,org.apache.deltaspike.core.api.projectstage,ProjectStage,49,79,2,2,7,22,4,4,2,4
+222,Apache DeltaSpike Core-API,org.apache.deltaspike.core.api.projectstage,ProjectStage.IntegrationTest,0,3,0,0,0,1,0,1,0,1
+223,Apache DeltaSpike Core-API,org.apache.deltaspike.core.api.projectstage,ProjectStage.UnitTest,0,3,0,0,0,1,0,1,0,1
+224,Apache DeltaSpike Core-API,org.apache.deltaspike.core.api.projectstage,ProjectStage.Development,0,3,0,0,0,1,0,1,0,1
+225,Apache DeltaSpike Core-API,org.apache.deltaspike.core.api.projectstage,ProjectStage.Production,0,3,0,0,0,1,0,1,0,1
+226,Apache DeltaSpike Core-API,org.apache.deltaspike.core.api.interpreter,SimpleOperationEnum,68,0,2,0,11,0,5,0,4,0
+227,Apache DeltaSpike Core-API,org.apache.deltaspike.core.api.interpreter,BasePropertyExpressionInterpreter,141,0,24,0,27,0,14,0,2,0
+228,Apache DeltaSpike Core-API,org.apache.deltaspike.core.util.interceptor,AbstractInvocationContext,44,0,2,0,16,0,9,0,8,0
+229,Apache DeltaSpike Core-API,org.apache.deltaspike.core.api.monitoring,MonitorResultEvent,36,0,0,0,11,0,4,0,4,0
+230,Apache DeltaSpike Core-API,org.apache.deltaspike.core.api.exception.control.event,ExceptionToCatchEvent,52,0,0,0,19,0,8,0,8,0
+231,Apache DeltaSpike Core-API,org.apache.deltaspike.core.api.exception.control.event,ExceptionStackEvent,200,0,18,0,47,0,21,0,12,0
+232,Apache DeltaSpike Core-API,org.apache.deltaspike.core.api.config.base,CoreBaseConfig.ParentExtensionCustomization,12,0,0,0,6,0,1,0,1,0
+233,Apache DeltaSpike Core-API,org.apache.deltaspike.core.api.config.base,CoreBaseConfig.BeanManagerIntegration,12,0,0,0,6,0,1,0,1,0
+234,Apache DeltaSpike Core-API,org.apache.deltaspike.core.api.config.base,CoreBaseConfig.ScopeCustomization.WindowRestriction,13,0,0,0,6,0,1,0,1,0
+235,Apache DeltaSpike Core-API,org.apache.deltaspike.core.api.config.base,CoreBaseConfig.Validation.new ConfigResolver.Converter() {...},6,0,0,0,2,0,2,0,2,0
+236,Apache DeltaSpike Core-API,org.apache.deltaspike.core.api.config.base,CoreBaseConfig.TimeoutCustomization,16,0,0,0,6,0,1,0,1,0
+237,Apache DeltaSpike Core-API,org.apache.deltaspike.core.api.config.base,CoreBaseConfig.Validation,15,0,0,0,6,0,1,0,1,0
+238,Apache DeltaSpike Core-API,org.apache.deltaspike.core.api.config.base,CoreBaseConfig.Validation.ViolationMode,34,0,0,0,2,0,1,0,1,0
+239,Apache DeltaSpike Core-API,org.apache.deltaspike.core.api.config.base,CoreBaseConfig.InterDynCustomization,10,0,0,0,5,0,1,0,1,0
+240,Apache DeltaSpike Core-API,org.apache.deltaspike.core.api.config.base,CoreBaseConfig.InterceptorCustomization,13,0,0,0,6,0,1,0,1,0
+241,Apache DeltaSpike Core-API,org.apache.deltaspike.core.api.config.base,CoreBaseConfig.MBeanIntegration,12,0,0,0,6,0,1,0,1,0
+242,Apache DeltaSpike Core-API,org.apache.deltaspike.core.api.provider,BeanManagerProvider,304,0,46,0,83,0,36,0,13,0
+243,Apache DeltaSpike Core-API,org.apache.deltaspike.core.api.provider,DependentProvider,118,0,8,0,27,0,9,0,5,0
+244,Apache DeltaSpike Core-API,org.apache.deltaspike.core.api.provider,BeanProvider,391,0,34,0,87,0,41,0,24,0
+245,Apache DeltaSpike Core-API,org.apache.deltaspike.core.api.resourceloader,ClasspathResourceProvider,168,0,18,0,40,0,15,0,6,0
+246,Apache DeltaSpike Core-API,org.apache.deltaspike.core.api.resourceloader,AbstractResourceProvider,92,0,6,0,26,0,11,0,8,0
+247,Apache DeltaSpike Core-API,org.apache.deltaspike.core.api.resourceloader,FileResourceProvider,42,0,6,0,10,0,7,0,4,0
+248,Apache DeltaSpike Core-API,org.apache.deltaspike.core.util.metadata,InjectionPointWrapper,36,0,0,0,11,0,8,0,8,0
+249,Apache DeltaSpike Core-API,org.apache.deltaspike.core.util.metadata,AnnotationInstanceProvider,72,459,7,57,21,94,7,38,0,13
+250,Apache DeltaSpike Core-API,org.apache.deltaspike.core.api.config.view.metadata,ExecutableCallbackDescriptor,97,0,12,0,25,0,9,0,3,0
+251,Apache DeltaSpike Core-API,org.apache.deltaspike.core.api.config.view.metadata,CallbackDescriptor.CallbackEntry,139,0,18,0,28,0,14,0,5,0
+252,Apache DeltaSpike Core-API,org.apache.deltaspike.core.api.config.view.metadata,SimpleCallbackDescriptor,15,0,0,0,5,0,3,0,3,0
+253,Apache DeltaSpike Core-API,org.apache.deltaspike.core.api.config.view.metadata,CallbackDescriptor,115,0,8,0,23,0,11,0,7,0
+254,Apache DeltaSpike Core-API,org.apache.deltaspike.core.api.lock,Locked.Operation,24,0,0,0,2,0,1,0,1,0
+255,Apache DeltaSpike Core-API,org.apache.deltaspike.core.api.config,ConfigResolverContext,8,44,0,0,3,14,2,6,2,6
+256,Apache DeltaSpike Core-API,org.apache.deltaspike.core.api.config,ConfigResolver.PropertyBuilder,79,619,20,75,14,155,22,47,2,19
+257,Apache DeltaSpike Core-API,org.apache.deltaspike.core.api.config,ConfigResolver,124,489,13,53,29,113,15,45,5,22
+258,Apache DeltaSpike Core-API,org.apache.deltaspike.core.api.config,ConfigResolver.new Comparator() {...},2,10,1,1,0,2,1,2,0,2
+259,Apache DeltaSpike Core-API,org.apache.deltaspike.core.api.config,ConfigResolver.new Comparator() {...},0,12,0,2,0,2,0,3,0,2
+260,Apache DeltaSpike Core-API,org.apache.deltaspike.core.api.config,PropertyLoader,42,250,8,30,9,63,8,18,0,7
+261,Apache DeltaSpike Core-API,org.apache.deltaspike.core.spi.config,BaseConfigPropertyProducer,132,0,12,0,29,0,14,0,8,0
+262,Apache DeltaSpike Core-API,org.apache.deltaspike.core.util.context,ContextualInstanceInfo,17,0,0,0,7,0,5,0,5,0
+263,Apache DeltaSpike Core-API,org.apache.deltaspike.core.util.context,ContextualStorage,121,0,12,0,36,0,12,0,6,0
+264,Apache DeltaSpike Core-API,org.apache.deltaspike.core.util.context,AbstractContext,223,0,28,0,62,0,24,0,10,0
+265,Apache DeltaSpike Core-API,org.apache.deltaspike.core.api.literal,SpecializesLiteral,3,0,0,0,1,0,1,0,1,0
+266,Apache DeltaSpike Core-API,org.apache.deltaspike.core.api.literal,NewLiteral,13,0,0,0,6,0,3,0,3,0
+267,Apache DeltaSpike Core-API,org.apache.deltaspike.core.api.literal,AlternativeLiteral,0,3,0,0,0,1,0,1,0,1
+268,Apache DeltaSpike Core-API,org.apache.deltaspike.core.api.literal,SessionScopeLiteral,3,0,0,0,1,0,1,0,1,0
+269,Apache DeltaSpike Core-API,org.apache.deltaspike.core.api.literal,DefaultLiteral,3,0,0,0,1,0,1,0,1,0
+270,Apache DeltaSpike Core-API,org.apache.deltaspike.core.api.literal,ConversationScopedLiteral,3,0,0,0,1,0,1,0,1,0
+271,Apache DeltaSpike Core-API,org.apache.deltaspike.core.api.literal,MessageContextConfigLiteral,35,0,0,0,12,0,6,0,6,0
+272,Apache DeltaSpike Core-API,org.apache.deltaspike.core.api.literal,DestroyedLiteral,8,0,0,0,2,0,2,0,2,0
+273,Apache DeltaSpike Core-API,org.apache.deltaspike.core.api.literal,DependentScopeLiteral,3,0,0,0,1,0,1,0,1,0
+274,Apache DeltaSpike Core-API,org.apache.deltaspike.core.api.literal,ViewControllerRefLiteral,15,0,0,0,6,0,3,0,3,0
+275,Apache DeltaSpike Core-API,org.apache.deltaspike.core.api.literal,InjectableResourceLiteral,15,0,0,0,6,0,3,0,3,0
+276,Apache DeltaSpike Core-API,org.apache.deltaspike.core.api.literal,InitializedLiteral,8,0,0,0,2,0,2,0,2,0
+277,Apache DeltaSpike Core-API,org.apache.deltaspike.core.api.literal,ModelLiteral,3,0,0,0,1,0,1,0,1,0
+278,Apache DeltaSpike Core-API,org.apache.deltaspike.core.api.literal,MessageBundleLiteral,3,0,0,0,1,0,1,0,1,0
+279,Apache DeltaSpike Core-API,org.apache.deltaspike.core.api.literal,NamedLiteral,0,15,0,0,0,7,0,3,0,3
+280,Apache DeltaSpike Core-API,org.apache.deltaspike.core.api.literal,ApplicationScopedLiteral,0,3,0,0,0,1,0,1,0,1
+281,Apache DeltaSpike Core-API,org.apache.deltaspike.core.api.literal,SingletonLiteral,3,0,0,0,1,0,1,0,1,0
+282,Apache DeltaSpike Core-API,org.apache.deltaspike.core.api.literal,TypedLiteral,6,10,0,0,3,4,1,2,1,2
+283,Apache DeltaSpike Core-API,org.apache.deltaspike.core.api.literal,DeltaSpikeLiteral,8,0,0,0,2,0,2,0,2,0
+284,Apache DeltaSpike Core-API,org.apache.deltaspike.core.api.literal,RequestScopedLiteral,3,0,0,0,1,0,1,0,1,0
+285,Apache DeltaSpike Core-API,org.apache.deltaspike.core.api.literal,AnyLiteral,0,3,0,0,0,1,0,1,0,1
+286,Apache DeltaSpike Core-API,org.apache.deltaspike.core.util,PropertyFileUtils,56,68,9,11,19,17,10,4,3,1
+287,Apache DeltaSpike Core-API,org.apache.deltaspike.core.util,Annotateds.AnnotatedCallableComparator,36,0,4,0,9,0,3,0,1,0
+288,Apache DeltaSpike Core-API,org.apache.deltaspike.core.util,OptionalUtil,18,41,3,3,10,9,4,4,1,4
+289,Apache DeltaSpike Core-API,org.apache.deltaspike.core.util,Annotateds,850,0,80,0,179,0,57,0,17,0
+290,Apache DeltaSpike Core-API,org.apache.deltaspike.core.util,Annotateds.AnnotatedMethodComparator,57,0,6,0,13,0,6,0,3,0
+291,Apache DeltaSpike Core-API,org.apache.deltaspike.core.util,ContextUtils,22,0,4,0,8,0,4,0,2,0
+292,Apache DeltaSpike Core-API,org.apache.deltaspike.core.util,ProjectStageProducer,58,83,12,8,17,23,11,9,3,7
+293,Apache DeltaSpike Core-API,org.apache.deltaspike.core.util,ClassUtils,336,47,53,5,82,15,44,7,15,7
+294,Apache DeltaSpike Core-API,org.apache.deltaspike.core.util,StringUtils,7,10,2,4,1,1,2,3,1,1
+295,Apache DeltaSpike Core-API,org.apache.deltaspike.core.util,ClassUtils.GetClassLoaderAction,13,0,0,0,6,0,2,0,2,0
+296,Apache DeltaSpike Core-API,org.apache.deltaspike.core.util,CollectionUtils,9,0,4,0,1,0,3,0,1,0
+297,Apache DeltaSpike Core-API,org.apache.deltaspike.core.util,BeanUtils,132,0,18,0,26,0,13,0,4,0
+298,Apache DeltaSpike Core-API,org.apache.deltaspike.core.util,Annotateds.AnnotatedConstructorComparator,57,0,6,0,13,0,6,0,3,0
+299,Apache DeltaSpike Core-API,org.apache.deltaspike.core.util,ParameterUtil,19,42,2,2,11,10,3,3,1,3
+300,Apache DeltaSpike Core-API,org.apache.deltaspike.core.util,ParentExtensionStorage,77,0,16,0,25,0,13,0,5,0
+301,Apache DeltaSpike Core-API,org.apache.deltaspike.core.util,StreamUtil,16,37,3,5,9,10,4,5,1,4
+302,Apache DeltaSpike Core-API,org.apache.deltaspike.core.util,ReflectionUtils,470,48,86,8,95,9,67,7,24,3
+303,Apache DeltaSpike Core-API,org.apache.deltaspike.core.util,ExceptionUtils,15,39,0,0,4,9,1,2,1,2
+304,Apache DeltaSpike Core-API,org.apache.deltaspike.core.util,ArraysUtils,19,0,4,0,4,0,4,0,2,0
+305,Apache DeltaSpike Core-API,org.apache.deltaspike.core.util,ProxyUtils,149,0,34,0,30,0,21,0,4,0
+306,Apache DeltaSpike Core-API,org.apache.deltaspike.core.util,ParameterizedTypeImpl,125,32,24,2,22,8,17,3,4,3
+307,Apache DeltaSpike Core-API,org.apache.deltaspike.core.util,HierarchyDiscovery,113,240,19,25,25,54,14,19,1,10
+308,Apache DeltaSpike Core-API,org.apache.deltaspike.core.util,Annotateds.AnnotationComparator,13,0,0,0,2,0,2,0,2,0
+309,Apache DeltaSpike Core-API,org.apache.deltaspike.core.util,AnnotationUtils,232,0,40,0,53,0,25,0,5,0
+310,Apache DeltaSpike Core-API,org.apache.deltaspike.core.util,ParentExtensionStorage.ExtensionStorageInfo,37,0,4,0,7,0,6,0,4,0
+311,Apache DeltaSpike Core-API,org.apache.deltaspike.core.util,AggregatedClassLoader,86,0,8,0,20,0,8,0,4,0
+312,Apache DeltaSpike Core-API,org.apache.deltaspike.core.util,ServiceUtils,35,44,5,5,7,13,3,5,0,3
+313,Apache DeltaSpike Core-API,org.apache.deltaspike.core.util,ExceptionUtils.ExceptionHelper,11,15,3,1,3,4,2,1,0,1
+314,Apache DeltaSpike Core-API,org.apache.deltaspike.core.util,Annotateds.MethodComparator,11,0,0,0,2,0,2,0,2,0
+315,Apache DeltaSpike Core-API,org.apache.deltaspike.core.util,Annotateds.AnnotatedFieldComparator,30,0,2,0,5,0,3,0,2,0
+316,Apache DeltaSpike Core-API,org.apache.deltaspike.core.util,ClassDeactivationUtils,92,203,9,21,16,55,7,15,0,7
+317,Apache DeltaSpike Core-API,org.apache.deltaspike.core.util,AggregatedClassLoader.new Enumeration() {...},23,0,0,0,4,0,3,0,3,0
+318,Apache DeltaSpike Core-API,org.apache.deltaspike.core.util.metadata.builder,ImmutableInjectionPoint,142,0,0,0,43,0,11,0,11,0
+319,Apache DeltaSpike Core-API,org.apache.deltaspike.core.util.metadata.builder,AnnotatedImpl,22,48,2,4,5,13,4,5,2,4
+320,Apache DeltaSpike Core-API,org.apache.deltaspike.core.util.metadata.builder,AnnotatedConstructorImpl,0,56,0,4,0,10,0,4,0,2
+321,Apache DeltaSpike Core-API,org.apache.deltaspike.core.util.metadata.builder,InjectableMethod,112,0,8,0,25,0,10,0,6,0
+322,Apache DeltaSpike Core-API,org.apache.deltaspike.core.util.metadata.builder,AnnotatedTypeImpl,0,319,1,23,0,49,1,16,0,5
+323,Apache DeltaSpike Core-API,org.apache.deltaspike.core.util.metadata.builder,DelegatingContextualLifecycle,36,0,0,0,13,0,3,0,3,0
+324,Apache DeltaSpike Core-API,org.apache.deltaspike.core.util.metadata.builder,AnnotatedMemberImpl,8,16,0,0,2,5,2,2,2,2
+325,Apache DeltaSpike Core-API,org.apache.deltaspike.core.util.metadata.builder,AnnotatedMethodImpl,0,16,0,0,0,3,0,1,0,1
+326,Apache DeltaSpike Core-API,org.apache.deltaspike.core.util.metadata.builder,AnnotationStore,9,26,0,0,4,7,1,4,1,4
+327,Apache DeltaSpike Core-API,org.apache.deltaspike.core.util.metadata.builder,DummyInjectionTarget,11,0,0,0,7,0,7,0,7,0
+328,Apache DeltaSpike Core-API,org.apache.deltaspike.core.util.metadata.builder,AnnotatedTypeBuilder,768,1069,94,102,110,179,83,50,23,12
+329,Apache DeltaSpike Core-API,org.apache.deltaspike.core.util.metadata.builder,ParameterValueRedefiner.ParameterValue,25,0,0,0,8,0,4,0,4,0
+330,Apache DeltaSpike Core-API,org.apache.deltaspike.core.util.metadata.builder,AnnotatedFieldImpl,0,11,0,0,0,2,0,1,0,1
+331,Apache DeltaSpike Core-API,org.apache.deltaspike.core.util.metadata.builder,AnnotatedCallableImpl,12,79,3,5,2,16,4,4,1,3
+332,Apache DeltaSpike Core-API,org.apache.deltaspike.core.util.metadata.builder,AnnotationBuilder,59,89,6,8,11,23,8,9,4,6
+333,Apache DeltaSpike Core-API,org.apache.deltaspike.core.util.metadata.builder,AnnotatedParameterImpl,3,16,0,0,1,5,1,2,1,2
+334,Apache DeltaSpike Core-API,org.apache.deltaspike.core.api.config.view.navigation.event,PreViewConfigNavigateEvent,19,0,0,0,8,0,4,0,4,0
+335,Apache DeltaSpike Core-API,org.apache.deltaspike.core.api.jmx,Table,90,0,6,0,21,0,11,0,8,0
+336,Apache DeltaSpike Core-API,org.apache.deltaspike.core.api.config.view,ViewRef.Manual,3,0,0,0,1,0,1,0,1,0
+337,Apache DeltaSpike Core-API,org.apache.deltaspike.core.api.config.view,ViewRef.ViewRefInlineMetaDataTransformer,22,0,2,0,6,0,3,0,2,0
+338,Apache DeltaSpike Core-API,org.apache.deltaspike.core.api.config.view,DefaultErrorView,3,0,0,0,1,0,1,0,1,0
+339,Apache DeltaSpike Core-API,org.apache.deltaspike.core.api.config.view,ViewRef.ViewRefTargetViewConfigProvider,6,0,0,0,2,0,2,0,2,0
+340,Apache DeltaSpike Core-API,org.apache.deltaspike.core.api.config.view.controller,ViewControllerRef.Descriptor,5,0,0,0,2,0,1,0,1,0
+341,Apache DeltaSpike Core-API,org.apache.deltaspike.core.api.config.view.controller,ViewControllerRef.AnnotationPreProcessor,41,0,0,0,10,0,2,0,2,0
+342,Apache DeltaSpike Core-API,org.apache.deltaspike.core.util.bean,ImmutablePassivationCapableBeanWrapper,18,0,0,0,4,0,2,0,2,0
+343,Apache DeltaSpike Core-API,org.apache.deltaspike.core.util.bean,BaseImmutableBean,221,0,18,0,47,0,21,0,12,0
+344,Apache DeltaSpike Core-API,org.apache.deltaspike.core.util.bean,BeanBuilder,451,0,30,0,104,0,55,0,40,0
+345,Apache DeltaSpike Core-API,org.apache.deltaspike.core.util.bean,ImmutablePassivationCapableBean,20,0,0,0,4,0,2,0,2,0
+346,Apache DeltaSpike Core-API,org.apache.deltaspike.core.util.bean,ImmutableBean,29,0,0,0,6,0,3,0,3,0
+347,Apache DeltaSpike Core-API,org.apache.deltaspike.core.util.bean,ImmutableBeanWrapper,29,0,0,0,7,0,3,0,3,0
+348,Apache DeltaSpike Core-API,org.apache.deltaspike.core.util.bean,WrappingBeanBuilder,57,0,2,0,7,0,4,0,3,0
+349,Apache DeltaSpike Core-API,org.apache.deltaspike.core.util.securitymanaged,SetAccessiblePrivilegedAction,12,0,0,0,5,0,2,0,2,0
+350,Apache DeltaSpike Partial-Bean-Module Impl,org.apache.deltaspike.partialbean.impl,DeltaSpikePartialProducerLifecycle,0,25,0,0,0,7,0,3,0,3
+351,Apache DeltaSpike Partial-Bean-Module Impl,org.apache.deltaspike.partialbean.impl,PartialBeanDescriptor,11,38,0,0,5,14,3,6,3,6
+352,Apache DeltaSpike Partial-Bean-Module Impl,org.apache.deltaspike.partialbean.impl,PartialBeanBindingExtension,119,482,17,53,21,104,15,31,0,11
+353,Apache DeltaSpike Partial-Bean-Module Impl,org.apache.deltaspike.partialbean.impl,PartialBeanProxyFactory,0,37,0,4,0,12,0,7,0,5
+,,,,19359,19276,2359,1844,,,,,,
+,,,,,,,,,,,,,
+,CodeCoverage,,,0.498925844,,,,,,,,,
+,BranchCoverage,,,0.438734237,,,,,,,,,
