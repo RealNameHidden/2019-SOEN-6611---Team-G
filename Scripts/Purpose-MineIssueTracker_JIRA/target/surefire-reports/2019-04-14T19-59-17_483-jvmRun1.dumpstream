@@ -1,0 +1,455 @@
+# Created at 2019-04-14T20:00:05.153
+TestSet has not finished before stream error has appeared >> initializing exit by non-null configuration: DEFAULT
+java.io.EOFException
+	at java.io.DataInputStream.readInt(DataInputStream.java:392)
+	at org.apache.maven.surefire.booter.MasterProcessCommand.decode(MasterProcessCommand.java:115)
+	at org.apache.maven.surefire.booter.CommandReader$CommandRunnable.run(CommandReader.java:390)
+	at java.lang.Thread.run(Thread.java:748)
+
+
+# Created at 2019-04-14T20:00:12.688
+Unexpected IOException with stream: [
+
+# Created at 2019-04-14T20:00:12.692
+Unexpected IOException with stream: 1
+
+# Created at 2019-04-14T20:00:12.695
+Unexpected IOException with stream: 5
+
+# Created at 2019-04-14T20:00:12.704
+Unexpected IOException with stream: 5
+
+# Created at 2019-04-14T20:00:12.707
+Unexpected IOException with stream: 5
+
+# Created at 2019-04-14T20:00:12.710
+Unexpected IOException with stream: 2
+
+# Created at 2019-04-14T20:00:12.714
+Unexpected IOException with stream: 8
+
+# Created at 2019-04-14T20:00:12.717
+Unexpected IOException with stream: 6
+
+# Created at 2019-04-14T20:00:12.721
+Unexpected IOException with stream: 4
+
+# Created at 2019-04-14T20:00:12.724
+Unexpected IOException with stream: 1
+
+# Created at 2019-04-14T20:00:12.728
+Unexpected IOException with stream: 2
+
+# Created at 2019-04-14T20:00:12.731
+Unexpected IOException with stream: .
+
+# Created at 2019-04-14T20:00:12.735
+Unexpected IOException with stream: 6
+
+# Created at 2019-04-14T20:00:12.738
+Unexpected IOException with stream: 8
+
+# Created at 2019-04-14T20:00:12.742
+Unexpected IOException with stream: 8
+
+# Created at 2019-04-14T20:00:12.745
+Unexpected IOException with stream: ]
+
+# Created at 2019-04-14T20:00:12.749
+Unexpected IOException with stream: [
+
+# Created at 2019-04-14T20:00:12.753
+Unexpected IOException with stream: W
+
+# Created at 2019-04-14T20:00:12.757
+Unexpected IOException with stream: A
+
+# Created at 2019-04-14T20:00:12.761
+Unexpected IOException with stream: R
+
+# Created at 2019-04-14T20:00:12.764
+Unexpected IOException with stream: N
+
+# Created at 2019-04-14T20:00:12.768
+Unexpected IOException with stream: I
+
+# Created at 2019-04-14T20:00:12.772
+Unexpected IOException with stream: N
+
+# Created at 2019-04-14T20:00:12.776
+Unexpected IOException with stream: G
+
+# Created at 2019-04-14T20:00:12.780
+Unexpected IOException with stream: ]
+
+# Created at 2019-04-14T20:00:12.784
+Unexpected IOException with stream: :
+
+# Created at 2019-04-14T20:00:12.800
+Unexpected IOException with stream:  
+
+# Created at 2019-04-14T20:00:12.803
+Unexpected IOException with stream: T
+
+# Created at 2019-04-14T20:00:12.806
+Unexpected IOException with stream: i
+
+# Created at 2019-04-14T20:00:12.810
+Unexpected IOException with stream: m
+
+# Created at 2019-04-14T20:00:12.814
+Unexpected IOException with stream: e
+
+# Created at 2019-04-14T20:00:12.818
+Unexpected IOException with stream: d
+
+# Created at 2019-04-14T20:00:12.824
+Unexpected IOException with stream:  
+
+# Created at 2019-04-14T20:00:12.828
+Unexpected IOException with stream: o
+
+# Created at 2019-04-14T20:00:12.832
+Unexpected IOException with stream: u
+
+# Created at 2019-04-14T20:00:12.836
+Unexpected IOException with stream: t
+
+# Created at 2019-04-14T20:00:12.839
+Unexpected IOException with stream:  
+
+# Created at 2019-04-14T20:00:12.844
+Unexpected IOException with stream: c
+
+# Created at 2019-04-14T20:00:12.848
+Unexpected IOException with stream: o
+
+# Created at 2019-04-14T20:00:12.851
+Unexpected IOException with stream: n
+
+# Created at 2019-04-14T20:00:12.855
+Unexpected IOException with stream: n
+
+# Created at 2019-04-14T20:00:12.859
+Unexpected IOException with stream: e
+
+# Created at 2019-04-14T20:00:12.863
+Unexpected IOException with stream: c
+
+# Created at 2019-04-14T20:00:12.868
+Unexpected IOException with stream: t
+
+# Created at 2019-04-14T20:00:12.871
+Unexpected IOException with stream: i
+
+# Created at 2019-04-14T20:00:12.875
+Unexpected IOException with stream: n
+
+# Created at 2019-04-14T20:00:12.879
+Unexpected IOException with stream: g
+
+# Created at 2019-04-14T20:00:12.883
+Unexpected IOException with stream:  
+
+# Created at 2019-04-14T20:00:12.887
+Unexpected IOException with stream: t
+
+# Created at 2019-04-14T20:00:12.890
+Unexpected IOException with stream: o
+
+# Created at 2019-04-14T20:00:12.894
+Unexpected IOException with stream:  
+
+# Created at 2019-04-14T20:00:12.898
+Unexpected IOException with stream: C
+
+# Created at 2019-04-14T20:00:12.902
+Unexpected IOException with stream: h
+
+# Created at 2019-04-14T20:00:12.906
+Unexpected IOException with stream: r
+
+# Created at 2019-04-14T20:00:12.911
+Unexpected IOException with stream: o
+
+# Created at 2019-04-14T20:00:12.914
+Unexpected IOException with stream: m
+
+# Created at 2019-04-14T20:00:12.919
+Unexpected IOException with stream: e
+
+# Created at 2019-04-14T20:00:12.923
+Unexpected IOException with stream: ,
+
+# Created at 2019-04-14T20:00:12.925
+Unexpected IOException with stream:  
+
+# Created at 2019-04-14T20:00:12.929
+Unexpected IOException with stream: r
+
+# Created at 2019-04-14T20:00:12.933
+Unexpected IOException with stream: e
+
+# Created at 2019-04-14T20:00:12.936
+Unexpected IOException with stream: t
+
+# Created at 2019-04-14T20:00:12.940
+Unexpected IOException with stream: r
+
+# Created at 2019-04-14T20:00:12.943
+Unexpected IOException with stream: y
+
+# Created at 2019-04-14T20:00:12.946
+Unexpected IOException with stream: i
+
+# Created at 2019-04-14T20:00:12.950
+Unexpected IOException with stream: n
+
+# Created at 2019-04-14T20:00:12.954
+Unexpected IOException with stream: g
+
+# Created at 2019-04-14T20:00:12.957
+Unexpected IOException with stream: .
+
+# Created at 2019-04-14T20:00:12.961
+Unexpected IOException with stream: .
+
+# Created at 2019-04-14T20:00:12.964
+Unexpected IOException with stream: .
+
+# Created at 2019-04-14T20:00:12.969
+Unexpected IOException with stream: 
+
+# Created at 2019-04-14T20:00:12.973
+Unexpected IOException with stream: 
+
+
+# Created at 2019-04-14T20:00:18.718
+Unexpected IOException with stream: [
+
+# Created at 2019-04-14T20:00:18.726
+Unexpected IOException with stream: 1
+
+# Created at 2019-04-14T20:00:18.737
+Unexpected IOException with stream: 5
+
+# Created at 2019-04-14T20:00:18.742
+Unexpected IOException with stream: 5
+
+# Created at 2019-04-14T20:00:18.746
+Unexpected IOException with stream: 5
+
+# Created at 2019-04-14T20:00:18.749
+Unexpected IOException with stream: 2
+
+# Created at 2019-04-14T20:00:18.753
+Unexpected IOException with stream: 8
+
+# Created at 2019-04-14T20:00:18.757
+Unexpected IOException with stream: 6
+
+# Created at 2019-04-14T20:00:18.760
+Unexpected IOException with stream: 4
+
+# Created at 2019-04-14T20:00:18.763
+Unexpected IOException with stream: 1
+
+# Created at 2019-04-14T20:00:18.767
+Unexpected IOException with stream: 8
+
+# Created at 2019-04-14T20:00:18.770
+Unexpected IOException with stream: .
+
+# Created at 2019-04-14T20:00:18.774
+Unexpected IOException with stream: 7
+
+# Created at 2019-04-14T20:00:18.777
+Unexpected IOException with stream: 1
+
+# Created at 2019-04-14T20:00:18.780
+Unexpected IOException with stream: 7
+
+# Created at 2019-04-14T20:00:18.784
+Unexpected IOException with stream: ]
+
+# Created at 2019-04-14T20:00:18.787
+Unexpected IOException with stream: [
+
+# Created at 2019-04-14T20:00:18.790
+Unexpected IOException with stream: W
+
+# Created at 2019-04-14T20:00:18.794
+Unexpected IOException with stream: A
+
+# Created at 2019-04-14T20:00:18.797
+Unexpected IOException with stream: R
+
+# Created at 2019-04-14T20:00:18.800
+Unexpected IOException with stream: N
+
+# Created at 2019-04-14T20:00:18.804
+Unexpected IOException with stream: I
+
+# Created at 2019-04-14T20:00:18.807
+Unexpected IOException with stream: N
+
+# Created at 2019-04-14T20:00:18.812
+Unexpected IOException with stream: G
+
+# Created at 2019-04-14T20:00:18.815
+Unexpected IOException with stream: ]
+
+# Created at 2019-04-14T20:00:18.819
+Unexpected IOException with stream: :
+
+# Created at 2019-04-14T20:00:18.823
+Unexpected IOException with stream:  
+
+# Created at 2019-04-14T20:00:18.827
+Unexpected IOException with stream: T
+
+# Created at 2019-04-14T20:00:18.831
+Unexpected IOException with stream: i
+
+# Created at 2019-04-14T20:00:18.835
+Unexpected IOException with stream: m
+
+# Created at 2019-04-14T20:00:18.839
+Unexpected IOException with stream: e
+
+# Created at 2019-04-14T20:00:18.843
+Unexpected IOException with stream: d
+
+# Created at 2019-04-14T20:00:18.847
+Unexpected IOException with stream:  
+
+# Created at 2019-04-14T20:00:18.850
+Unexpected IOException with stream: o
+
+# Created at 2019-04-14T20:00:18.855
+Unexpected IOException with stream: u
+
+# Created at 2019-04-14T20:00:18.858
+Unexpected IOException with stream: t
+
+# Created at 2019-04-14T20:00:18.863
+Unexpected IOException with stream:  
+
+# Created at 2019-04-14T20:00:18.868
+Unexpected IOException with stream: c
+
+# Created at 2019-04-14T20:00:18.872
+Unexpected IOException with stream: o
+
+# Created at 2019-04-14T20:00:18.876
+Unexpected IOException with stream: n
+
+# Created at 2019-04-14T20:00:18.880
+Unexpected IOException with stream: n
+
+# Created at 2019-04-14T20:00:18.884
+Unexpected IOException with stream: e
+
+# Created at 2019-04-14T20:00:18.888
+Unexpected IOException with stream: c
+
+# Created at 2019-04-14T20:00:18.893
+Unexpected IOException with stream: t
+
+# Created at 2019-04-14T20:00:18.898
+Unexpected IOException with stream: i
+
+# Created at 2019-04-14T20:00:18.902
+Unexpected IOException with stream: n
+
+# Created at 2019-04-14T20:00:18.906
+Unexpected IOException with stream: g
+
+# Created at 2019-04-14T20:00:18.911
+Unexpected IOException with stream:  
+
+# Created at 2019-04-14T20:00:18.915
+Unexpected IOException with stream: t
+
+# Created at 2019-04-14T20:00:18.919
+Unexpected IOException with stream: o
+
+# Created at 2019-04-14T20:00:18.923
+Unexpected IOException with stream:  
+
+# Created at 2019-04-14T20:00:18.928
+Unexpected IOException with stream: C
+
+# Created at 2019-04-14T20:00:18.932
+Unexpected IOException with stream: h
+
+# Created at 2019-04-14T20:00:18.936
+Unexpected IOException with stream: r
+
+# Created at 2019-04-14T20:00:18.941
+Unexpected IOException with stream: o
+
+# Created at 2019-04-14T20:00:18.945
+Unexpected IOException with stream: m
+
+# Created at 2019-04-14T20:00:18.949
+Unexpected IOException with stream: e
+
+# Created at 2019-04-14T20:00:18.953
+Unexpected IOException with stream: ,
+
+# Created at 2019-04-14T20:00:18.957
+Unexpected IOException with stream:  
+
+# Created at 2019-04-14T20:00:18.961
+Unexpected IOException with stream: r
+
+# Created at 2019-04-14T20:00:18.965
+Unexpected IOException with stream: e
+
+# Created at 2019-04-14T20:00:18.969
+Unexpected IOException with stream: t
+
+# Created at 2019-04-14T20:00:18.973
+Unexpected IOException with stream: r
+
+# Created at 2019-04-14T20:00:18.978
+Unexpected IOException with stream: y
+
+# Created at 2019-04-14T20:00:18.982
+Unexpected IOException with stream: i
+
+# Created at 2019-04-14T20:00:18.987
+Unexpected IOException with stream: n
+
+# Created at 2019-04-14T20:00:18.992
+Unexpected IOException with stream: g
+
+# Created at 2019-04-14T20:00:18.996
+Unexpected IOException with stream: .
+
+# Created at 2019-04-14T20:00:19.000
+Unexpected IOException with stream: .
+
+# Created at 2019-04-14T20:00:19.005
+Unexpected IOException with stream: .
+
+# Created at 2019-04-14T20:00:19.008
+Unexpected IOException with stream: 
+
+# Created at 2019-04-14T20:00:19.013
+Unexpected IOException with stream: 
+
+
+# Created at 2019-04-14T20:00:22.731
+Unexpected IOException: 6,1,DefectDensity,ProjectList(DefectDensity),null,null,null
+
+
+# Created at 2019-04-14T20:00:22.986
+Unexpected IOException: 8,1,DefectDensity,TearDown(DefectDensity),null,chrome not reachable\000A  (Session info: chrome=73.0.3683.103)\000A  (Driver info: chromedriver=2.45.615291 (ec3682e3c9061c10f26ea9e5cdcf3c53f3f74387)\002Cplatform=Windows NT 10.0.17763 x86_64) (WARNING: The server did not provide any stacktrace information)\000ACommand duration or timeout: 0 milliseconds\000ABuild info: version: '3.141.59'\002C revision: 'e82be7d358'\002C time: '2018-11-14T08:17:03'\000ASystem info: host: 'DESKTOP-KCLRGFN'\002C ip: '192.168.0.165'\002C os.name: 'Windows 10'\002C os.arch: 'amd64'\002C os.version: '10.0'\002C java.version: '1.8.0_191'\000ADriver info: org.openqa.selenium.chrome.ChromeDriver\000ACapabilities {acceptInsecureCerts: false\002C acceptSslCerts: false\002C applicationCacheEnabled: false\002C browserConnectionEnabled: false\002C browserName: chrome\002C chrome: {chromedriverVersion: 2.45.615291 (ec3682e3c9061c...\002C userDataDir: C:\005CUsers\005Cvssuc\005CAppData\005CLoca...}\002C cssSelectorsEnabled: true\002C databaseEnabled: false\002C goog:chromeOptions: {debuggerAddress: localhost:55444}\002C handlesAlerts: true\002C hasTouchScreen: false\002C javascriptEnabled: true\002C locationContextEnabled: true\002C mobileEmulationEnabled: false\002C nativeEvents: true\002C networkConnectionEnabled: false\002C pageLoadStrategy: normal\002C platform: XP\002C platformName: XP\002C proxy: Proxy()\002C rotatable: false\002C setWindowRect: true\002C strictFileInteractability: false\002C takesHeapSnapshot: true\002C takesScreenshot: true\002C timeouts: {implicit: 0\002C pageLoad: 300000\002C script: 30000}\002C unexpectedAlertBehaviour: ignore\002C unhandledPromptBehavior: ignore\002C version: 73.0.3683.103\002C webStorageEnabled: true}\000ASession ID: 6df124ee5aa60e5cb4df18d755f49901,null,chrome not reachable\000A  (Session info: chrome=73.0.3683.103)\000A  (Driver info: chromedriver=2.45.615291 (ec3682e3c9061c10f26ea9e5cdcf3c53f3f74387)\002Cplatform=Windows NT 10.0.17763 x86_64) (WARNING: The server did not provide any stacktrace information)\000ACommand duration or timeout: 0 milliseconds\000ABuild info: version: '3.141.59'\002C revision: 'e82be7d358'\002C time: '2018-11-14T08:17:03'\000ASystem info: host: 'DESKTOP-KCLRGFN'\002C ip: '192.168.0.165'\002C os.name: 'Windows 10'\002C os.arch: 'amd64'\002C os.version: '10.0'\002C java.version: '1.8.0_191'\000ADriver info: org.openqa.selenium.chrome.ChromeDriver\000ACapabilities {acceptInsecureCerts: false\002C acceptSslCerts: false\002C applicationCacheEnabled: false\002C browserConnectionEnabled: false\002C browserName: chrome\002C chrome: {chromedriverVersion: 2.45.615291 (ec3682e3c9061c...\002C userDataDir: C:\005CUsers\005Cvssuc\005CAppData\005CLoca...}\002C cssSelectorsEnabled: true\002C databaseEnabled: false\002C goog:chromeOptions: {debuggerAddress: localhost:55444}\002C handlesAlerts: true\002C hasTouchScreen: false\002C javascriptEnabled: true\002C locationContextEnabled: true\002C mobileEmulationEnabled: false\002C nativeEvents: true\002C networkConnectionEnabled: false\002C pageLoadStrategy: normal\002C platform: XP\002C platformName: XP\002C proxy: Proxy()\002C rotatable: false\002C setWindowRect: true\002C strictFileInteractability: false\002C takesHeapSnapshot: true\002C takesScreenshot: true\002C timeouts: {implicit: 0\002C pageLoad: 300000\002C script: 30000}\002C unexpectedAlertBehaviour: ignore\002C unhandledPromptBehavior: ignore\002C version: 73.0.3683.103\002C webStorageEnabled: true}\000ASession ID: 6df124ee5aa60e5cb4df18d755f49901,DefectDensity.TearDown:449 \00BB WebDriver chrome not reachable\000A  (Session info: c...,org.openqa.selenium.WebDriverException: \000Achrome not reachable\000A  (Session info: chrome=73.0.3683.103)\000A  (Driver info: chromedriver=2.45.615291 (ec3682e3c9061c10f26ea9e5cdcf3c53f3f74387)\002Cplatform=Windows NT 10.0.17763 x86_64) (WARNING: The server did not provide any stacktrace information)\000ACommand duration or timeout: 0 milliseconds\000ABuild info: version: '3.141.59'\002C revision: 'e82be7d358'\002C time: '2018-11-14T08:17:03'\000ASystem info: host: 'DESKTOP-KCLRGFN'\002C ip: '192.168.0.165'\002C os.name: 'Windows 10'\002C os.arch: 'amd64'\002C os.version: '10.0'\002C java.version: '1.8.0_191'\000ADriver info: org.openqa.selenium.chrome.ChromeDriver\000ACapabilities {acceptInsecureCerts: false\002C acceptSslCerts: false\002C applicationCacheEnabled: false\002C browserConnectionEnabled: false\002C browserName: chrome\002C chrome: {chromedriverVersion: 2.45.615291 (ec3682e3c9061c...\002C userDataDir: C:\005CUsers\005Cvssuc\005CAppData\005CLoca...}\002C cssSelectorsEnabled: true\002C databaseEnabled: false\002C goog:chromeOptions: {debuggerAddress: localhost:55444}\002C handlesAlerts: true\002C hasTouchScreen: false\002C javascriptEnabled: true\002C locationContextEnabled: true\002C mobileEmulationEnabled: false\002C nativeEvents: true\002C networkConnectionEnabled: false\002C pageLoadStrategy: normal\002C platform: XP\002C platformName: XP\002C proxy: Proxy()\002C rotatable: false\002C setWindowRect: true\002C strictFileInteractability: false\002C takesHeapSnapshot: true\002C takesScreenshot: true\002C timeouts: {implicit: 0\002C pageLoad: 300000\002C script: 30000}\002C unexpectedAlertBehaviour: ignore\002C unhandledPromptBehavior: ignore\002C version: 73.0.3683.103\002C webStorageEnabled: true}\000ASession ID: 6df124ee5aa60e5cb4df18d755f49901\000A\0009at DefectDensity.TearDown(DefectDensity.java:449)\000A
+
+
+# Created at 2019-04-14T20:00:23.127
+Unexpected IOException: 2,1,org.apache.maven.surefire.testng.TestNGXmlTestSuite,TestSuite,null,null,null
+
+

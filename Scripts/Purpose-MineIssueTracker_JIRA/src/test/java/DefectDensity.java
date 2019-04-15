@@ -46,8 +46,7 @@ public class DefectDensity {
     		
    
     private String defectcount,project,version,bugversiondisplayed;
-   // private ArrayList<WebElement> projectNamesinPicklist=new ArrayList<>(),VersionNamesinPicklist=new ArrayList<>();//,ExceptionOccurances=new ArrayList<>();
-	
+  /*Declaring webelement locator variables*/
 	
 	By picklist_version;
 	By picklist_project;
@@ -73,7 +72,7 @@ public class DefectDensity {
 	Robot rob;
 	JavascriptExecutor js;
 		
-	
+	/*Initializing driver objects and timeout variables*/
 		
 	public void DriverSetup() throws AWTException {
     	DriverFactory.getinstance().setchromeDriver();
@@ -85,17 +84,18 @@ public class DefectDensity {
 		wait=new WebDriverWait(driver,10);
 		js=(JavascriptExecutor)driver;
 		rob=new Robot();
-	//	System.out.println("Driversetup "+Thread.currentThread().getId()+"driver "+driver);
 				
     }
 	
-	
+	/*Function to highlight selected element in the webpage*/
 	public void highlight(WebElement element) {
 		JavascriptExecutor js=(JavascriptExecutor)driver;
 		js.executeScript("arguments[0].style.backgroundColor = 'rgb(0,200,0)'", element);
 		
 	}
 
+	/*Initialize locater variables with css/xpath values*/
+	
 	public void InitialiseObjects() {
 		System.out.println(" Intialise "+Thread.currentThread().getId());
 		picklist_version=By.cssSelector("button[data-id='version']");
@@ -112,11 +112,12 @@ public class DefectDensity {
 		versionpicklist_valuelist=By.cssSelector("ul#released-versions li.check-list-item>label");
 		by_bugversionDisplayed=By.xpath("//span[@id='versions-val']/span/span");
 		by_projectNameinDetailpage=By.cssSelector("a#project-name-val");
-		//selectedproject=By.cssSelector("//label[title='Struts 1']");
 		
 		
 	}
 	
+	
+	/*Function to return the affected versions of a bug as a string*/
 	public String getAffectedVersionList(List<WebElement> lists) {
 		String result="";
 		for(int i=0;i<lists.size();i++)
@@ -125,6 +126,8 @@ public class DefectDensity {
 			
 	}
 	
+	
+	/*Function to write the output(ProjectName : bugcount) to an excel file*/
 	public void WriteData(String data1,String data2,String filename) {
 		int colnum=0;
 		Cell cell;
@@ -149,7 +152,7 @@ public class DefectDensity {
 		
 	}
 	
-	
+	/*Function to add Affected Version field to the filters*/
 	public void AddVersionField() {
 		
 		driver.findElement(picklist_addfields).click();
@@ -161,7 +164,7 @@ public class DefectDensity {
 		
 	}
 	
-	
+	/*Function to iterate through projects and fetch the bug count as per the set filter*/
 	
 	
 	public void LoopProjects(String filename) {
@@ -183,14 +186,14 @@ public class DefectDensity {
 			driver.findElements(projectpicklist_valuesList).get(i).click();
 			rob.keyPress(KeyEvent.VK_ESCAPE);
 			rob.keyRelease(KeyEvent.VK_ESCAPE);
-			//Thread.sleep(1000);
+			Thread.sleep(1000);
 			try {
 			
 			wait.until(new ProjectLoadException(project,driver.findElement(by_projectNameinDetailpage).getText()));
 			
 			}
 			catch(TimeoutException e) {
-				wait.until(new ProjectLoadException(project,driver.findElement(by_projectNameinDetailpage).getText()));
+				//wait.until(new ProjectLoadException(project,driver.findElement(by_projectNameinDetailpage).getText()));
 			}
 			highlight(driver.findElement(by_defectcount));
 			defectcount=driver.findElement(by_defectcount).getText().substring(5);
@@ -215,8 +218,8 @@ public class DefectDensity {
 	}
 	}
 
+	/*Function to set Affection Version :No Version - to filter out bugs without a valid version*/
 	
-
 	public void NoVersionDefects() {
 	
 		AddVersionField();
@@ -225,6 +228,8 @@ public class DefectDensity {
 		LoopProjects(DefectWithNoVersion);
 		
 	}
+	
+	/*Function to set Affection Version :UnSpecified - to filter out bugs without a valid version*/
 	
 	public void UnspecifiedVersionDefects() throws InterruptedException {
 		ArrayList<WebElement> projectNamesinPicklist=new ArrayList<>();
@@ -274,6 +279,9 @@ public class DefectDensity {
 	
 		}
 	
+	/*Function to iterate through the selected projects and fetch bug count for all released versions*/
+	
+	
 public void FindVersions(String filename,By selectedproject) throws InterruptedException {
 	ArrayList<WebElement> VersionNamesinPicklist=new ArrayList<>();
 	String AffectedVersionperDefect;
@@ -322,9 +330,9 @@ public void FindVersions(String filename,By selectedproject) throws InterruptedE
 		
 		WriteData(version,defectcount,filename);
 		driver.findElement(picklist_version).click();
-		//Thread.sleep(1000);
+		
 		driver.findElement(clickedversion).click();
-	//	System.out.println(i+"Version Name "+version);
+	
 		i=(flag==true)?(VersionNamesinPicklist.size()-1):(i);
 			
 	
@@ -332,7 +340,7 @@ public void FindVersions(String filename,By selectedproject) throws InterruptedE
 		catch(Exception ex) {
 
 			WriteData("Exception "+ex.toString(),null,filename);
-			//System.out.println(ex.toString());;
+			
 			ex.printStackTrace();
 			driver.findElement(picklist_version).click();
 			driver.findElement(clickedversion).click();
