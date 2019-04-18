@@ -12,8 +12,6 @@ import org.openqa.selenium.remote.RemoteWebDriver;
 import java.net.MalformedURLException;
 import java.net.URL;
 
-import io.github.bonigarcia.wdm.WebDriverManager;
-
 public class DriverFactory {
 	
 	private DriverFactory() {
@@ -45,12 +43,6 @@ public class DriverFactory {
 		WebDriverManager.getInstance(IEXPLORER).setup(); 
 	     driver.set(new InternetExplorerDriver());
 	   }
-	
-	
-		
-		
-	
-
 			   public ThreadLocal<WebDriver> getDriver() // call this method to get the driver object and launch the browser
 			   {
 				  return driver;
