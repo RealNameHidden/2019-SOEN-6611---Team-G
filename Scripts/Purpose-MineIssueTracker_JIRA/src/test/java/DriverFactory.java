@@ -9,9 +9,6 @@ import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
 
-import static io.github.bonigarcia.wdm.DriverManagerType.CHROME;
-import static io.github.bonigarcia.wdm.DriverManagerType.IEXPLORER;
-
 import java.net.MalformedURLException;
 import java.net.URL;
 
@@ -49,65 +46,22 @@ public class DriverFactory {
 	     driver.set(new InternetExplorerDriver());
 	   }
 	
-	/*public void setRemote(String node) throws MalformedURLException {
-		DesiredCapabilities cap1=new DesiredCapabilities();
-		String url;
-		Options opt=new Options();
-		if(node.equalsIgnoreCase("11477"))
-		{
-		url="http://192.168.0.165:11477/wd/hub";
-		cap1.setBrowserName("chrome");
-		cap1.setPlatform(Platform.WIN10);
-		driver.set(new RemoteWebDriver(new URL(url),cap1));
-		}
-		else
-		{
-			url="http://192.168.0.165:38389/wd/hub";
-			cap1.setBrowserName("internet explorer");
-			cap1.setPlatform(Platform.WIN10);
-			driver.set(new RemoteWebDriver(new URL(url),cap1));
-		}
-		
-	}*/
 	
-	
-		
 		
 		
 	
 
 			   public ThreadLocal<WebDriver> getDriver() // call this method to get the driver object and launch the browser
 			   {
-				//  System.out.println("IN driver factory get"+driver.get()+" Thread "+Thread.currentThread());
-			      return driver;
+				  return driver;
 			   }
 
 			   public void removeDriver() // Quits the driver and closes the browser
 			   {
-				 //  System.out.println("in driver factory quit"+ driver.get());
-			      
+				 
 			      driver.remove();
 			   }
 			   
-		/*	   ThreadLocal<WebDriver> iedriver = new ThreadLocal<WebDriver>() // thread local driver object for webdriver
-					   {
-					      @Override
-					      protected WebDriver initialValue()
-					      {
-					    	  WebDriverManager.getInstance(IEXPLORER).setup(); 
-					         return new InternetExplorerDriver(); // can be replaced with other browser drivers
-					      }
-					   };
-					   public WebDriver getIEDriver() // call this method to get the driver object and launch the browser
-					   {
-					      return iedriver.get();
-					   }
-
-					   public void removeIEDriver() // Quits the driver and closes the browser
-					   {
-					      iedriver.get().quit();
-					      iedriver.remove();
-					   }*/
-
+		
 			   
 }
