@@ -38,12 +38,7 @@ public class DriverFactory {
 	      driver.set(new ChromeDriver());
 	      
 	      }
-	public void setieDriver() // call this method to get the driver object and launch the browser
-	   {
-		WebDriverManager.getInstance(IEXPLORER).setup(); 
-	     driver.set(new InternetExplorerDriver());
-	   }
-			   public ThreadLocal<WebDriver> getDriver() // call this method to get the driver object and launch the browser
+		  public ThreadLocal<WebDriver> getDriver() // call this method to get the driver object and launch the browser
 			   {
 				  return driver;
 			   }
@@ -53,6 +48,7 @@ public class DriverFactory {
 				 
 			      driver.remove();
 			   }
+	
 			   
 		
 			   
