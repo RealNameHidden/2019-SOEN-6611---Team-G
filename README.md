@@ -206,4 +206,4 @@ Packages needed:
 
 - run `mvn test` in the command line to get the reports in the target folder
 
-#### Note: Data for cyclomatic complexity was collected using MetricsReloaded plugin as well apart from Jacoco, but we decided to go with the data from jacoco as it was easier to compute class level cyclomatic complexity and coverage in Jacoco. So the Jacoco data can be found in the path '2019-SOEN-6611---Team-G\DataCollection\Metric1&2&3' and the data from Metrics reloaded is in the path '2019-SOEN-6611---Team-G\DataCollection\Metric4'
+#### Note: Data for cyclomatic complexity was collected using MetricsReloaded plugin as well apart from Jacoco, but we decided to go with the data from jacoco as it was easier to compute class level cyclomatic complexity and coverage in Jacoco. So the Jacoco data can be found in the path '2019-SOEN-6611---Team-G\DataCollection\Metric1&2&4' and the data from Metrics reloaded is in the path '2019-SOEN-6611---Team-G\DataCollection\Metric4'
