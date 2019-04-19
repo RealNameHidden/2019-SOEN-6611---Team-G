@@ -1,0 +1,81 @@
+GROUP,PACKAGE,CLASS,INSTRUCTION_MISSED,INSTRUCTION_COVERED,BRANCH_MISSED,BRANCH_COVERED,LINE_MISSED,LINE_COVERED,COMPLEXITY_MISSED,COMPLEXITY_COVERED,METHOD_MISSED,METHOD_COVERED
+Doxia :: Core,org.apache.maven.doxia.macro,MacroRequest,4,20,0,0,2,7,1,4,1,4
+Doxia :: Core,org.apache.maven.doxia.macro,MacroExecutionException,9,0,0,0,4,0,2,0,2,0
+Doxia :: Core,org.apache.maven.doxia.macro,Macro,1,13,1,1,0,2,1,1,0,1
+Doxia :: Core,org.apache.maven.doxia.macro,EchoMacro,0,57,0,6,0,11,0,5,0,2
+Doxia :: Core,org.apache.maven.doxia.macro,SwfMacro,12,337,14,32,4,77,12,13,0,2
+Doxia :: Core,org.apache.maven.doxia.macro,AbstractMacro,4,65,2,8,2,18,2,8,0,5
+Doxia :: Core,org.apache.maven.doxia,DefaultDoxia,25,0,0,0,6,0,3,0,3,0
+Doxia :: Core,org.apache.maven.doxia,Doxia,11,0,2,0,1,0,2,0,1,0
+Doxia :: Core,org.apache.maven.doxia.module.site,SiteModule,11,0,2,0,1,0,2,0,1,0
+Doxia :: Core,org.apache.maven.doxia.module.site,AbstractSiteModule,27,0,0,0,10,0,5,0,5,0
+Doxia :: Core,org.apache.maven.doxia.module.site.manager,DefaultSiteModuleManager,57,0,6,0,13,0,6,0,3,0
+Doxia :: Core,org.apache.maven.doxia.module.site.manager,SiteModuleNotFoundException,13,0,0,0,6,0,3,0,3,0
+Doxia :: Core,org.apache.maven.doxia.module.site.manager,SiteModuleManager,11,0,2,0,1,0,2,0,1,0
+Doxia :: Core,org.apache.maven.doxia.sink,SinkEventAttributeSet,0,516,1,43,0,106,1,47,0,26
+Doxia :: Core,org.apache.maven.doxia.sink,AbstractSink,25,55,7,7,5,15,5,7,0,5
+Doxia :: Core,org.apache.maven.doxia.sink,AbstractXmlSink,0,131,0,10,0,38,0,15,0,10
+Doxia :: Core,org.apache.maven.doxia.sink,AbstractBinarySinkFactory,59,0,6,0,11,0,7,0,4,0
+Doxia :: Core,org.apache.maven.doxia.sink,PipelineSink,60,0,6,0,12,0,7,0,4,0
+Doxia :: Core,org.apache.maven.doxia.sink,XhtmlBaseSink,477,1758,91,160,110,526,107,152,19,113
+Doxia :: Core,org.apache.maven.doxia.sink,SinkUtils,0,478,2,22,0,64,2,15,0,5
+Doxia :: Core,org.apache.maven.doxia.sink,AbstractTextSink,3,0,0,0,1,0,1,0,1,0
+Doxia :: Core,org.apache.maven.doxia.sink,AbstractTextSinkFactory,67,0,6,0,12,0,8,0,5,0
+Doxia :: Core,org.apache.maven.doxia.sink,SinkAdapter,11,312,5,39,1,195,4,142,0,124
+Doxia :: Core,org.apache.maven.doxia.sink,AbstractXmlSinkFactory,3,0,0,0,1,0,1,0,1,0
+Doxia :: Core,org.apache.maven.doxia.parser.manager,ParserManager,11,0,2,0,1,0,2,0,1,0
+Doxia :: Core,org.apache.maven.doxia.parser.manager,DefaultParserManager,25,0,2,0,5,0,3,0,2,0
+Doxia :: Core,org.apache.maven.doxia.parser.manager,ParserNotFoundException,13,0,0,0,6,0,3,0,3,0
+Doxia :: Core,org.apache.maven.doxia.macro.snippet,SnippetReader,2,178,3,23,0,45,3,19,0,9
+Doxia :: Core,org.apache.maven.doxia.macro.snippet,SnippetMacro,77,222,10,16,15,51,10,15,1,11
+Doxia :: Core,org.apache.maven.doxia.parser,XhtmlBaseParser,131,1370,36,218,31,325,29,133,3,32
+Doxia :: Core,org.apache.maven.doxia.parser,AbstractTextParser,5,0,0,0,2,0,2,0,2,0
+Doxia :: Core,org.apache.maven.doxia.parser,AbstractXmlParser.CachedFileEntityResolver,310,5,20,0,60,1,14,1,4,1
+Doxia :: Core,org.apache.maven.doxia.parser,ParseException,96,0,4,0,24,0,14,0,12,0
+Doxia :: Core,org.apache.maven.doxia.parser,AbstractParser,45,30,2,2,13,10,7,6,6,5
+Doxia :: Core,org.apache.maven.doxia.parser,AbstractXmlParser,186,407,26,52,43,110,29,35,7,18
+Doxia :: Core,org.apache.maven.doxia.parser,Parser,11,0,2,0,1,0,2,0,1,0
+Doxia :: Core,org.apache.maven.doxia.macro.manager,MacroNotFoundException,9,4,0,0,4,2,2,1,2,1
+Doxia :: Core,org.apache.maven.doxia.macro.manager,MacroManager,1,10,1,1,0,1,1,1,0,1
+Doxia :: Core,org.apache.maven.doxia.macro.manager,DefaultMacroManager,0,25,0,2,0,5,0,3,0,2
+Doxia :: Core,org.apache.maven.doxia.index,IndexingSink,48,134,2,3,24,46,12,16,10,15
+Doxia :: Core,org.apache.maven.doxia.index,IndexEntry,88,152,13,13,22,42,12,18,4,13
+Doxia :: Core,org.apache.maven.doxia.document.io.xpp3,DocumentXpp3Reader,638,2533,131,175,108,507,104,79,13,17
+Doxia :: Core,org.apache.maven.doxia.document.io.xpp3,DocumentXpp3Writer,44,1320,101,107,7,227,100,16,0,12
+Doxia :: Core,org.apache.maven.doxia.util,ByLineReaderSource,34,68,5,7,12,23,5,8,2,5
+Doxia :: Core,org.apache.maven.doxia.util,LineBreaker,171,0,20,0,52,0,20,0,9,0
+Doxia :: Core,org.apache.maven.doxia.util,DoxiaUtils,48,365,8,86,13,56,7,52,1,11
+Doxia :: Core,org.apache.maven.doxia.util,HtmlTools,22,811,9,62,5,99,9,42,0,14
+Doxia :: Core,org.apache.maven.doxia.util,XmlValidator.MessagesErrorHandler,163,0,10,0,40,0,13,0,7,0
+Doxia :: Core,org.apache.maven.doxia.util,XmlValidator,142,0,12,0,33,0,11,0,5,0
+Doxia :: Core,org.apache.maven.doxia.sink.render,RenderingContext,56,71,1,1,12,16,9,3,8,3
+Doxia :: Core,org.apache.maven.doxia.macro.toc,TocMacro,34,213,8,22,4,55,8,11,0,4
+Doxia :: Core,org.apache.maven.doxia.document,DocumentMeta,264,1419,165,119,33,273,139,66,4,59
+Doxia :: Core,org.apache.maven.doxia.document,DocumentAuthor,131,774,100,62,6,144,82,34,1,34
+Doxia :: Core,org.apache.maven.doxia.document,DocumentHyperlinkBehaviour,10,77,8,6,2,19,7,6,0,6
+Doxia :: Core,org.apache.maven.doxia.document,DocumentTOC,31,174,16,14,8,37,17,10,3,9
+Doxia :: Core,org.apache.maven.doxia.document,DocumentCover,131,651,84,54,16,123,69,32,2,30
+Doxia :: Core,org.apache.maven.doxia.document,DocumentModel,24,238,24,20,0,51,20,16,0,14
+Doxia :: Core,org.apache.maven.doxia.document,DocumentTOCItem,87,217,27,19,21,44,28,11,6,10
+Doxia :: Core,org.apache.maven.doxia.document,DocumentTemplate,30,237,26,20,3,47,22,14,0,13
+Doxia :: Core,org.apache.maven.doxia.document,DocumentStatistic,18,738,30,30,2,149,30,32,0,32
+Doxia :: Core,org.apache.maven.doxia.markup,HtmlMarkup.new HTML.Tag() {...},0,5,0,0,0,2,0,2,0,2
+Doxia :: Core,org.apache.maven.doxia.markup,HtmlMarkup.new HTML.Tag() {...},0,5,0,0,0,2,0,2,0,2
+Doxia :: Core,org.apache.maven.doxia.markup,HtmlMarkup.new HTML.Tag() {...},0,5,0,0,0,2,0,2,0,2
+Doxia :: Core,org.apache.maven.doxia.markup,HtmlMarkup.new HTML.Tag() {...},0,5,0,0,0,2,0,2,0,2
+Doxia :: Core,org.apache.maven.doxia.markup,HtmlMarkup.new HTML.Tag() {...},0,5,0,0,0,2,0,2,0,2
+Doxia :: Core,org.apache.maven.doxia.markup,HtmlMarkup.new HTML.Tag() {...},0,5,0,0,0,2,0,2,0,2
+Doxia :: Core,org.apache.maven.doxia.markup,HtmlMarkup.new HTML.Tag() {...},0,5,0,0,0,2,0,2,0,2
+Doxia :: Core,org.apache.maven.doxia.markup,HtmlMarkup.new HTML.Tag() {...},0,5,0,0,0,2,0,2,0,2
+Doxia :: Core,org.apache.maven.doxia.markup,HtmlMarkup.new HTML.Tag() {...},0,5,0,0,0,2,0,2,0,2
+Doxia :: Core,org.apache.maven.doxia.markup,HtmlMarkup,0,219,0,0,0,91,0,1,0,1
+Doxia :: Core,org.apache.maven.doxia.markup,HtmlMarkup.new HTML.Tag() {...},0,5,0,0,0,2,0,2,0,2
+Doxia :: Core,org.apache.maven.doxia.markup,HtmlMarkup.new HTML.Tag() {...},0,5,0,0,0,2,0,2,0,2
+Doxia :: Core,org.apache.maven.doxia.markup,HtmlMarkup.new HTML.Tag() {...},0,5,0,0,0,2,0,2,0,2
+Doxia :: Core,org.apache.maven.doxia.markup,HtmlMarkup.new HTML.Tag() {...},0,5,0,0,0,2,0,2,0,2
+Doxia :: Core,org.apache.maven.doxia.markup,HtmlMarkup.new HTML.Tag() {...},0,5,0,0,0,2,0,2,0,2
+Doxia :: Core,org.apache.maven.doxia.markup,HtmlMarkup.new HTML.Tag() {...},0,5,0,0,0,2,0,2,0,2
+Doxia :: Core,org.apache.maven.doxia.markup,HtmlMarkup.new HTML.Tag() {...},0,5,0,0,0,2,0,2,0,2
+Doxia :: Core,org.apache.maven.doxia.markup,HtmlMarkup.new HTML.Tag() {...},0,5,0,0,0,2,0,2,0,2
+Doxia :: Core,org.apache.maven.doxia.markup,HtmlMarkup.new HTML.Tag() {...},0,5,0,0,0,2,0,2,0,2
+Doxia :: Core,org.apache.maven.doxia.markup,Markup,0,4,0,0,0,1,0,1,0,1

@@ -1,0 +1,52 @@
+GROUP,PACKAGE,CLASS,INSTRUCTION_MISSED,INSTRUCTION_COVERED,BRANCH_MISSED,BRANCH_COVERED,LINE_MISSED,LINE_COVERED,COMPLEXITY_MISSED,COMPLEXITY_COVERED,METHOD_MISSED,METHOD_COVERED
+Doxia :: TWiki Module,org.apache.maven.doxia.module.twiki,TWikiSinkFactory,8,0,0,0,2,0,2,0,2,0
+Doxia :: TWiki Module,org.apache.maven.doxia.module.twiki,TWikiSink,256,695,35,22,101,248,56,108,30,104
+Doxia :: TWiki Module,org.apache.maven.doxia.module.twiki,TWikiSiteModule,6,0,0,0,2,0,1,0,1,0
+Doxia :: TWiki Module,org.apache.maven.doxia.module.twiki,TWikiParser,86,235,8,16,24,53,7,10,1,4
+Doxia :: TWiki Module,org.apache.maven.doxia.module.twiki,TWikiMarkup,0,5,0,0,0,1,0,1,0,1
+Doxia :: TWiki Module,org.apache.maven.doxia.module.twiki,TWikiMarkup.new HTML.Tag() {...},0,5,0,0,0,2,0,2,0,2
+Doxia :: TWiki Module,org.apache.maven.doxia.module.twiki.parser,SectionBlockParser,27,130,4,18,4,28,4,15,0,8
+Doxia :: TWiki Module,org.apache.maven.doxia.module.twiki.parser,TextParser,71,618,12,56,11,114,11,38,1,14
+Doxia :: TWiki Module,org.apache.maven.doxia.module.twiki.parser,VerbatimBlock,7,4,0,0,4,2,2,1,2,1
+Doxia :: TWiki Module,org.apache.maven.doxia.module.twiki.parser,HRuleBlockParser,5,53,2,6,1,17,2,6,0,4
+Doxia :: TWiki Module,org.apache.maven.doxia.module.twiki.parser,GenericListBlockParser.new GenericListBlockParser.Type() {...},0,10,0,0,0,3,0,3,0,3
+Doxia :: TWiki Module,org.apache.maven.doxia.module.twiki.parser,GenericListBlockParser.new GenericListBlockParser.Type() {...},6,5,0,0,1,2,1,2,1,2
+Doxia :: TWiki Module,org.apache.maven.doxia.module.twiki.parser,TableCellHeaderBlock,6,4,0,0,4,2,2,1,2,1
+Doxia :: TWiki Module,org.apache.maven.doxia.module.twiki.parser,UnorderedListBlock,6,4,0,0,4,2,2,1,2,1
+Doxia :: TWiki Module,org.apache.maven.doxia.module.twiki.parser,GenericListBlockParser.new GenericListBlockParser.Type() {...},0,11,0,0,0,3,0,3,0,3
+Doxia :: TWiki Module,org.apache.maven.doxia.module.twiki.parser,GenericListBlockParser.new GenericListBlockParser.Type() {...},6,5,0,0,1,2,1,2,1,2
+Doxia :: TWiki Module,org.apache.maven.doxia.module.twiki.parser,GenericListBlockParser.new GenericListBlockParser.Type() {...},0,11,0,0,0,3,0,3,0,3
+Doxia :: TWiki Module,org.apache.maven.doxia.module.twiki.parser,GenericListBlockParser.new GenericListBlockParser.Type() {...},0,11,0,0,0,3,0,3,0,3
+Doxia :: TWiki Module,org.apache.maven.doxia.module.twiki.parser,SectionBlock,168,38,3,5,34,10,10,5,8,3
+Doxia :: TWiki Module,org.apache.maven.doxia.module.twiki.parser,ListBlock,0,4,0,0,0,2,0,1,0,1
+Doxia :: TWiki Module,org.apache.maven.doxia.module.twiki.parser,BoldBlock,6,4,0,0,4,2,2,1,2,1
+Doxia :: TWiki Module,org.apache.maven.doxia.module.twiki.parser,ImageBlock,29,27,3,3,9,10,5,2,2,2
+Doxia :: TWiki Module,org.apache.maven.doxia.module.twiki.parser,ListItemBlock,25,82,11,13,7,21,11,8,2,5
+Doxia :: TWiki Module,org.apache.maven.doxia.module.twiki.parser,TableRowBlock,6,4,0,0,4,2,2,1,2,1
+Doxia :: TWiki Module,org.apache.maven.doxia.module.twiki.parser,ParagraphBlock,6,4,0,0,4,2,2,1,2,1
+Doxia :: TWiki Module,org.apache.maven.doxia.module.twiki.parser,TextBlock,29,37,1,5,4,13,3,6,2,4
+Doxia :: TWiki Module,org.apache.maven.doxia.module.twiki.parser,XHTMLBlock,50,0,8,0,17,0,8,0,4,0
+Doxia :: TWiki Module,org.apache.maven.doxia.module.twiki.parser,WikiWordBlock,19,83,3,11,5,20,4,9,1,5
+Doxia :: TWiki Module,org.apache.maven.doxia.module.twiki.parser,LinkBlock,24,63,3,9,7,15,5,6,2,3
+Doxia :: TWiki Module,org.apache.maven.doxia.module.twiki.parser,XHTMLWikiWordLinkResolver,11,3,0,0,1,1,1,1,1,1
+Doxia :: TWiki Module,org.apache.maven.doxia.module.twiki.parser,NumeratedListBlock,19,24,2,2,6,7,5,2,3,2
+Doxia :: TWiki Module,org.apache.maven.doxia.module.twiki.parser,FormatedTextParser.new FormatBlockFactory() {...},0,8,0,0,0,2,0,2,0,2
+Doxia :: TWiki Module,org.apache.maven.doxia.module.twiki.parser,FormatedTextParser.new FormatBlockFactory() {...},0,8,0,0,0,2,0,2,0,2
+Doxia :: TWiki Module,org.apache.maven.doxia.module.twiki.parser,FormatedTextParser.new FormatBlockFactory() {...},0,8,0,0,0,2,0,2,0,2
+Doxia :: TWiki Module,org.apache.maven.doxia.module.twiki.parser,ParagraphBlockParser,49,193,13,31,11,52,13,19,0,10
+Doxia :: TWiki Module,org.apache.maven.doxia.module.twiki.parser,AbstractFatherBlock,38,85,5,15,7,23,5,10,1,4
+Doxia :: TWiki Module,org.apache.maven.doxia.module.twiki.parser,FormatedTextParser.new FormatBlockFactory() {...},0,16,0,0,0,2,0,2,0,2
+Doxia :: TWiki Module,org.apache.maven.doxia.module.twiki.parser,FormatedTextParser.new FormatBlockFactory() {...},0,16,0,0,0,2,0,2,0,2
+Doxia :: TWiki Module,org.apache.maven.doxia.module.twiki.parser,AnchorBlock,15,34,1,5,5,12,3,5,2,3
+Doxia :: TWiki Module,org.apache.maven.doxia.module.twiki.parser,TableBlockParser,16,138,8,14,2,23,8,8,0,5
+Doxia :: TWiki Module,org.apache.maven.doxia.module.twiki.parser,HorizontalRuleBlock,3,22,0,6,2,4,1,6,1,3
+Doxia :: TWiki Module,org.apache.maven.doxia.module.twiki.parser,FormatedTextParser,5,384,4,54,1,67,4,33,0,8
+Doxia :: TWiki Module,org.apache.maven.doxia.module.twiki.parser,TableBlock,36,4,2,0,10,2,4,1,3,1
+Doxia :: TWiki Module,org.apache.maven.doxia.module.twiki.parser,TreeListBuilder.TreeComponent,61,70,6,4,12,19,6,8,2,7
+Doxia :: TWiki Module,org.apache.maven.doxia.module.twiki.parser,TableCellBlock,6,4,0,0,4,2,2,1,2,1
+Doxia :: TWiki Module,org.apache.maven.doxia.module.twiki.parser,MonospaceBlock,6,4,0,0,4,2,2,1,2,1
+Doxia :: TWiki Module,org.apache.maven.doxia.module.twiki.parser,ItalicBlock,6,4,0,0,4,2,2,1,2,1
+Doxia :: TWiki Module,org.apache.maven.doxia.module.twiki.parser,TreeListBuilder,9,172,3,17,2,34,3,12,0,5
+Doxia :: TWiki Module,org.apache.maven.doxia.module.twiki.parser,VerbatimBlockParser,5,90,2,4,1,17,2,5,0,4
+Doxia :: TWiki Module,org.apache.maven.doxia.module.twiki.parser,NopBlock,18,3,4,0,4,1,5,1,3,1
+Doxia :: TWiki Module,org.apache.maven.doxia.module.twiki.parser,GenericListBlockParser,11,200,5,19,1,38,5,12,0,5

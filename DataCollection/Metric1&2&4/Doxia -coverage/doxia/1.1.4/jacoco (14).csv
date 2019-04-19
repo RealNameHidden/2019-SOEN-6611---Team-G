@@ -1,0 +1,5 @@
+GROUP,PACKAGE,CLASS,INSTRUCTION_MISSED,INSTRUCTION_COVERED,BRANCH_MISSED,BRANCH_COVERED,LINE_MISSED,LINE_COVERED,COMPLEXITY_MISSED,COMPLEXITY_COVERED,METHOD_MISSED,METHOD_COVERED
+Doxia :: Maven Plugin,org.apache.maven.doxia.plugin,DoxiaRenderBooksMojo,408,0,38,0,78,0,25,0,6,0
+Doxia :: Maven Plugin,org.apache.maven.doxia.plugin,Book,18,0,0,0,6,0,6,0,6,0
+Doxia :: Maven Plugin,org.apache.maven.doxia.plugin,Format,6,0,0,0,2,0,2,0,2,0
+Doxia :: Maven Plugin,org.apache.maven.doxia.plugin,HelpMojo,528,0,54,0,104,0,34,0,7,0

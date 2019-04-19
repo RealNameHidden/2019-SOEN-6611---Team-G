@@ -1,5 +1,0 @@
-GROUP,PACKAGE,CLASS,INSTRUCTION_MISSED,INSTRUCTION_COVERED,BRANCH_MISSED,BRANCH_COVERED,LINE_MISSED,LINE_COVERED,COMPLEXITY_MISSED,COMPLEXITY_COVERED,METHOD_MISSED,METHOD_COVERED
-Doxia :: Markdown Module,org.apache.maven.doxia.module.markdown,MarkdownSiteModule,6,0,0,0,2,0,1,0,1,0
-Doxia :: Markdown Module,org.apache.maven.doxia.module.markdown,MarkdownToDoxiaHtmlSerializer,0,41,0,2,0,10,0,3,0,2
-Doxia :: Markdown Module,org.apache.maven.doxia.module.markdown,MarkdownParser,46,383,7,41,10,84,6,25,0,7
-Doxia :: Markdown Module,org.apache.maven.doxia.module.markdown,MarkdownParserModule,5,0,0,0,2,0,1,0,1,0
