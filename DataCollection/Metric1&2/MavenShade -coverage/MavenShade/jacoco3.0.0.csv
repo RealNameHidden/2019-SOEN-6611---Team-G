@@ -1,0 +1,41 @@
+GROUP,PACKAGE,CLASS,INSTRUCTION_MISSED,INSTRUCTION_COVERED,BRANCH_MISSED,BRANCH_COVERED,LINE_MISSED,LINE_COVERED,COMPLEXITY_MISSED,COMPLEXITY_COVERED,METHOD_MISSED,METHOD_COVERED
+Apache Maven Shade Plugin,org.apache.maven.plugins.shade.resource,IncludeResourceTransformer,40,0,2,0,12,0,6,0,5,0
+Apache Maven Shade Plugin,org.apache.maven.plugins.shade.resource,ManifestResourceTransformer,85,0,12,0,21,0,11,0,5,0
+Apache Maven Shade Plugin,org.apache.maven.plugins.shade.resource,DontIncludeResourceTransformer,41,0,10,0,12,0,10,0,5,0
+Apache Maven Shade Plugin,org.apache.maven.plugins.shade.resource,PluginXmlResourceTransformer,353,0,50,0,73,0,36,0,11,0
+Apache Maven Shade Plugin,org.apache.maven.plugins.shade.resource,ResourceBundleAppendingTransformer,68,33,7,3,14,7,7,4,3,3
+Apache Maven Shade Plugin,org.apache.maven.plugins.shade.resource,ServicesResourceTransformer,21,203,7,23,6,47,7,13,2,3
+Apache Maven Shade Plugin,org.apache.maven.plugins.shade.resource,XmlAppendingTransformer,129,18,13,3,30,5,10,3,3,2
+Apache Maven Shade Plugin,org.apache.maven.plugins.shade.resource,ComponentsXmlResourceTransformer.new BufferedInputStream() {...},0,8,0,0,0,2,0,2,0,2
+Apache Maven Shade Plugin,org.apache.maven.plugins.shade.resource,PluginXmlResourceTransformer.new BufferedInputStream() {...},8,0,0,0,2,0,2,0,2,0
+Apache Maven Shade Plugin,org.apache.maven.plugins.shade.resource,XmlAppendingTransformer.new EntityResolver() {...},14,0,0,0,2,0,2,0,2,0
+Apache Maven Shade Plugin,org.apache.maven.plugins.shade.resource,GroovyResourceTransformer,2,176,5,16,1,42,5,15,0,9
+Apache Maven Shade Plugin,org.apache.maven.plugins.shade.resource,ServicesResourceTransformer.ServiceStream,12,33,3,3,1,7,2,4,0,3
+Apache Maven Shade Plugin,org.apache.maven.plugins.shade.resource,AppendingTransformer,36,20,3,3,8,5,5,3,3,2
+Apache Maven Shade Plugin,org.apache.maven.plugins.shade.resource,ApacheNoticeResourceTransformer,386,49,54,4,78,12,30,4,3,2
+Apache Maven Shade Plugin,org.apache.maven.plugins.shade.resource,ApacheLicenseResourceTransformer,4,20,0,4,3,3,3,4,3,2
+Apache Maven Shade Plugin,org.apache.maven.plugins.shade.resource,ComponentsXmlResourceTransformer,23,279,11,27,5,61,11,17,0,9
+Apache Maven Shade Plugin,org.apache.maven.plugins.shade.relocation,SimpleRelocator,32,303,13,47,7,58,10,30,0,10
+Apache Maven Shade Plugin,org.apache.maven.plugins.shade.relocation,Relocator,4,0,0,0,1,0,1,0,1,0
+Apache Maven Shade Plugin,org.apache.maven.plugins.shade.filter,MinijarFilter,340,65,26,2,73,10,21,3,8,2
+Apache Maven Shade Plugin,org.apache.maven.plugins.shade.filter,SimpleFilter,21,146,8,24,5,29,8,18,2,8
+Apache Maven Shade Plugin,org.apache.maven.plugins.shade.pom,Counter,22,0,0,0,8,0,4,0,4,0
+Apache Maven Shade Plugin,org.apache.maven.plugins.shade.pom,MavenJDOMWriter,4833,0,532,0,918,0,334,0,68,0
+Apache Maven Shade Plugin,org.apache.maven.plugins.shade.pom,PomWriter,95,0,6,0,19,0,6,0,3,0
+Apache Maven Shade Plugin,org.apache.maven.plugins.shade.mojo,PackageRelocation,18,0,0,0,6,0,6,0,6,0
+Apache Maven Shade Plugin,org.apache.maven.plugins.shade.mojo,RelativizePath,2,121,1,17,1,25,1,10,0,2
+Apache Maven Shade Plugin,org.apache.maven.plugins.shade.mojo,ArtifactId,16,162,4,28,3,32,5,21,1,9
+Apache Maven Shade Plugin,org.apache.maven.plugins.shade.mojo,ArchiveFilter,0,12,0,0,0,4,0,4,0,4
+Apache Maven Shade Plugin,org.apache.maven.plugins.shade.mojo,ShadeMojo,1584,172,167,13,326,36,114,5,26,3
+Apache Maven Shade Plugin,org.apache.maven.plugins.shade.mojo,ArtifactSelector,41,99,10,18,6,18,7,13,2,4
+Apache Maven Shade Plugin,org.apache.maven.plugins.shade.mojo,ArtifactSet,9,0,0,0,3,0,3,0,3,0
+Apache Maven Shade Plugin,org.apache.maven.plugins.shade.mojo,HelpMojo,889,0,108,0,157,0,70,0,16,0
+Apache Maven Shade Plugin,org.apache.maven.plugins.shade,DefaultShader.new RemappingClassAdapter() {...},5,41,1,1,1,7,1,2,0,2
+Apache Maven Shade Plugin,org.apache.maven.plugins.shade,ShadingResult,3,0,0,0,1,0,1,0,1,0
+Apache Maven Shade Plugin,org.apache.maven.plugins.shade,Shader,0,4,0,0,0,1,0,1,0,1
+Apache Maven Shade Plugin,org.apache.maven.plugins.shade,DefaultShader,380,491,40,42,79,112,29,27,2,13
+Apache Maven Shade Plugin,org.apache.maven.plugins.shade,DefaultShader.RelocatorRemapper,49,123,4,14,8,31,4,9,0,4
+Apache Maven Shade Plugin,org.apache.maven.plugins.shade,ShadeRequest,4,41,0,0,2,17,1,12,1,12
+,,,9569,2619,1097,292,,,,,,
+,,,0.214883492,,,,,,,,,
+,,,0.210223182,,,,,,,,,
