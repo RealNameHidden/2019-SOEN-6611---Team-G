@@ -21,7 +21,8 @@
 
 ## I Design Details about the script developed to Mine JIRA.
 
- Github location : /Scripts/Purpose-MineIssueTracker_JIRA/
+ Github location : `/Scripts/Purpose-MineIssueTracker_JIRA/`
+ 
  Language : JAVA
  Packages Used :
  - Selenium (Version : 3.141.59).
@@ -104,7 +105,7 @@ Note:
 - the original readme.md can be found in the directory
 - Github link from where the code was borrowed: https://github.com/dmillett/churn
 
-## Instructions to run the script to generate spearman correlation values and scatter plot graphs
+## IV Instructions to run the script to generate spearman correlation values and scatter plot graphs
 
 Github location:
 `/Scripts/Purpose-SpearmanCorrelation/`
@@ -122,7 +123,7 @@ Packages needed:
  
  > Step 4: the correlation value will be displayed in the console and also a scatter plot will be generated
  
-## IV Instruction for generating Jacoco reports (Coverage and complexity)
+## V Instruction for generating Jacoco reports (Coverage and complexity)
 
 - Changes have to be made in the pom.xml file of the respective project
 - The below configuration must be added under <plugins> section of the pom.xml
@@ -175,7 +176,7 @@ Packages needed:
 ```
 > Run `mvn test` to get the reports generated in the target folder
 
-## V Instructions for generating Pit reports (Mutation coverage)
+## VI Instructions for generating Pit reports (Mutation coverage)
 - Changes have to be made in the pom.xml file of the respective project
 - The below configuration must be added under <plugins> section of the pom.xml
 ```xml
