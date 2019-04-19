@@ -7,7 +7,7 @@ def plot(X, Y,xstring,ystring, sheetname, coefficient, value):
     plt.xlabel(xstring)
     plt.ylabel(ystring)
     plt.title(r'Spearman Correlation'+' R='+str(coefficient)+' P='+str(value),fontweight="bold")
-  #  plt.text(0.1, 1,r'r='+str(coefficient))
-
+  
+  #Give the name to the file to be saved as desired below
     plt.savefig(sheetname+"1,4"+"-plot")
     plt.show()
