@@ -1,0 +1,23 @@
+|       1 |       2 |       1 |       1 |        0 | conf/checkstyle.xml |
+|       1 |       2 |       1 |       1 |        0 | src/main/java/org/apache/commons/configuration/DynamicCombinedConfiguration.java |
+|       1 |       2 |       1 |       1 |        0 | src/site/xdoc/dependencies.xml |
+|       1 |       2 |       2 |       0 |        2 | conf/checkstyle-suppressions.xml |
+|       1 |       2 |       2 |       0 |        2 | src/main/java/org/apache/commons/configuration/DefaultConfigurationBuilder.java |
+|       1 |       5 |       3 |       2 |        1 | src/site/xdoc/userguide/howto_basicfeatures.xml |
+|       1 |       7 |       7 |       0 |        7 | doap_configuration.rdf |
+|       1 |       8 |       4 |       4 |        0 | src/site/xdoc/userguide/howto_properties.xml |
+|       1 |      10 |       5 |       5 |        0 | src/main/java/org/apache/commons/configuration/beanutils/BeanHelper.java |
+|       1 |      14 |      14 |       0 |       14 | src/test/java/org/apache/commons/configuration/plist/TestXMLPropertyListConfiguration.java |
+|       3 |      14 |       7 |       7 |        0 | build.xml |
+|       1 |      18 |       9 |       9 |        0 | src/main/java/org/apache/commons/configuration/beanutils/ConfigurationDynaBean.java |
+|       1 |      18 |       9 |       9 |        0 | src/main/java/org/apache/commons/configuration/beanutils/ConfigurationDynaClass.java |
+|       1 |      22 |      14 |       8 |        6 | src/main/java/org/apache/commons/configuration/DefaultFileSystem.java |
+|       6 |      24 |      21 |       3 |       18 | src/changes/changes.xml |
+|       5 |      31 |      21 |      10 |       11 | pom.xml |
+|       1 |      32 |      16 |      16 |        0 | src/site/xdoc/download_configuration.xml |
+|       1 |      32 |      32 |       0 |       32 | src/test/resources/test_invalid_date.plist.xml |
+|       2 |      56 |      37 |      19 |       18 | src/main/java/org/apache/commons/configuration/plist/XMLPropertyListConfiguration.java |
+|       4 |      97 |      46 |      51 |       -5 | RELEASE-NOTES.txt |
+|      35 |     398 |     252 |     146 |      106 | Stat Totals |
+=====================================================================
+|   files |   lines | growth  | shrink  | net(+/-) | filename/stats |

@@ -1,0 +1,34 @@
+|       1 |       1 |       1 |       0 |        1 | src/test/resources/test.properties |
+|       1 |       2 |       1 |       1 |        0 | NOTICE.txt |
+|       1 |       2 |       1 |       1 |        0 | src/main/java/org/apache/commons/configuration2/builder/PropertiesBuilderParametersImpl.java |
+|       1 |       2 |       1 |       1 |        0 | src/site/site.xml |
+|       1 |       2 |       1 |       1 |        0 | src/test/java/org/apache/commons/configuration2/builder/fluent/TestParameters.java |
+|       1 |       6 |       3 |       3 |        0 | src/test/resources/testMultiTenentConfigurationBuilder5.xml |
+|       1 |       6 |       6 |       0 |        6 | src/main/java/org/apache/commons/configuration2/plist/XMLPropertyListConfiguration.java |
+|       2 |       6 |       3 |       3 |        0 | src/site/xdoc/dependencies.xml |
+|       1 |       9 |       8 |       1 |        7 | src/test/java/org/apache/commons/configuration2/TestDynamicCombinedConfiguration.java |
+|       1 |      10 |      10 |       0 |       10 | src/main/java/org/apache/commons/configuration2/AbstractConfiguration.java |
+|       5 |      10 |       6 |       4 |        2 | pom.xml |
+|       1 |      13 |      13 |       0 |       13 | src/main/java/org/apache/commons/configuration2/io/FileBased.java |
+|       1 |      18 |      18 |       0 |       18 | src/site/xdoc/userguide/howto_concurrency.xml |
+|       1 |      20 |      20 |       0 |       20 | src/test/java/org/apache/commons/configuration2/builder/TestFileBasedConfigurationBuilder.java |
+|       1 |      20 |      20 |       0 |       20 | src/test/java/org/apache/commons/configuration2/TestPropertiesConfigurationLayout.java |
+|       1 |      24 |      24 |       0 |       24 | .travis.yml |
+|       2 |      26 |      12 |      14 |       -2 | src/main/java/org/apache/commons/configuration2/PropertiesConfigurationLayout.java |
+|       2 |      27 |      23 |       4 |       19 | src/test/java/org/apache/commons/configuration2/builder/TestPropertiesBuilderParametersImpl.java |
+|       3 |      35 |      33 |       2 |       31 | src/test/java/org/apache/commons/configuration2/TestXMLConfiguration.java |
+|       1 |      37 |      34 |       3 |       31 | src/test/java/org/apache/commons/configuration2/plist/TestXMLPropertyListConfiguration.java |
+|       2 |      48 |      34 |      14 |       20 | src/main/java/org/apache/commons/configuration2/PropertiesConfiguration.java |
+|      14 |      58 |      55 |       3 |       52 | src/changes/changes.xml |
+|       3 |      74 |      48 |      26 |       22 | src/test/java/org/apache/commons/configuration2/TestPropertiesConfiguration.java |
+|       1 |      84 |      50 |      34 |       16 | src/site/xdoc/download_configuration.xml |
+|       1 |      84 |      79 |       5 |       74 | RELEASE-NOTES.txt |
+|       1 |      97 |      97 |       0 |       97 | CONTRIBUTING.md |
+|       1 |      98 |      98 |       0 |       98 | README.md |
+|       2 |     101 |      66 |      35 |       31 | src/site/xdoc/userguide/howto_basicfeatures.xml |
+|       2 |     109 |      96 |      13 |       83 | src/main/java/org/apache/commons/configuration2/XMLConfiguration.java |
+|       1 |     208 |     208 |       0 |      208 | src/test/java/org/apache/commons/configuration2/TestXMLListHandling.java |
+|       1 |     220 |     220 |       0 |      220 | src/main/java/org/apache/commons/configuration2/XMLListReference.java |
+|      58 |    1457 |    1289 |     168 |     1121 | Stat Totals |
+=====================================================================
+|   files |   lines | growth  | shrink  | net(+/-) | filename/stats |
